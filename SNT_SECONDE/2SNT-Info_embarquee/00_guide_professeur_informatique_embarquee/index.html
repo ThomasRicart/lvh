@@ -1,0 +1,1239 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/SNT_SECONDE/2SNT-Info_embarquee/00_guide_professeur_informatique_embarquee/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>📚 Séquence SNT – Informatique Embarquée et Objets Connectés - Cours de M. Ricart</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sequence-snt-informatique-embarquee-et-objets-connectes" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../.." title="Cours de M. Ricart" class="md-header__button md-logo" aria-label="Cours de M. Ricart" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cours de M. Ricart
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📚 Séquence SNT – Informatique Embarquée et Objets Connectés
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  SNT Seconde
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../NSI_PREMIERE/index.md" class="md-tabs__link">
+          
+  
+  
+  NSI Première
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../NSI_TERMINALE/index.md" class="md-tabs__link">
+          
+  
+  
+  NSI Terminale
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Cours de M. Ricart" class="md-nav__button md-logo" aria-label="Cours de M. Ricart" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Cours de M. Ricart
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT Seconde
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SNT Seconde
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT Seconde
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NSI Première
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NSI Première
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../NSI_PREMIERE/index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    None
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NSI Terminale
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    NSI Terminale
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../NSI_TERMINALE/index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    None
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#guide-professeur-vue-densemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guide professeur – Vue d'ensemble
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organisation-de-la-sequence-4-seances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organisation de la séquence (4 séances)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#couverture-du-programme-officiel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Couverture du programme officiel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Couverture du programme officiel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contenus-et-capacites-attendues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contenus et capacités attendues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequis-eleves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prérequis élèves
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fichiers-de-la-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fichiers de la séquence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-pedagogiques-par-seance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes pédagogiques par séance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Notes pédagogiques par séance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seance-1-presentation-generale-1h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Séance 1 – Présentation générale (1h)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seance-2-realiser-une-ihm-avec-tinkercad-2h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Séance 2 – Réaliser une IHM avec Tinkercad (2h)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seance-3-projet-en-autonomie-2h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Séance 3 – Projet en autonomie (2h)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seance-4-evaluation-1h" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Séance 4 – Évaluation (1h)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation-alternative-evaluation-pratique-sur-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Évaluation alternative – Évaluation pratique sur machine
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ressources-complementaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ressources complémentaires
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materiel-necessaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matériel nécessaire
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sequence-snt-informatique-embarquee-et-objets-connectes">📚 Séquence SNT – Informatique Embarquée et Objets Connectés</h1>
+<h2 id="guide-professeur-vue-densemble">Guide professeur – Vue d'ensemble</h2>
+<hr />
+<h2 id="organisation-de-la-sequence-4-seances">Organisation de la séquence (4 séances)</h2>
+<table>
+<thead>
+<tr>
+<th>Séance</th>
+<th>Titre</th>
+<th>Notions du programme couvertes</th>
+<th>Durée</th>
+<th>Outils</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S01</td>
+<td>Présentation générale</td>
+<td>Systèmes embarqués, capteurs, actionneurs, IHM, IoT, sûreté, sécurité</td>
+<td>1h</td>
+<td>Notebook Jupyter</td>
+</tr>
+<tr>
+<td>S02</td>
+<td>Réaliser une IHM avec micro:bit</td>
+<td>IHM, capteur, actionneur, acquisition de données, commande</td>
+<td>2h</td>
+<td>Tinkercad + micro:bit (MicroPython)</td>
+</tr>
+<tr>
+<td>S03</td>
+<td>Projet : concevoir son propre objet connecté</td>
+<td>IHM complète, algorithme de contrôle, capteur + actionneur</td>
+<td>2h</td>
+<td>Tinkercad + micro:bit (MicroPython)</td>
+</tr>
+<tr>
+<td>S04</td>
+<td>Évaluation</td>
+<td>Toutes les notions de la séquence</td>
+<td>1h</td>
+<td>Notebook Jupyter</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="couverture-du-programme-officiel">Couverture du programme officiel</h2>
+<h3 id="contenus-et-capacites-attendues">Contenus et capacités attendues</h3>
+<table>
+<thead>
+<tr>
+<th>Contenu</th>
+<th>Capacité attendue</th>
+<th>Séance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Systèmes informatiques embarqués</td>
+<td>Identifier des algorithmes de contrôle des comportements physiques à travers les données des capteurs, l'IHM et les actions des actionneurs</td>
+<td>S01, S02</td>
+</tr>
+<tr>
+<td>Interface homme-machine (IHM)</td>
+<td>Réaliser une IHM simple d'un objet connecté</td>
+<td>S02, S03</td>
+</tr>
+<tr>
+<td>Commande d'un actionneur</td>
+<td>Écrire des programmes simples de commande d'un actionneur</td>
+<td>S02, S03</td>
+</tr>
+<tr>
+<td>Acquisition de données d'un capteur</td>
+<td>Écrire des programmes simples d'acquisition de données</td>
+<td>S02, S03</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Toutes les capacités du programme sont couvertes.</strong></p>
+<hr />
+<h2 id="prerequis-eleves">Prérequis élèves</h2>
+<ul>
+<li>Bases Python : variables, boucles <code>for</code> et <code>while</code>, conditions <code>if/elif/else</code>, fonctions simples</li>
+<li>Utilisation basique d'un navigateur web (pour Tinkercad)</li>
+<li>Pas de prérequis en électronique : Tinkercad est entièrement simulé</li>
+</ul>
+<hr />
+<h2 id="fichiers-de-la-sequence">Fichiers de la séquence</h2>
+<table>
+<thead>
+<tr>
+<th>Fichier</th>
+<th>Type</th>
+<th>Destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>S01_presentation_informatique_embarquee.ipynb</code></td>
+<td>Notebook élève</td>
+<td>Distribuer en début de S01</td>
+</tr>
+<tr>
+<td><code>S01_CORRECTION.ipynb</code></td>
+<td>Notebook professeur</td>
+<td>Usage professeur uniquement</td>
+</tr>
+<tr>
+<td><code>S02_IHM_microbit_tinkercad.ipynb</code></td>
+<td>Notebook élève</td>
+<td>Distribuer en début de S02</td>
+</tr>
+<tr>
+<td><code>S02_CORRECTION.ipynb</code></td>
+<td>Notebook professeur</td>
+<td>Usage professeur uniquement</td>
+</tr>
+<tr>
+<td><code>S03_projet_IHM_autonomie.ipynb</code></td>
+<td>Notebook élève</td>
+<td>Distribuer en début de S03</td>
+</tr>
+<tr>
+<td><code>S03_CORRECTION.ipynb</code></td>
+<td>Notebook professeur</td>
+<td>Usage professeur uniquement</td>
+</tr>
+<tr>
+<td><code>S04_evaluation.md</code></td>
+<td>Évaluation élève</td>
+<td>Distribuer en début de S04</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="notes-pedagogiques-par-seance">Notes pédagogiques par séance</h2>
+<h3 id="seance-1-presentation-generale-1h">Séance 1 – Présentation générale (1h)</h3>
+<p><strong>Objectif principal</strong> : poser le vocabulaire de base et donner du sens à la notion de système embarqué.</p>
+<p><strong>Point d'attention</strong> : bien distinguer les trois composants fondamentaux : <em>capteur</em> (mesure → numérique), <em>actionneur</em> (numérique → action physique), <em>IHM</em> (interaction humaine). La confusion entre capteur et actionneur est très fréquente chez les élèves — par exemple, croire que le thermomètre « chauffe » la pièce.</p>
+<p><strong>Déroulement suggéré</strong> :
+- 10 min : accroche par une vidéo ou une photo de carte micro:bit / voiture autonome
+- 20 min : lecture de la partie cours (Parties 1 à 4) avec commentaires oraux
+- 25 min : questions 1 à 5 en autonomie ou binôme
+- 5 min : mise en commun sur la synthèse finale</p>
+<p><strong>Différenciation</strong> :
+- La question 3 (voiture autonome) peut être approfondie par les élèves rapides grâce à une recherche documentaire sur les niveaux d'autonomie SAE (0 à 5).
+- La question 5 (attaque Mirai) peut faire l'objet d'une discussion orale collective si le temps manque pour une réponse écrite.</p>
+<p><strong>Erreurs fréquentes</strong> :
+- Confondre sûreté (<em>safety</em>) et sécurité (<em>security</em>) — deux mots proches en français mais distincts techniquement
+- Penser que seuls les ordinateurs et smartphones contiennent des systèmes embarqués
+- Ne pas trouver d'exemples au-delà du smartphone et de la voiture</p>
+<p><strong>Questions bonus pour les élèves avancés</strong> :
+- Un distributeur de billets : quels sont ses capteurs, actionneurs et IHM ?
+- Cherchez la différence entre un microprocesseur et un microcontrôleur.
+- Est-ce que votre téléphone est un système embarqué ? Justifiez.</p>
+<hr />
+<h3 id="seance-2-realiser-une-ihm-avec-tinkercad-2h">Séance 2 – Réaliser une IHM avec Tinkercad (2h)</h3>
+<p><strong>Objectif principal</strong> : passer à la pratique — programmer une carte micro:bit simulée pour créer une IHM fonctionnelle avec un capteur et un actionneur.</p>
+<p><strong>Pré-requis technique</strong> : créer un compte Tinkercad est gratuit et ne nécessite pas d'adresse e-mail avec certaines configurations (compte « élève » possible). Prévoir 5 min en début de séance pour la connexion.</p>
+<p><strong>Déroulement suggéré</strong> :
+- 5 min : connexion Tinkercad et création du projet
+- 20 min : Activité 1 – prise en main (<code>display.scroll</code>, <code>display.show</code>)
+- 30 min : Activité 2 – boutons et compteur (<code>was_pressed</code>, <code>while True</code>)
+- 40 min : Activité 3 – station météo (capteur température + IHM complète)
+- 15 min : Activité 4 (bonus) + question finale de bilan
+- 10 min : mise en commun collective</p>
+<p><strong>Point d'attention – erreur piège</strong> : dans l'Activité 3, le code de départ écrit <code>temperature = temperature()</code>, ce qui crée un conflit de nom : Python écrase la fonction <code>temperature()</code> avec la variable du même nom. À la deuxième itération de la boucle, l'appel de <code>temperature()</code> provoque une erreur <code>TypeError</code>. <strong>Insister sur ce point</strong> — c'est l'erreur la plus fréquente et la plus déroutante. La solution est de nommer la variable <code>t</code>, <code>temp</code> ou <code>temp_c</code>.</p>
+<p><strong>Point d'attention – <code>is_pressed()</code> vs <code>was_pressed()</code></strong> : <code>is_pressed()</code> renvoie <code>True</code> tant que le bouton est maintenu, ce qui fait s'incrémenter un compteur des dizaines de fois par seconde. <code>was_pressed()</code> se déclenche une seule fois par appui. Ce point mérite une démonstration en direct.</p>
+<p><strong>Point d'attention – <code>display.scroll()</code> bloquant</strong> : par défaut, <code>display.scroll()</code> bloque l'exécution du programme jusqu'à la fin du défilement. Si des boutons sont appuyés pendant ce temps, ils ne sont pas détectés. Montrer le paramètre <code>wait=False</code> comme solution.</p>
+<p><strong>Tableau des erreurs fréquentes</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Erreur</th>
+<th>Cause</th>
+<th>Correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>temperature = temperature()</code></td>
+<td>Conflit de nom variable/fonction</td>
+<td>Renommer : <code>t = temperature()</code></td>
+</tr>
+<tr>
+<td><code>is_pressed()</code> dans un compteur</td>
+<td>Incrémentation en boucle rapide</td>
+<td>Utiliser <code>was_pressed()</code></td>
+</tr>
+<tr>
+<td>Oubli de <code>while True</code></td>
+<td>Programme s'exécute une seule fois</td>
+<td>Encapsuler dans <code>while True</code></td>
+</tr>
+<tr>
+<td><code>display.scroll()</code> qui bloque</td>
+<td>Comportement bloquant par défaut</td>
+<td>Ajouter <code>wait=False</code></td>
+</tr>
+<tr>
+<td>Indentation incorrecte</td>
+<td>SyntaxError ou comportement inattendu</td>
+<td>Vérifier 4 espaces dans <code>while</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Remarque sur la matrice LED</strong> : c'est un excellent exemple pédagogique de composant polyvalent — elle est à la fois IHM sortie (communique une info à l'utilisateur), actionneur (produit de la lumière) et même capteur (mesure la luminosité ambiante en mode lecture). Utiliser ce cas pour montrer que les catégories ne sont pas toujours exclusives.</p>
+<p><strong>Activité bonus (dé)</strong> : utilise les images personnalisées <code>Image("...")</code> et l'indexation de liste. Réservée aux élèves maîtrisant déjà les listes Python.</p>
+<hr />
+<h3 id="seance-3-projet-en-autonomie-2h">Séance 3 – Projet en autonomie (2h)</h3>
+<p><strong>Objectif principal</strong> : concevoir et programmer un objet connecté complet de A à Z, en autonomie guidée.</p>
+<p><strong>Déroulement suggéré</strong> :
+- 15 min : choix du projet, remplissage de la fiche de projet et du tableau des composants
+- 20 min : rédaction de l'algorithme en pseudo-code → <strong>validation professeur obligatoire avant de coder</strong>
+- 50 min : codage et tests dans Tinkercad
+- 15 min : remplissage de la grille de test
+- 10 min : préparation et présentation orale du projet</p>
+<p><strong>Point d'attention – valider l'algorithme avant le code</strong> : le passage professeur à l'étape 2 est crucial. Un algorithme incorrect mène à 30 minutes de débogage stérile. Vérifier que la structure <code>while True / if / elif / else</code> est logiquement cohérente, que les variables sont initialisées, et qu'il n'y a pas d'ambiguïté dans les conditions.</p>
+<p><strong>Conseil d'organisation</strong> : constituer les binômes à l'avance et s'assurer que les projets sont variés dans la classe (éviter que tous choisissent le projet 1).</p>
+<p><strong>Complexité des projets</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Projet</th>
+<th>Difficulté</th>
+<th>Public cible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 – Alerte canicule</td>
+<td>⭐⭐ Facile</td>
+<td>Tous les élèves</td>
+</tr>
+<tr>
+<td>2 – Jeu de réaction</td>
+<td>⭐⭐ Facile</td>
+<td>Tous les élèves</td>
+</tr>
+<tr>
+<td>4 – Boussole affichée</td>
+<td>⭐⭐ Facile</td>
+<td>Tous les élèves</td>
+</tr>
+<tr>
+<td>5 – Détecteur de mouvement</td>
+<td>⭐⭐⭐ Moyen</td>
+<td>Élèves à l'aise</td>
+</tr>
+<tr>
+<td>3 – Minuteur de sport</td>
+<td>⭐⭐⭐⭐ Difficile</td>
+<td>Élèves avancés</td>
+</tr>
+<tr>
+<td>6 – Mini-jeu de mémoire</td>
+<td>⭐⭐⭐⭐ Difficile</td>
+<td>Élèves avancés</td>
+</tr>
+<tr>
+<td>7 – Projet libre</td>
+<td>Variable</td>
+<td>Sur validation</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Remarque sur le projet 4 (Boussole)</strong> : la boussole nécessite un calibrage (<code>compass.calibrate()</code>) et n'est pas simulable dans Tinkercad car elle dépend d'un vrai champ magnétique. Si votre établissement possède de vraies cartes micro:bit, ce projet y est mieux adapté. Sinon, orienter les élèves vers un autre projet.</p>
+<p><strong>Questions de passage pour vérifier la compréhension</strong> : lors des rondes en classe, poser ces questions oralement plutôt que de lire le code :
+- <em>Montre-moi le capteur dans ton code. Comment la valeur est-elle récupérée ?</em>
+- <em>Que se passe-t-il si je change cette valeur dans la simulation ?</em>
+- <em>Pourquoi as-tu mis <code>was_pressed()</code> plutôt que <code>is_pressed()</code> ici ?</em>
+- <em>À quoi sert le <code>sleep()</code> à la fin de ta boucle ?</em>
+- <em>Qu'est-ce que ton programme ferait si on supprimait la boucle <code>while True</code> ?</em></p>
+<p><strong>Présentation orale</strong> : même courte (2-3 min par binôme), elle a une vraie valeur pédagogique — reformuler en langage naturel ce que fait le programme est un excellent indicateur de compréhension réelle.</p>
+<hr />
+<h3 id="seance-4-evaluation-1h">Séance 4 – Évaluation (1h)</h3>
+<p><strong>Structure de l'évaluation</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Exercice</th>
+<th>Contenu</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ex. 1 – Vocabulaire</td>
+<td>Reliage, tableau composants, mots manquants</td>
+<td>/6</td>
+</tr>
+<tr>
+<td>Ex. 2 – Lecture de programme</td>
+<td>Analyse, description, modification de code</td>
+<td>/6</td>
+</tr>
+<tr>
+<td>Ex. 3 – Écriture de programme</td>
+<td>Algorithme + code complet (alarme plante)</td>
+<td>/8</td>
+</tr>
+<tr>
+<td>Ex. 4 – Bonus</td>
+<td>Réflexion sur les enjeux sociétaux</td>
+<td>/2</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>/20</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Consignes à rappeler aux élèves</strong> :
+- La documentation micro:bit n'est <strong>pas</strong> autorisée
+- Les exercices sont <strong>indépendants</strong> — commencer par celui qu'on maîtrise le mieux
+- Pour l'exercice 3, rédiger l'algorithme avant le code (même conseil qu'en S03)</p>
+<p><strong>Points de vigilance pour la correction</strong> :</p>
+<ul>
+<li><strong>Ex. 1.1</strong> : accepter toute formulation correcte du sens, pas seulement un mot clé exact</li>
+<li><strong>Ex. 2.3</strong> : la matrice LED peut être acceptée comme « IHM sortie » ou « actionneur » — les deux sont corrects</li>
+<li><strong>Ex. 2.4</strong> : vérifier que la condition <code>A and B</code> est placée <strong>avant</strong> les conditions séparées de A et B</li>
+<li><strong>Ex. 3</strong> : l'essentiel est la structure <code>while True</code> + lecture capteur + <code>if/elif/else</code> + boutons. Ne pas pénaliser les erreurs mineures de syntaxe si la logique est correcte</li>
+</ul>
+<p><strong>Correction de l'exercice 3 (programme complet attendu)</strong> :</p>
+<pre><code class="language-python">from microbit import *
+
+while True:
+    t = temperature()
+
+    if button_a.was_pressed():
+        display.scroll(str(t) + &quot;C&quot;, wait=False)
+
+    elif button_b.was_pressed():
+        if t &lt; 10 or t &gt; 30:
+            display.show(Image.NO)
+        else:
+            display.show(Image.YES)
+
+    else:
+        if t &lt; 10:
+            display.show(Image.SKULL)
+            display.scroll(&quot;GEL !&quot;, wait=False)
+        elif t &lt;= 30:
+            display.show(Image.HAPPY)
+        else:
+            display.show(Image.ANGRY)
+            display.scroll(&quot;CHAUD&quot;, wait=False)
+
+    sleep(300)
+</code></pre>
+<p><strong>Barème indicatif pour l'exercice 3</strong> :
+- Algorithme structuré et lisible : 2 pts
+- <code>from microbit import *</code> + <code>while True</code> : 1 pt
+- Lecture correcte du capteur (<code>t = temperature()</code>) : 1 pt
+- Structure <code>if/elif/else</code> pour les 3 zones de température : 2 pts
+- Gestion des boutons A et B : 2 pts</p>
+<hr />
+<h2 id="evaluation-alternative-evaluation-pratique-sur-machine">Évaluation alternative – Évaluation pratique sur machine</h2>
+<p>Si vous souhaitez une évaluation pratique sur Tinkercad plutôt qu'écrite, voici une proposition :</p>
+<p>Fournir aux élèves un programme incomplet à compléter dans Tinkercad, par exemple un système de détection de chute (accéléromètre) avec un score et un affichage. Les consignes peuvent être rédigées en Markdown ou dans un notebook Jupyter. Cette approche évalue mieux les compétences de programmation réelle mais est plus longue à corriger.</p>
+<hr />
+<h2 id="ressources-complementaires">Ressources complémentaires</h2>
+<ul>
+<li><a href="https://makecode.microbit.org">makecode.microbit.org</a> – éditeur officiel micro:bit (blocs + JavaScript + Python)</li>
+<li><a href="https://microbit.org/fr/">microbit.org/fr/</a> – documentation officielle en français</li>
+<li><a href="https://www.tinkercad.com">tinkercad.com</a> – simulateur en ligne (circuits + micro:bit)</li>
+<li><a href="https://python.microbit.org">python.microbit.org</a> – éditeur Python micro:bit en ligne (alternative à Tinkercad)</li>
+<li><a href="https://pixees.fr">pixees.fr</a> – ressources pédagogiques SNT</li>
+<li><a href="https://www.education.gouv.fr/bo/19/Special1/MENE1901641A.htm">education.gouv.fr – programme SNT</a> – programme officiel</li>
+</ul>
+<hr />
+<h2 id="materiel-necessaire">Matériel nécessaire</h2>
+<table>
+<thead>
+<tr>
+<th>Séance</th>
+<th>Matériel</th>
+<th>Remarque</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S01</td>
+<td>Ordinateurs avec Jupyter</td>
+<td>1 par élève ou 1 pour 2</td>
+</tr>
+<tr>
+<td>S02</td>
+<td>Ordinateurs avec accès Tinkercad</td>
+<td>1 par élève ou 1 pour 2, compte Tinkercad créé</td>
+</tr>
+<tr>
+<td>S03</td>
+<td>Ordinateurs avec accès Tinkercad</td>
+<td>Idem S02</td>
+</tr>
+<tr>
+<td>S04</td>
+<td>Ordinateurs avec Jupyter</td>
+<td>1 par élève, évaluation individuelle</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Optionnel</strong> : si votre établissement possède de vraies cartes micro:bit, la séance S02 peut être réalisée sur matériel réel. Le code MicroPython est identique. L'avantage est de pouvoir tester l'accéléromètre et la boussole réels.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
