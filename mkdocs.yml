@@ -1,0 +1,10 @@
+site_name: Cours de M. Ricart
+site_url: https://thomasricart.github.io/lvh
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
