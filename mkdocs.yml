@@ -6,5 +6,11 @@ theme:
   language: fr
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.indexes
     - search.suggest
+
+plugins:
+  - search
+  - awesome-pages
