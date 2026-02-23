@@ -919,7 +919,22 @@
 <li>Calculer les termes <span class="arithmatex">\(u_0\)</span>, <span class="arithmatex">\(u_1\)</span> et <span class="arithmatex">\(u_2\)</span>.</li>
 <li>Étudier les variations de la suite <span class="arithmatex">\((u_n)\)</span> sur <span class="arithmatex">\(\mathbb{N}\)</span>.</li>
 <li>Déterminer, par le calcul, le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n &gt; 2,5\)</span>.</li>
+<li>Compléter l'algorithme de recherche de seuil qui calcule le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n&gt;cible\)</span>, <span class="arithmatex">\(cible\)</span> étant un réel strictement inférieur à 3. </li>
 </ol>
+<pre><code>def cherche_seuil(cible):
+    n = 0
+    u = -0.5  # Valeur de u_0
+
+    while u .........:
+        n = .........
+        u = .........
+
+    return n
+
+# Appel de la fonction pour la valeur demandée
+resultat = cherche_seuil(2.99999)
+print(&quot;Le plus petit entier n est :&quot;, resultat)
+</code></pre>
 <h3 id="partie-b-modelisation-et-suite-arithmetico-geometrique">Partie B : Modélisation et Suite Arithmético-géométrique</h3>
 <p>Un investisseur place <span class="arithmatex">\(1\,000\)</span> € le 1er janvier 2024 sur un compte d'épargne. Chaque année, ce capital augmente de <span class="arithmatex">\(5\%\)</span> grâce aux intérêts, mais l'investisseur retire <span class="arithmatex">\(40\)</span> € de frais de gestion à la fin de l'année.<br />
 On note <span class="arithmatex">\(v_n\)</span> le capital au 1er janvier de l'année <span class="arithmatex">\(2024 + n\)</span>. On a <span class="arithmatex">\(v_0 = 1\,000\)</span>.</p>

@@ -885,6 +885,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#4-recherche-de-seuil-avec-un-algorithme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Recherche de seuil avec un algorithme
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1026,6 +1037,21 @@ f(x) &amp; &amp; \nearrow &amp; \\
 <p><span class="arithmatex">\(3n - 1 &gt; 2,5n + 5\)</span> </p>
 <p><span class="arithmatex">\(0,5n &gt; 6 \iff n &gt; 12\)</span>.  </p>
 <p>Le plus petit entier est <strong><span class="arithmatex">\(n = 13\)</span></strong>.</p>
+<h3 id="4-recherche-de-seuil-avec-un-algorithme">4. Recherche de seuil avec un algorithme</h3>
+<pre><code>def cherche_seuil(cible):
+    n = 0
+    u = -0.5  # Valeur de u_0
+
+    while u &lt;= cible:
+        n = n + 1
+        u = (3 * n - 1) / (n + 2)
+
+    return n
+
+# Appel de la fonction pour la valeur demandée
+resultat = cherche_seuil(2.99999)
+print(&quot;Le plus petit entier n est :&quot;, resultat)
+</code></pre>
 <hr />
 <h2 id="partie-b-suite-arithmetico-geometrique">Partie B : Suite Arithmético-géométrique</h2>
 <h3 id="1-premiers-termes">1. Premiers termes</h3>
