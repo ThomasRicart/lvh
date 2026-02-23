@@ -1505,33 +1505,22 @@
 <h2 id="1-analyse-des-racines-et-du-signe">1. Analyse des racines et du signe</h2>
 <h3 id="11-calcul-du-discriminant-delta">1.1 Calcul du discriminant <span class="arithmatex">\(\Delta\)</span></h3>
 <p>La fonction est de la forme <span class="arithmatex">\(ax^2 + bx + c\)</span> avec <span class="arithmatex">\(a=2\)</span>, <span class="arithmatex">\(b=-8\)</span> et <span class="arithmatex">\(c=6\)</span>.
-$<span class="arithmatex">\(\Delta = b^2 - 4ac = (-8)^2 - 4(2)(6) = 64 - 48 = 16\)</span>$</p>
+\[\Delta = b^2 - 4ac = (-8)^2 - 4(2)(6) = 64 - 48 = 16$$</p>
 <h3 id="12-determination-des-racines">1.2 Détermination des racines</h3>
 <p>Puisque <span class="arithmatex">\(\Delta &gt; 0\)</span>, l'équation <span class="arithmatex">\(f(x) = 0\)</span> admet deux racines réelles distinctes :
 * <span class="arithmatex">\(x_1 = \frac{-b - \sqrt{\Delta}}{2a} = \frac{8 - 4}{4} = \frac{4}{4} = 1\)</span>
 * <span class="arithmatex">\(x_2 = \frac{-b + \sqrt{\Delta}}{2a} = \frac{8 + 4}{4} = \frac{12}{4} = 3\)</span></p>
 <h3 id="13-tableau-de-signes">1.3 Tableau de signes</h3>
 <p>Le coefficient <span class="arithmatex">\(a=2\)</span> est positif, donc la parabole est orientée vers le haut ("en sourire"). La fonction est négative entre les racines.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><span class="arithmatex">\(x\)</span></th>
-<th style="text-align: center;"><span class="arithmatex">\(-\infty\)</span></th>
-<th style="text-align: center;"><span class="arithmatex">\(1\)</span></th>
-<th style="text-align: center;"><span class="arithmatex">\(3\)</span></th>
-<th style="text-align: center;"><span class="arithmatex">\(+\infty\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><span class="arithmatex">\(f(x)\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(+\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(-\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
-</tr>
-</tbody>
-</table>
+<p>\[
+\begin{array}{|c|ccccccc|}
+\hline
+x &amp; -\infty &amp; &amp; 1 &amp; &amp; 3 &amp; &amp; +\infty \
+\hline
+f(x) &amp; &amp; + &amp; 0 &amp; - &amp; 0 &amp; + &amp; \
+\hline
+\end{array}
+\]</p>
 <hr />
 <h2 id="2-variations-et-geometrie">2. Variations et Géométrie</h2>
 <h3 id="21-coordonnees-du-sommet-s">2.1 Coordonnées du sommet <span class="arithmatex">\(S\)</span></h3>
@@ -1542,24 +1531,19 @@ L'ordonnée est l'image de <span class="arithmatex">\(x_S\)</span> par <span cla
 Le sommet est <strong><span class="arithmatex">\(S(2 ; -2)\)</span></strong>.</p>
 <h3 id="22-tableau-de-variations">2.2 Tableau de variations</h3>
 <p>Puisque <span class="arithmatex">\(a &gt; 0\)</span>, la fonction est d'abord décroissante puis croissante.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"><span class="arithmatex">\(x\)</span></th>
-<th style="text-align: center;"><span class="arithmatex">\(-\infty\)</span></th>
-<th style="text-align: center;"><span class="arithmatex">\(2\)</span></th>
-<th style="text-align: center;"><span class="arithmatex">\(+\infty\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><span class="arithmatex">\(f\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(\searrow\)</span></td>
-<td style="text-align: center;"><span class="arithmatex">\(-2\)</span> (min)</td>
-<td style="text-align: center;"><span class="arithmatex">\(\nearrow\)</span></td>
-</tr>
-</tbody>
-</table>
+<p>\[ 
+\begin{array}{|c|ccccc|}
+\hline
+x &amp; -\infty &amp; &amp; 2 &amp; &amp; +\infty \
+\hline
+f'(x) &amp; &amp; - &amp; 0 &amp; + &amp; \
+\hline
+&amp; +\infty &amp; &amp; &amp; &amp; +\infty \
+f(x) &amp; &amp; \searrow &amp; &amp; \nearrow &amp; \
+&amp; &amp; &amp; -2 &amp; &amp; \
+\hline
+\end{array}
+    \]</p>
 <h3 id="23-axe-de-symetrie-et-appartenance">2.3 Axe de symétrie et appartenance</h3>
 <ul>
 <li><strong>Axe de symétrie :</strong> La droite d'équation <strong><span class="arithmatex">\(x = 2\)</span></strong>.</li>
@@ -1571,7 +1555,7 @@ Le sommet est <strong><span class="arithmatex">\(S(2 ; -2)\)</span></strong>.</p
 <h2 id="3-derivation-et-tangente-en-x0">3. Dérivation et Tangente en <span class="arithmatex">\(x=0\)</span></h2>
 <h3 id="31-fonction-derivee">3.1 Fonction dérivée</h3>
 <p>En utilisant les règles de dérivation (<span class="arithmatex">\(x^n \to nx^{n-1}\)</span>) :
-$<span class="arithmatex">\(f'(x) = 2(2x) - 8 = 4x - 8\)</span>$</p>
+\[f'(x) = 2(2x) - 8 = 4x - 8\]</p>
 <h3 id="32-tangente-t_0">3.2 Tangente <span class="arithmatex">\(T_0\)</span></h3>
 <p>L'équation est <span class="arithmatex">\(y = f'(0)(x - 0) + f(0)\)</span>.
 * <span class="arithmatex">\(f'(0) = 4(0) - 8 = -8\)</span>
@@ -1581,13 +1565,13 @@ L'équation de la tangente est <strong><span class="arithmatex">\(y = -8x + 6\)<
 <h2 id="4-question-douverture-tangente-passant-par-p15-4">4. Question d'ouverture : Tangente passant par <span class="arithmatex">\(P(1,5 ; -4)\)</span></h2>
 <h3 id="41-equation-de-t_a">4.1 Équation de <span class="arithmatex">\(T_a\)</span></h3>
 <p>Pour un point d'abscisse <span class="arithmatex">\(a\)</span>, la tangente <span class="arithmatex">\(T_a\)</span> a pour équation :
-$<span class="arithmatex">\(y = (4a - 8)(x - a) + (2a^2 - 8a + 6)\)</span>$</p>
+\[y = (4a - 8)(x - a) + (2a^2 - 8a + 6)\]</p>
 <h3 id="42-recherche-de-a">4.2 Recherche de <span class="arithmatex">\(a\)</span></h3>
 <p>Si <span class="arithmatex">\(P(1,5 ; -4)\)</span> appartient à <span class="arithmatex">\(T_a\)</span>, ses coordonnées vérifient l'équation :
-$<span class="arithmatex">\(-4 = (4a - 8)(1,5 - a) + 2a^2 - 8a + 6\)</span>$
+\[4 = (4a - 8)(1,5 - a) + 2a^2 - 8a + 6\]
 En développant :
-$<span class="arithmatex">\(-4 = 6a - 4a^2 - 12 + 8a + 2a^2 - 8a + 6\)</span>$
-$<span class="arithmatex">\(-4 = -2a^2 + 6a - 6\)</span>$
+\[4 = 6a - 4a^2 - 12 + 8a + 2a^2 - 8a + 6\]
+\[4 = -2a^2 + 6a - 6\]
 En passant tout à gauche :
 <strong><span class="arithmatex">\(2a^2 - 6a + 2 = 0\)</span></strong> (ce qui revient à <span class="arithmatex">\(a^2 - 3a + 1 = 0\)</span> en divisant par 2).</p>
 <h3 id="43-resolution">4.3 Résolution</h3>
