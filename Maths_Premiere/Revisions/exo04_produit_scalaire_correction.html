@@ -2,33 +2,62 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Accès Protégé</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrigé Sécurisé</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body class="bg-slate-100 min-h-screen flex items-center justify-center p-4">
+    
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <div id="lock-screen" class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md text-center">
-        <div class="text-4xl mb-4">🔑</div>
-        <h2 class="text-xl font-bold mb-4 text-slate-800">Page Protégée</h2>
-        <input type="password" id="passwordInput" placeholder="Mot de passe" 
-               class="w-full p-3 border rounded-lg mb-4 outline-none focus:ring-2 focus:ring-blue-500">
-        <button onclick="checkPassword()" 
-                class="w-full bg-slate-800 text-white p-3 rounded-lg font-bold hover:bg-slate-700 transition">
-            Débloquer le corrigé
-        </button>
-        <p id="errorMsg" class="text-red-500 mt-4 hidden">Mot de passe incorrect</p>
+    <style>
+        .animate-fade-in { animation: fadeIn 0.5s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col items-center p-4 md:p-10">
+
+    <div id="lock-screen" class="w-full max-w-md bg-white p-8 rounded-2xl shadow-xl border border-slate-200 mt-20">
+        <div class="text-center mb-8">
+            <div class="inline-block p-4 bg-emerald-100 rounded-full text-4xl mb-4">🔐</div>
+            <h1 class="text-2xl font-bold text-slate-800">Accès Réservé</h1>
+            <p class="text-slate-500 mt-2 text-sm">Entrez le mot de passe pour consulter le document.</p>
+        </div>
+
+        <div class="space-y-4">
+            <input type="password" id="passwordInput" placeholder="Mot de passe" 
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:outline-none transition-all text-center text-lg">
+            
+            <button onclick="checkPassword()" 
+                class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 rounded-lg transition-colors shadow-lg">
+                Afficher le contenu
+            </button>
+            
+            <p id="errorMsg" class="text-red-500 text-center text-sm font-medium hidden">❌ Mot de passe incorrect</p>
+        </div>
     </div>
 
-    <div id="secret-content" class="hidden max-w-4xl w-full bg-white p-10 rounded-xl shadow-lg prose">
-        <div id="markdown-body"></div>
+    <div id="secret-area" class="hidden w-full max-w-4xl bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-200 animate-fade-in">
+        <article id="markdown-render" class="prose prose-slate prose-emerald lg:prose-xl max-w-none">
+        </article>
+        
+        <div class="mt-12 pt-6 border-t border-slate-100 text-center">
+            <button onclick="location.reload()" class="text-slate-400 hover:text-emerald-600 text-sm transition">
+                ← Verrouiller à nouveau
+            </button>
+        </div>
     </div>
 
     <script>
-        // Ton contenu secret écrit en Markdown classique
-        const monMarkdown = `
-
-
+        // 1. TON TEXTE EN MARKDOWN CLASSIQUE
+        const contenuSecret = `
 # Correction : Vecteurs et Produit Scalaire
 
 ## Partie A : Repère orthonormé
@@ -100,21 +129,42 @@ Pour $\vec{AC} \cdot \vec{AB}$, le projeté orthogonal de $C$ sur $(AB)$ est le 
 2. **Produit scalaire :**
 
    $\vec{EF} \cdot \vec{EG} = 5 \times 8 \times \cos(60^\circ) = 40 \times 0,5 = 20$.
+   
         `;
 
+        // 2. VÉRIFICATION DU MOT DE PASSE
         function checkPassword() {
             const input = document.getElementById('passwordInput').value;
-            // Le mot de passe est "Maths2026"
-            if (input === "Maths2026") {
-                document.getElementById('lock-screen').classList.add('hidden');
-                document.getElementById('secret-content').classList.remove('hidden');
-                
-                // On transforme le Markdown en HTML et on l'affiche
-                document.getElementById('markdown-body').innerHTML = marked.parse(monMarkdown);
+            const error = document.getElementById('errorMsg');
+            
+            // Le code Base64 pour "Maths2026" est "TWF0aHMyMDI2"
+            if (btoa(input) === "TWF0aHMyMDI2") {
+                renderContent();
             } else {
-                document.getElementById('errorMsg').classList.remove('hidden');
+                error.classList.remove('hidden');
+                document.getElementById('passwordInput').value = "";
             }
         }
+
+        // 3. TRANSFORMATION ET AFFICHAGE
+        function renderContent() {
+            document.getElementById('lock-screen').classList.add('hidden');
+            document.getElementById('secret-area').classList.remove('hidden');
+            
+            // On transforme le Markdown en HTML propre
+            const htmlContent = marked.parse(contenuSecret);
+            document.getElementById('markdown-render').innerHTML = htmlContent;
+            
+            // On demande à MathJax de retraiter les formules injectées
+            if (window.MathJax) {
+                MathJax.typesetPromise();
+            }
+        }
+
+        // Permet de valider avec la touche "Entrée"
+        document.getElementById('passwordInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') checkPassword();
+        });
     </script>
 </body>
 </html>
