@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/S37-Langage_web_HTML5_prof/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/S38-Langage_web_CSS3/">
       
       
-        <link rel="prev" href="../S37-Langage_web_HTML5/">
+        <link rel="prev" href="../S37-Langage_web_HTML5_prof/">
       
       
-        <link rel="next" href="../S38-Langage_web_CSS3/">
+        <link rel="next" href="../../../NSI_Terminale/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>S37 Langage web HTML5 prof - Cours de M. Ricart</title>
+        <title>S38 — Langages du Web (2) : CSS3 (Mise en forme) - Cours de M. Ricart</title>
       
     
     
@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#s38-langages-du-web-2-css3-mise-en-forme" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -97,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              S37 Langage web HTML5 prof
+              S38 — Langages du Web (2) : CSS3 (Mise en forme)
             
           </span>
         </div>
@@ -1234,6 +1239,104 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#capacites-attendues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capacités attendues
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction-quel-est-le-role-du-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Introduction : Quel est le rôle du CSS ?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-syntaxe-et-selecteurs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Syntaxe et Sélecteurs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-mini-projet-dashboard-domotique-phase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Mini-projet : Dashboard Domotique (Phase 2)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-synthese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Synthèse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-les-differentes-balises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Les différentes balises
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mini-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Mini projet:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-synthese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Synthèse
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1250,9 +1353,444 @@
 
 
 
-  <h1>S37 Langage web HTML5 prof</h1>
+<h1 id="s38-langages-du-web-2-css3-mise-en-forme">S38 — Langages du Web (2) : CSS3 (Mise en forme)</h1>
+<p>🎯Objectifs et Compétences</p>
+<p>L'objectif est d'apprendre à styliser une structure existante en utilisant des feuilles de style pour séparer le fond de la forme.</p>
+<h3 id="capacites-attendues">Capacités attendues</h3>
+<table>
+<thead>
+<tr>
+<th>Capacités visées</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distinguer</td>
+<td>Séparer la description (HTML) du comportement (JavaScript) et de la forme (CSS)</td>
+</tr>
+<tr>
+<td>Styliser</td>
+<td>Utiliser des sélecteurs, des propriétés et des valeurs pour modifier l'apparence.</td>
+</tr>
+<tr>
+<td>Mettre en page</td>
+<td>Manipuler le modèle de boîte pour organiser les éléments du Dashboard.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-introduction-quel-est-le-role-du-css">1. Introduction : Quel est le rôle du CSS ?</h2>
+<ul>
+<li>
+<p><strong>Notion:</strong> Le CSS (<em>Cascading Style Sheets</em>) est le langage qui définit l'apparence visuelle.</p>
+</li>
+<li>
+<p><strong>Analogie:</strong> Si le HTML est le squelette (la structure) et les briques de la maison, le CSS est la peinture, la décoration et la disposition des meubles.</p>
+</li>
+<li>
+<p><strong>Intégration:</strong>  On lie une feuille de style externe au document HTML via la balise <code>&lt;link&gt;</code> placée dans le <code>&lt;head&gt;</code>.</p>
+</li>
+</ul>
+<pre><code class="language-css">/* 1. Style global du document */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Gris très clair */
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
 
+/* 2. Titres */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 10px;
+}
 
+h2 {
+    color: #e67e22;
+    margin-top: 30px;
+}
+
+/* 3. Le Modèle de Boîte (Box Model) appliqué aux sections */
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 4. Style des composants d'interaction (Boutons) */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease; /* Animation fluide */
+}
+
+/* Effet au survol (Hover) */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Bouton spécifique pour &quot;Éteindre&quot; */
+button:nth-of-type(even) {
+    background-color: #e74c3c;
+}
+
+button:nth-of-type(even):hover {
+    background-color: #c0392b;
+}
+
+/* 5. Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0;
+}
+</code></pre>
+<h2 id="2-syntaxe-et-selecteurs">2. Syntaxe et Sélecteurs</h2>
+<p>Une <strong>règle CSS</strong> se compose d'un <strong>sélecteur</strong> (quelle balise viser ?) et d'un <strong>bloc de déclaration</strong> (quelles modifications appliquer ?).</p>
+<ul>
+<li>
+<p><strong>Sélecteurs de balises</strong> : Ciblent tous les éléments d'un type (ex: <code>h1</code>, <code>p</code>, <code>button</code>).</p>
+</li>
+<li>
+<p><strong>Propriétés</strong> courantes :</p>
+<ul>
+<li>
+<p><code>color</code> : Couleur du texte.</p>
+</li>
+<li>
+<p><code>background-color</code> : Couleur de fond.</p>
+</li>
+<li>
+<p><code>font-size</code> : Taille de la police.</p>
+</li>
+<li>
+<p><code>border</code> : Bordure autour de l'élément.</p>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Thématique</th>
+<th style="text-align: left;">Propriété</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Exemple de valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Texte</strong></td>
+<td style="text-align: left;"><code>color</code></td>
+<td style="text-align: left;">Couleur du texte</td>
+<td style="text-align: left;"><code>red</code>, <code>#FF5733</code>, <code>rgb(0,0,0)</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>font-family</code></td>
+<td style="text-align: left;">Choix de la police</td>
+<td style="text-align: left;"><code>'Arial'</code>, <code>sans-serif</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>font-size</code></td>
+<td style="text-align: left;">Taille du texte</td>
+<td style="text-align: left;"><code>16px</code>, <code>1.2em</code>, <code>large</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>text-align</code></td>
+<td style="text-align: left;">Alignement horizontal</td>
+<td style="text-align: left;"><code>left</code>, <code>center</code>, <code>right</code>, <code>justify</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>font-weight</code></td>
+<td style="text-align: left;">Épaisseur (gras)</td>
+<td style="text-align: left;"><code>bold</code>, <code>normal</code>, <code>600</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fond</strong></td>
+<td style="text-align: left;"><code>background-color</code></td>
+<td style="text-align: left;">Couleur de l'arrière-plan</td>
+<td style="text-align: left;"><code>white</code>, <code>transparent</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>background-image</code></td>
+<td style="text-align: left;">Image d'arrière-plan</td>
+<td style="text-align: left;"><code>url('fond.jpg')</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Modèle de Boîte</strong></td>
+<td style="text-align: left;"><code>width</code> / <code>height</code></td>
+<td style="text-align: left;">Largeur et Hauteur</td>
+<td style="text-align: left;"><code>200px</code>, <code>50%</code>, <code>auto</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>padding</code></td>
+<td style="text-align: left;">Marge <strong>intérieure</strong></td>
+<td style="text-align: left;"><code>10px</code> (entre contenu et bordure)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>margin</code></td>
+<td style="text-align: left;">Marge <strong>extérieure</strong></td>
+<td style="text-align: left;"><code>20px</code> (entre l'élément et ses voisins)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>border</code></td>
+<td style="text-align: left;">Bordure (taille, style, couleur)</td>
+<td style="text-align: left;"><code>2px solid black</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>border-radius</code></td>
+<td style="text-align: left;">Coins arrondis</td>
+<td style="text-align: left;"><code>10px</code>, <code>50%</code> (pour un cercle)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Affichage</strong></td>
+<td style="text-align: left;"><code>display</code></td>
+<td style="text-align: left;">Type d'affichage</td>
+<td style="text-align: left;"><code>block</code>, <code>inline</code>, <code>flex</code>, <code>none</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>box-shadow</code></td>
+<td style="text-align: left;">Ombre portée</td>
+<td style="text-align: left;"><code>2px 2px 5px grey</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>opacity</code></td>
+<td style="text-align: left;">Transparence</td>
+<td style="text-align: left;"><code>0.5</code> (de 0 à 1)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-mini-projet-dashboard-domotique-phase-2">3. Mini-projet : Dashboard Domotique (Phase 2)</h2>
+<p><strong>Objectif</strong> : Transformer votre fichier brut de la séance S37 en une interface moderne.</p>
+<p><strong>Etapes à réaliser:</strong></p>
+<ol>
+<li>
+<p>Création : Créez un fichier <code>style.css</code> dans le même dossier que votre <code>index.html</code>.</p>
+</li>
+<li>
+<p>Liaison : Ajoutez <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> dans le <code>&lt;head&gt;</code> de votre HTML.</p>
+</li>
+<li>
+<p>Mise en forme :</p>
+<ul>
+<li>
+<p>Changez la couleur de fond de la page (<code>body</code>).</p>
+</li>
+<li>
+<p>Modifiez la police et la couleur des titres (<code>h1</code>, <code>h2</code>).</p>
+</li>
+<li>
+<p>Donnez une apparence "bouton moderne" à vos balises <code>&lt;button&gt;</code> (couleur vive, bordure arrondie, changement au survol).</p>
+</li>
+<li>
+<p>Utilisez les <code>margins</code> et <code>paddings</code> pour aérer vos sections de capteurs.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>✅ <strong>Liste de contrôle du projet</strong></p>
+<p>☐ <strong>Le fichier <code>style.css</code> est correctement lié (les changements sont visibles).</strong></p>
+<p>☐ <strong>Les sélecteurs correspondent bien aux balises HTML utilisées..</strong></p>
+<p>☐ <strong>L'interface est plus lisible et aérée que la version HTML pure.</strong></p>
+<p>☐ <strong>Défi (Optionnel) : Utiliser la propriété <code>border-radius</code> pour arrondir les coins des boutons et des images..</strong></p>
+<p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
+<h2 id="4-synthese">4. Synthèse</h2>
+<ul>
+<li>
+<p>Le CSS permet de centraliser la mise en forme.</p>
+</li>
+<li>
+<p>On utilise des propriétés et des valeurs (ex: <code>color</code>: <code>blue</code>;).</p>
+</li>
+<li>
+<p>Le modèle de boîte gère l'espacement et les bordures des éléments.</p>
+</li>
+</ul>
+<hr />
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Ma Première Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Bienvenue sur mon site&lt;/h1&gt;
+
+    &lt;p&gt;Ceci est un paragraphe d'introduction pour présenter le contenu de la page.&lt;/p&gt;
+
+    &lt;p&gt;Voici une liste de mes liens préférés :&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Moteur de recherche Google&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://wikipedia.org&quot;&gt;Encyclopédie Wikipédia&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Un élément de liste sans lien pour l'exemple&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><img alt="image alt" src="../images/dom_tree2.webp" /></p>
+<h2 id="3-les-differentes-balises">3. Les différentes balises</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Balise</th>
+<th style="text-align: left;">Nom complet</th>
+<th style="text-align: left;">Rôle principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>&lt;html&gt;</code></td>
+<td style="text-align: left;">Document HTML</td>
+<td style="text-align: left;">Racine du document (englobe tout le code).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;head&gt;</code></td>
+<td style="text-align: left;">En-tête</td>
+<td style="text-align: left;">Contient les infos techniques (métadonnées, titre).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;meta&gt;</code></td>
+<td style="text-align: left;">Métadonnées</td>
+<td style="text-align: left;">Définit l'encodage (UTF-8).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;title&gt;</code></td>
+<td style="text-align: left;">Titre</td>
+<td style="text-align: left;">Texte affiché dans l'onglet du navigateur.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;body&gt;</code></td>
+<td style="text-align: left;">Corps</td>
+<td style="text-align: left;">Contient tout le contenu visible (texte, images).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;h1&gt;</code></td>
+<td style="text-align: left;">Titre H1</td>
+<td style="text-align: left;">Le titre principal de la page.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;p&gt;</code></td>
+<td style="text-align: left;">Paragraphe</td>
+<td style="text-align: left;">Bloc de texte standard.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;a&gt;</code></td>
+<td style="text-align: left;">Lien</td>
+<td style="text-align: left;">Crée un lien hypertexte (attribut href).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;ul&gt;</code></td>
+<td style="text-align: left;">Liste</td>
+<td style="text-align: left;">Définit une liste à puces (non ordonnée).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;li&gt;</code></td>
+<td style="text-align: left;">Élément</td>
+<td style="text-align: left;">Un item spécifique dans une liste.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;ol&gt;</code></td>
+<td style="text-align: left;">Liste</td>
+<td style="text-align: left;">Définit une liste numérotée</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-mini-projet">4. Mini projet:</h2>
+<p>Vous allez construire la structure de contrôle d'une pièce (Salon, Garage ou Cuisine).</p>
+<p>Vous devez réaliser l'ossature (le squelette) de l'interface de contrôle d'une pièce (Salon, Cuisine ou Garage).</p>
+<p><strong>Cahier des charges :</strong></p>
+<ul>
+<li>
+<p>Structure : Respecter les balises obligatoires  <code>html</code>, <code>head</code> et <code>body</code>.</p>
+</li>
+<li>
+<p>Contenu :</p>
+<ul>
+<li>
+<p>Un titre principal <code>&lt;h1&gt;</code> (ex: "Contrôle du Salon").</p>
+</li>
+<li>
+<p>Deux sous-sections <code>&lt;h2&gt;</code> (ex: "Éclairage" et "Chauffage").</p>
+</li>
+<li>
+<p>Une liste à puces <code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code> affichant 3 capteurs (Ex: <code>Température : 21°C</code>).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Interactions : Insérer deux balises <code>&lt;button&gt;</code> : <code>Allumer</code> et <code>Éteindre</code>.</p>
+</li>
+<li>
+<p>Médias : Une image <code>&lt;img&gt;</code> avec l'attribut <code>alt</code> (obligatoire pour l'accessibilité des malvoyants).</p>
+</li>
+<li>
+<p>Lien : Un lien <code>&lt;a&gt;</code> vers un site météo.</p>
+</li>
+</ul>
+<p><a href = "../S37-dashboard.html"> Le rendu devrait ressembler à quelque chose comme cela.</a></p>
+<p><strong>Zoom sur la balise <code>&lt;button&gt;</code></strong></p>
+<p>Dans cette séance, la balise <code>&lt;button&gt;</code> sert de composant graphique d'interaction.</p>
+<ul>
+<li>
+<p>Ce qu'elle fait aujourd'hui : Elle affiche un élément cliquable sur l'interface.</p>
+</li>
+<li>
+<p>Ce qu'elle fera plus tard : Dans les séances suivantes, nous lui associerons un événement JavaScript pour qu'elle puisse réellement piloter un objet.</p>
+</li>
+</ul>
+<p>☐ <strong>Défi (Optionnel): ajouter une balise <code>&lt;input type="range"&gt;</code> pour simuler un variateur de lumière.</strong></p>
+<h2 id="5-synthese">5. Synthèse</h2>
+<ul>
+<li>
+<p>Le <strong>HTML5</strong> permet de structurer les données de manière hiérarchique (structure en arbre).</p>
+</li>
+<li>
+<p>on sépare le <strong>fond</strong> (HTML) de la <strong>forme</strong> (CSS) et du <strong>comportement</strong> (JS).</p>
+</li>
+<li>
+<p>Les <strong>balises</strong> :</p>
+<ul>
+<li>
+<p>Doubles : <code>&lt;p&gt;Texte&lt;/p&gt;</code> (ouvrent et ferment).</p>
+</li>
+<li>
+<p>Orphelines : <code>&lt;img&gt;</code> ou <code>&lt;br&gt;</code> (autoférmentes).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Les <strong>attributs</strong> : Ils complètent les balises (ex: <code>href</code> pour un lien, <code>src</code> pour une image).</p>
+</li>
+<li>
+<p>La balise <code>&lt;button&gt;</code> : C'est un composant graphique d'interaction. En HTML, on définit son apparence ; son action réelle sera codée plus tard en JavaScript.</p>
+</li>
+</ul>
 
 
 
