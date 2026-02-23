@@ -1303,39 +1303,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#3-les-differentes-balises" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Les différentes balises
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-mini-projet" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Mini projet:
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-synthese" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Synthèse
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1391,6 +1358,33 @@
 <p><strong>Intégration:</strong>  On lie une feuille de style externe au document HTML via la balise <code>&lt;link&gt;</code> placée dans le <code>&lt;head&gt;</code>.</p>
 </li>
 </ul>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Mon Dashboard Domotique&lt;/title&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;h1&gt;Mon Dashboard&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Salon&lt;/h2&gt;
+            &lt;p&gt;La température actuelle est de 21°C.&lt;/p&gt;
+            &lt;button type=&quot;button&quot;&gt;Allumer&lt;/button&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 <pre><code class="language-css">/* 1. Style global du document */
 body {
     font-family: 'Arial', sans-serif;
@@ -1630,167 +1624,6 @@ img {
 </li>
 </ul>
 <hr />
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;fr&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Ma Première Page&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-    &lt;h1&gt;Bienvenue sur mon site&lt;/h1&gt;
-
-    &lt;p&gt;Ceci est un paragraphe d'introduction pour présenter le contenu de la page.&lt;/p&gt;
-
-    &lt;p&gt;Voici une liste de mes liens préférés :&lt;/p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Moteur de recherche Google&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;https://wikipedia.org&quot;&gt;Encyclopédie Wikipédia&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;Un élément de liste sans lien pour l'exemple&lt;/li&gt;
-    &lt;/ul&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<p><img alt="image alt" src="../images/dom_tree2.webp" /></p>
-<h2 id="3-les-differentes-balises">3. Les différentes balises</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Balise</th>
-<th style="text-align: left;">Nom complet</th>
-<th style="text-align: left;">Rôle principal</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>&lt;html&gt;</code></td>
-<td style="text-align: left;">Document HTML</td>
-<td style="text-align: left;">Racine du document (englobe tout le code).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;head&gt;</code></td>
-<td style="text-align: left;">En-tête</td>
-<td style="text-align: left;">Contient les infos techniques (métadonnées, titre).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;meta&gt;</code></td>
-<td style="text-align: left;">Métadonnées</td>
-<td style="text-align: left;">Définit l'encodage (UTF-8).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;title&gt;</code></td>
-<td style="text-align: left;">Titre</td>
-<td style="text-align: left;">Texte affiché dans l'onglet du navigateur.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;body&gt;</code></td>
-<td style="text-align: left;">Corps</td>
-<td style="text-align: left;">Contient tout le contenu visible (texte, images).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;h1&gt;</code></td>
-<td style="text-align: left;">Titre H1</td>
-<td style="text-align: left;">Le titre principal de la page.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;p&gt;</code></td>
-<td style="text-align: left;">Paragraphe</td>
-<td style="text-align: left;">Bloc de texte standard.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;a&gt;</code></td>
-<td style="text-align: left;">Lien</td>
-<td style="text-align: left;">Crée un lien hypertexte (attribut href).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;ul&gt;</code></td>
-<td style="text-align: left;">Liste</td>
-<td style="text-align: left;">Définit une liste à puces (non ordonnée).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;li&gt;</code></td>
-<td style="text-align: left;">Élément</td>
-<td style="text-align: left;">Un item spécifique dans une liste.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>&lt;ol&gt;</code></td>
-<td style="text-align: left;">Liste</td>
-<td style="text-align: left;">Définit une liste numérotée</td>
-</tr>
-</tbody>
-</table>
-<h2 id="4-mini-projet">4. Mini projet:</h2>
-<p>Vous allez construire la structure de contrôle d'une pièce (Salon, Garage ou Cuisine).</p>
-<p>Vous devez réaliser l'ossature (le squelette) de l'interface de contrôle d'une pièce (Salon, Cuisine ou Garage).</p>
-<p><strong>Cahier des charges :</strong></p>
-<ul>
-<li>
-<p>Structure : Respecter les balises obligatoires  <code>html</code>, <code>head</code> et <code>body</code>.</p>
-</li>
-<li>
-<p>Contenu :</p>
-<ul>
-<li>
-<p>Un titre principal <code>&lt;h1&gt;</code> (ex: "Contrôle du Salon").</p>
-</li>
-<li>
-<p>Deux sous-sections <code>&lt;h2&gt;</code> (ex: "Éclairage" et "Chauffage").</p>
-</li>
-<li>
-<p>Une liste à puces <code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code> affichant 3 capteurs (Ex: <code>Température : 21°C</code>).</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Interactions : Insérer deux balises <code>&lt;button&gt;</code> : <code>Allumer</code> et <code>Éteindre</code>.</p>
-</li>
-<li>
-<p>Médias : Une image <code>&lt;img&gt;</code> avec l'attribut <code>alt</code> (obligatoire pour l'accessibilité des malvoyants).</p>
-</li>
-<li>
-<p>Lien : Un lien <code>&lt;a&gt;</code> vers un site météo.</p>
-</li>
-</ul>
-<p><a href = "../S37-dashboard.html"> Le rendu devrait ressembler à quelque chose comme cela.</a></p>
-<p><strong>Zoom sur la balise <code>&lt;button&gt;</code></strong></p>
-<p>Dans cette séance, la balise <code>&lt;button&gt;</code> sert de composant graphique d'interaction.</p>
-<ul>
-<li>
-<p>Ce qu'elle fait aujourd'hui : Elle affiche un élément cliquable sur l'interface.</p>
-</li>
-<li>
-<p>Ce qu'elle fera plus tard : Dans les séances suivantes, nous lui associerons un événement JavaScript pour qu'elle puisse réellement piloter un objet.</p>
-</li>
-</ul>
-<p>☐ <strong>Défi (Optionnel): ajouter une balise <code>&lt;input type="range"&gt;</code> pour simuler un variateur de lumière.</strong></p>
-<h2 id="5-synthese">5. Synthèse</h2>
-<ul>
-<li>
-<p>Le <strong>HTML5</strong> permet de structurer les données de manière hiérarchique (structure en arbre).</p>
-</li>
-<li>
-<p>on sépare le <strong>fond</strong> (HTML) de la <strong>forme</strong> (CSS) et du <strong>comportement</strong> (JS).</p>
-</li>
-<li>
-<p>Les <strong>balises</strong> :</p>
-<ul>
-<li>
-<p>Doubles : <code>&lt;p&gt;Texte&lt;/p&gt;</code> (ouvrent et ferment).</p>
-</li>
-<li>
-<p>Orphelines : <code>&lt;img&gt;</code> ou <code>&lt;br&gt;</code> (autoférmentes).</p>
-</li>
-</ul>
-</li>
-<li>
-<p>Les <strong>attributs</strong> : Ils complètent les balises (ex: <code>href</code> pour un lien, <code>src</code> pour une image).</p>
-</li>
-<li>
-<p>La balise <code>&lt;button&gt;</code> : C'est un composant graphique d'interaction. En HTML, on définit son apparence ; son action réelle sera codée plus tard en JavaScript.</p>
-</li>
-</ul>
 
 
 
