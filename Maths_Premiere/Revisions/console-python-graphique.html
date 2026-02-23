@@ -1,111 +1,55 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labo Python & Graphiques - Spé Maths</title>
-    
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <style>
-        #output {
-            background-color: #1e1e1e;
-            color: #d4d4d4;
-            font-family: 'Fira Code', monospace;
-            min-height: 100px;
-        }
-        .py-error { color: #ff5555; }
-        #graph-area img { margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    </style>
-</head>
-<body class="bg-slate-100 min-h-screen p-4 md:p-8">
+<textarea id="code-editor" class="w-full h-80 p-4 bg-slate-800 text-emerald-400 font-mono rounded-lg border-2 border-slate-700 focus:border-emerald-500 outline-none shadow-inner mb-4" spellcheck="false">
+def discriminant(a, b, c):
+    delta = b**2 - 4*a*c
+    return delta
 
-    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
-        <div class="bg-emerald-700 p-6 text-white">
-            <h1 class="text-2xl font-bold flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3m-3-3v8jM5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                Labo Python : Algorithmes & Graphiques
-            </h1>
-        </div>
+print(f"Le discriminant de x² - 4x + 3 est : {discriminant(1, -4, 3)}")
+</textarea>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6">
-            <div>
-                <h2 class="text-sm font-semibold text-slate-500 uppercase mb-2">Éditeur de code</h2>
-                <textarea id="code-editor" class="w-full h-80 p-4 bg-slate-800 text-emerald-400 font-mono rounded-lg border-2 border-slate-700 focus:border-emerald-500 outline-none shadow-inner mb-4" spellcheck="false">
-import matplotlib.pyplot as plt
+<script>
+    // Script d'indentation automatique
+    const editor = document.getElementById('code-editor');
 
-# 1. Tracé d'une parabole (Second Degré)
-def f(x):
-    return 2*x**2 - 8*x + 6
+    editor.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            // 1. Récupérer la position du curseur
+            const start = this.selectionStart;
+            const end = this.selectionEnd;
+            const value = this.value;
 
-X = [x/10 for x in range(-10, 51)] # x de -1 à 5
-Y = [f(x) for x in X]
+            // 2. Trouver la ligne actuelle
+            const lastNewline = value.lastIndexOf('\n', start - 1);
+            const currentLine = value.substring(lastNewline + 1, start);
 
-plt.figure(figsize=(6, 4))
-plt.plot(X, Y, label="f(x) = 2x² - 8x + 6")
-plt.axhline(0, color='black', linewidth=0.5)
-plt.axvline(0, color='black', linewidth=0.5)
-plt.grid(True, linestyle='--')
-plt.legend()
-plt.title("Représentation graphique")
+            // 3. Si la ligne se termine par ':', on indente
+            if (currentLine.trim().endsWith(':')) {
+                e.preventDefault(); // Empêche le saut de ligne classique
 
-display(plt) # Affiche le graphique dans la zone prévue
-                </textarea>
-
-                <div class="flex gap-2">
-                    <button id="run-button" py-click="run_python" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-lg transition shadow-md flex justify-center items-center gap-2">
-                        ▶ Exécuter
-                    </button>
-                    <button onclick="document.getElementById('code-editor').value = '';" class="bg-slate-200 p-3 rounded-lg">Effacer</button>
-                </div>
-            </div>
-
-            <div class="flex flex-col gap-4">
-                <div>
-                    <h2 class="text-sm font-semibold text-slate-500 uppercase mb-2">Console</h2>
-                    <div id="output" class="p-4 rounded-lg overflow-y-auto whitespace-pre-wrap text-sm"></div>
-                </div>
-                <div>
-                    <h2 class="text-sm font-semibold text-slate-500 uppercase mb-2">Affichage Graphique</h2>
-                    <div id="graph-area" class="bg-white border-2 border-dashed border-slate-200 rounded-lg p-2 min-h-[300px] flex items-center justify-center">
-                        <span class="text-slate-400 italic">Le graphique s'affichera ici</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <py-config>
-        packages = ["matplotlib"]
-    </py-config>
-
-    <script type="py">
-        from pyscript import display, document
-        import matplotlib.pyplot as plt
-
-        def run_python(event):
-            code = document.getElementById("code-editor").value
-            output_div = document.getElementById("output")
-            graph_div = document.getElementById("graph-area")
-            
-            output_div.innerHTML = ""
-            graph_div.innerHTML = "" # Effacer le graphique précédent
-            
-            try:
-                def custom_print(*args, **kwargs):
-                    text = " ".join(map(str, args))
-                    output_div.innerHTML += text + "\n"
+                // Calculer l'indentation actuelle pour la conserver + 4 espaces
+                const currentIndent = currentLine.match(/^\s*/)[0];
+                const newIndent = currentIndent + "    ";
                 
-                # On prépare un environnement d'exécution
-                # display() est automatiquement géré par PyScript vers graph_div si défini
-                exec(code, {"print": custom_print, "plt": plt, "display": lambda x: display(x, target="graph-area")})
-            except Exception as e:
-                output_div.innerHTML = f'<span class="py-error">Erreur : {str(e)}</span>'
-    </script>
-</body>
-</html>
+                // Insérer le saut de ligne et l'indentation
+                this.value = value.substring(0, start) + "\n" + newIndent + value.substring(end);
+
+                // Replacer le curseur au bon endroit
+                this.selectionStart = this.selectionEnd = start + 1 + newIndent.length;
+            } else {
+                // Optionnel : Conserver l'indentation de la ligne précédente même sans ':'
+                e.preventDefault();
+                const currentIndent = currentLine.match(/^\s*/)[0];
+                this.value = value.substring(0, start) + "\n" + currentIndent + value.substring(end);
+                this.selectionStart = this.selectionEnd = start + 1 + currentIndent.length;
+            }
+        }
+
+        // Support de la touche Tab (facultatif mais recommandé)
+        if (e.key === 'Tab') {
+            e.preventDefault();
+            const start = this.selectionStart;
+            const end = this.selectionEnd;
+            this.value = this.value.substring(0, start) + "    " + this.value.substring(end);
+            this.selectionStart = this.selectionEnd = start + 4;
+        }
+    });
+</script>
