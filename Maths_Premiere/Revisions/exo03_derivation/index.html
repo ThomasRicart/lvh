@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/Maths_Premiere/Revisions/exo2_suites/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/Maths_Premiere/Revisions/exo03_derivation/">
       
       
-        <link rel="prev" href="../exo03_derivation_correction/">
+        <link rel="prev" href="../exo01_polynomes_correction/">
       
       
-        <link rel="next" href="../exo2_suites_correction/">
+        <link rel="next" href="../exo03_derivation_correction/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Exercice 2 : Étude de suites numériques (Modélisation et Sommes) - Cours de M. Ricart</title>
+        <title>Exercice 3: Dérivation et Étude de fonctions - Cours de M. Ricart</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-2-etude-de-suites-numeriques-modelisation-et-sommes" class="md-skip">
+        <a href="#exercice-3-derivation-et-etude-de-fonctions" class="md-skip">
           Aller au contenu
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercice 2 : Étude de suites numériques (Modélisation et Sommes)
+              Exercice 3: Dérivation et Étude de fonctions
             
           </span>
         </div>
@@ -853,10 +853,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#partie-a-etude-dune-suite-explicite" class="md-nav__link">
+  <a href="#partie-a-calcul-de-derivees" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie A : Étude d'une suite explicite
+        Partie A : Calcul de dérivées
       
     </span>
   </a>
@@ -864,10 +864,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#partie-b-modelisation-et-suite-arithmetico-geometrique" class="md-nav__link">
+  <a href="#partie-b-etude-complete" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie B : Modélisation et Suite Arithmético-géométrique
+        Partie B : Étude complète
       
     </span>
   </a>
@@ -875,10 +875,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#partie-c-calcul-de-somme-et-cumul" class="md-nav__link">
+  <a href="#partie-c-le-plaisir-de-loptimisation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie C : Calcul de somme et cumul
+        Partie C : Le plaisir de l'optimisation
       
     </span>
   </a>
@@ -907,51 +907,31 @@
 
 
 
-<h1 id="exercice-2-etude-de-suites-numeriques-modelisation-et-sommes">Exercice 2 : Étude de suites numériques (Modélisation et Sommes)</h1>
+<h1 id="exercice-3-derivation-et-etude-de-fonctions">Exercice 3: Dérivation et Étude de fonctions</h1>
 <p><strong>Niveau :</strong> Première Spécialité Mathématiques<br />
-<strong>Thème :</strong> Suites explicites, récurrence arithmético-géométrique et calcul de sommes.</p>
+<strong>Thème :</strong> Formules de dérivation, variations, tangentes et optimisation.</p>
 <hr />
 <h2 id="enonce">Énoncé</h2>
-<h3 id="partie-a-etude-dune-suite-explicite">Partie A : Étude d'une suite explicite</h3>
-<p>Soit <span class="arithmatex">\((u_n)\)</span> la suite définie pour tout entier naturel <span class="arithmatex">\(n \geq 0\)</span> par :<br />
-\[u_n = \frac{3n - 1}{n + 2}\]</p>
+<h3 id="partie-a-calcul-de-derivees">Partie A : Calcul de dérivées</h3>
+<p>Calculer la dérivée <span class="arithmatex">\(f'(x)\)</span> de chacune des fonctions suivantes sur l'intervalle <span class="arithmatex">\(I\)</span> donné (on ne demande pas d'étudier les variations ici) :</p>
 <ol>
-<li>Calculer les termes <span class="arithmatex">\(u_0\)</span>, <span class="arithmatex">\(u_1\)</span> et <span class="arithmatex">\(u_2\)</span>.</li>
-<li>Étudier les variations de la suite <span class="arithmatex">\((u_n)\)</span> sur <span class="arithmatex">\(\mathbb{N}\)</span>.</li>
-<li>Déterminer, par le calcul, le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n &gt; 2,5\)</span>.</li>
-<li>Compléter l'algorithme de recherche de seuil qui calcule le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n&gt;cible\)</span>, <span class="arithmatex">\(cible\)</span> étant un réel strictement inférieur à 3. </li>
+<li>(<span class="arithmatex">\(u \cdot v\)</span>) : <span class="arithmatex">\(f(x) = (3x - 2)\sqrt{x}\)</span> sur <span class="arithmatex">\(I = ]0 ; +\infty[\)</span>.</li>
+<li>(<span class="arithmatex">\(u^n\)</span>) : <span class="arithmatex">\(g(x) = (2x^2 - 5)^4\)</span> sur <span class="arithmatex">\(I = \mathbb{R}\)</span>.</li>
+<li>(<span class="arithmatex">\(1/u\)</span>) : <span class="arithmatex">\(h(x) = \frac{1}{x^2 + x + 1}\)</span> sur <span class="arithmatex">\(I = \mathbb{R}\)</span>.</li>
+<li>(<span class="arithmatex">\(u/v\)</span>) : <span class="arithmatex">\(k(x) = \frac{2x + 1}{x - 3}\)</span> sur <span class="arithmatex">\(I = ]3 ; +\infty[\)</span>.</li>
 </ol>
-<pre><code>def cherche_seuil(cible):
-    n = 0
-    u = -0.5  # Valeur de u_0
-
-    while u .........:
-        n = .........
-        u = .........
-
-    return n
-
-# Appel de la fonction pour la valeur demandée
-resultat = cherche_seuil(2.99999)
-print(&quot;Le plus petit entier n est :&quot;, resultat)
-</code></pre>
-<h3 id="partie-b-modelisation-et-suite-arithmetico-geometrique">Partie B : Modélisation et Suite Arithmético-géométrique</h3>
-<p>Un investisseur place <span class="arithmatex">\(1\,000\)</span> € le 1er janvier 2024 sur un compte d'épargne. Chaque année, ce capital augmente de <span class="arithmatex">\(5\%\)</span> grâce aux intérêts, mais l'investisseur retire <span class="arithmatex">\(40\)</span> € de frais de gestion à la fin de l'année.<br />
-On note <span class="arithmatex">\(v_n\)</span> le capital au 1er janvier de l'année <span class="arithmatex">\(2024 + n\)</span>. On a <span class="arithmatex">\(v_0 = 1\,000\)</span>.</p>
+<h3 id="partie-b-etude-complete">Partie B : Étude complète</h3>
+<p>Soit la fonction <span class="arithmatex">\(f\)</span> définie sur <span class="arithmatex">\(\mathbb{R}\)</span> par : <span class="arithmatex">\(f(x) = \frac{x^2 - 3x}{x^2 + 1}\)</span>.</p>
 <ol>
-<li>Calculer <span class="arithmatex">\(v_1\)</span> et <span class="arithmatex">\(v_2\)</span>.</li>
-<li>Justifier que pour tout <span class="arithmatex">\(n \in \mathbb{N}\)</span> : <span class="arithmatex">\(v_{n+1} = 1,05v_n - 40\)</span>.</li>
-<li>On considère la suite auxiliaire <span class="arithmatex">\((w_n)\)</span> définie par <span class="arithmatex">\(w_n = v_n - 800\)</span>.
-   a. Démontrer que <span class="arithmatex">\((w_n)\)</span> est une suite géométrique de raison <span class="arithmatex">\(q = 1,05\)</span>. Préciser son premier terme <span class="arithmatex">\(w_0\)</span>.
-   b. Exprimer <span class="arithmatex">\(w_n\)</span> en fonction de <span class="arithmatex">\(n\)</span>.
-   c. En déduire que pour tout <span class="arithmatex">\(n \in \mathbb{N}\)</span> : <span class="arithmatex">\(v_n = 200 \times 1,05^n + 800\)</span>.</li>
+<li>Déterminer la dérivée <span class="arithmatex">\(f'(x)\)</span> et montrer que <span class="arithmatex">\(f'(x) = \frac{3x^2 + 2x - 3}{(x^2 + 1)^2}\)</span>.</li>
+<li>Étudier le signe de <span class="arithmatex">\(f'(x)\)</span> et en déduire le tableau de variations de <span class="arithmatex">\(f\)</span>.</li>
+<li>Déterminer l'équation de la tangente <span class="arithmatex">\((T)\)</span> à la courbe de <span class="arithmatex">\(f\)</span> au point d'abscisse <span class="arithmatex">\(0\)</span>.</li>
 </ol>
-<h3 id="partie-c-calcul-de-somme-et-cumul">Partie C : Calcul de somme et cumul</h3>
-<p>On souhaite calculer la somme totale des capitaux présents sur le compte entre l'année 2024 et l'année 2033 incluse (soit de <span class="arithmatex">\(n=0\)</span> à <span class="arithmatex">\(n=9\)</span>).<br />
-On note <span class="arithmatex">\(S = v_0 + v_1 + v_2 + \dots + v_9\)</span>.</p>
+<h3 id="partie-c-le-plaisir-de-loptimisation">Partie C : Le plaisir de l'optimisation</h3>
+<p>On dispose d'une plaque de carton carrée de <span class="arithmatex">\(20\)</span> cm de côté. On coupe un petit carré de côté <span class="arithmatex">\(x\)</span> à chaque coin et on relève les bords pour former une boîte (sans couvercle).</p>
 <ol>
-<li>Exprimer <span class="arithmatex">\(S\)</span> en fonction de la somme des termes de la suite <span class="arithmatex">\((w_n)\)</span>.</li>
-<li>En déduire la valeur exacte de <span class="arithmatex">\(S\)</span>, puis une valeur arrondie à l'euro près.</li>
+<li>Justifier que le volume de la boîte est donné par <span class="arithmatex">\(V(x) = x(20 - 2x)^2\)</span> pour <span class="arithmatex">\(x \in [0 ; 10]\)</span>.</li>
+<li>Pour quelle valeur de <span class="arithmatex">\(x\)</span> le volume de la boîte est-il maximal ? Quel est ce volume ?</li>
 </ol>
 
 

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/Maths_Premiere/Revisions/exo2_suites/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/Maths_Premiere/Revisions/exo03_derivation_correction/">
       
       
-        <link rel="prev" href="../exo03_derivation_correction/">
+        <link rel="prev" href="../exo03_derivation/">
       
       
-        <link rel="next" href="../exo2_suites_correction/">
+        <link rel="next" href="../exo2_suites/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Exercice 2 : Étude de suites numériques (Modélisation et Sommes) - Cours de M. Ricart</title>
+        <title>Correction : Dérivation - Cours de M. Ricart</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-2-etude-de-suites-numeriques-modelisation-et-sommes" class="md-skip">
+        <a href="#correction-derivation" class="md-skip">
           Aller au contenu
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercice 2 : Étude de suites numériques (Modélisation et Sommes)
+              Correction : Dérivation
             
           </span>
         </div>
@@ -841,52 +841,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enonce" class="md-nav__link">
+  <a href="#partie-a-calculs-techniques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Énoncé
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Énoncé">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#partie-a-etude-dune-suite-explicite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Partie A : Étude d'une suite explicite
+        Partie A : Calculs techniques
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#partie-b-modelisation-et-suite-arithmetico-geometrique" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-etude-de-fonction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie B : Modélisation et Suite Arithmético-géométrique
+        Partie B : Étude de fonction
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#partie-c-calcul-de-somme-et-cumul" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-optimisation-boite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie C : Calcul de somme et cumul
+        Partie C : Optimisation (Boîte)
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -907,51 +890,69 @@
 
 
 
-<h1 id="exercice-2-etude-de-suites-numeriques-modelisation-et-sommes">Exercice 2 : Étude de suites numériques (Modélisation et Sommes)</h1>
-<p><strong>Niveau :</strong> Première Spécialité Mathématiques<br />
-<strong>Thème :</strong> Suites explicites, récurrence arithmético-géométrique et calcul de sommes.</p>
+<h1 id="correction-derivation">Correction : Dérivation</h1>
+<h2 id="partie-a-calculs-techniques">Partie A : Calculs techniques</h2>
+<ol>
+<li>
+<p><strong><span class="arithmatex">\(f(x) = (3x-2)\sqrt{x}\)</span></strong> : Formule <span class="arithmatex">\((uv)' = u'v + uv'\)</span>.
+   <span class="arithmatex">\(u(x) = 3x-2 \Rightarrow u'(x) = 3\)</span>
+   <span class="arithmatex">\(v(x) = \sqrt{x} \Rightarrow v'(x) = \frac{1}{2\sqrt{x}}\)</span>
+   <span class="arithmatex">\(f'(x) = 3\sqrt{x} + \frac{3x-2}{2\sqrt{x}} = \frac{6x + 3x - 2}{2\sqrt{x}} = \frac{9x - 2}{2\sqrt{x}}\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(g(x) = (2x^2-5)^4\)</span></strong> : Formule <span class="arithmatex">\((u^n)' = n \cdot u' \cdot u^{n-1}\)</span>.
+   <span class="arithmatex">\(u(x) = 2x^2-5 \Rightarrow u'(x) = 4x\)</span>.
+   <span class="arithmatex">\(g'(x) = 4 \times 4x \times (2x^2-5)^3 = 16x(2x^2-5)^3\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(h(x) = \frac{1}{x^2+x+1}\)</span></strong> : Formule <span class="arithmatex">\((\frac{1}{u})' = -\frac{u'}{u^2}\)</span>.
+   <span class="arithmatex">\(u(x) = x^2+x+1 \Rightarrow u'(x) = 2x+1\)</span>.
+   <span class="arithmatex">\(h'(x) = -\frac{2x+1}{(x^2+x+1)^2}\)</span>.</p>
+</li>
+<li>
+<p><strong><span class="arithmatex">\(k(x) = \frac{2x+1}{x-3}\)</span></strong> : Formule <span class="arithmatex">\((\frac{u}{v})' = \frac{u'v - uv'}{v^2}\)</span>.
+   <span class="arithmatex">\(k'(x) = \frac{2(x-3) - 1(2x+1)}{(x-3)^2} = \frac{2x-6-2x-1}{(x-3)^2} = \frac{-7}{(x-3)^2}\)</span>.</p>
+</li>
+</ol>
 <hr />
-<h2 id="enonce">Énoncé</h2>
-<h3 id="partie-a-etude-dune-suite-explicite">Partie A : Étude d'une suite explicite</h3>
-<p>Soit <span class="arithmatex">\((u_n)\)</span> la suite définie pour tout entier naturel <span class="arithmatex">\(n \geq 0\)</span> par :<br />
-\[u_n = \frac{3n - 1}{n + 2}\]</p>
+<h2 id="partie-b-etude-de-fonction">Partie B : Étude de fonction</h2>
 <ol>
-<li>Calculer les termes <span class="arithmatex">\(u_0\)</span>, <span class="arithmatex">\(u_1\)</span> et <span class="arithmatex">\(u_2\)</span>.</li>
-<li>Étudier les variations de la suite <span class="arithmatex">\((u_n)\)</span> sur <span class="arithmatex">\(\mathbb{N}\)</span>.</li>
-<li>Déterminer, par le calcul, le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n &gt; 2,5\)</span>.</li>
-<li>Compléter l'algorithme de recherche de seuil qui calcule le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n&gt;cible\)</span>, <span class="arithmatex">\(cible\)</span> étant un réel strictement inférieur à 3. </li>
+<li>
+<p><strong>Dérivée :</strong> <span class="arithmatex">\(f(x) = \frac{x^2 - 3x}{x^2 + 1}\)</span>.
+   <span class="arithmatex">\(f'(x) = \frac{(2x-3)(x^2+1) - 2x(x^2-3x)}{(x^2+1)^2} = \frac{2x^3+2x-3x^2-3-2x^3+6x^2}{(x^2+1)^2} = \frac{3x^2+2x-3}{(x^2+1)^2}\)</span>.</p>
+</li>
+<li>
+<p><strong>Signe et Variations :</strong> Le dénominateur est un carré positif. On étudie le signe de <span class="arithmatex">\(3x^2+2x-3\)</span>.
+   <span class="arithmatex">\(\Delta = 2^2 - 4(3)(-3) = 4 + 36 = 40\)</span>.
+   Racines : <span class="arithmatex">\(x_1 = \frac{-2-\sqrt{40}}{6} \approx -1,39\)</span> et <span class="arithmatex">\(x_2 = \frac{-2+\sqrt{40}}{6} \approx 0,72\)</span>.
+   Le trinôme est positif à l'extérieur des racines.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(f\)</span> est croissante sur <span class="arithmatex">\(]-\infty ; x_1]\)</span>, décroissante sur <span class="arithmatex">\([x_1 ; x_2]\)</span> et croissante sur <span class="arithmatex">\([x_2 ; +\infty[\)</span>.</p>
+</li>
+<li>
+<p><strong>Tangente en <span class="arithmatex">\(0\)</span> :</strong> <span class="arithmatex">\(y = f'(0)(x-0) + f(0)\)</span>.
+   <span class="arithmatex">\(f(0) = \frac{0}{1} = 0\)</span>.
+   <span class="arithmatex">\(f'(0) = \frac{-3}{1^2} = -3\)</span>.
+   Équation : <strong><span class="arithmatex">\(y = -3x\)</span></strong>.</p>
+</li>
 </ol>
-<pre><code>def cherche_seuil(cible):
-    n = 0
-    u = -0.5  # Valeur de u_0
-
-    while u .........:
-        n = .........
-        u = .........
-
-    return n
-
-# Appel de la fonction pour la valeur demandée
-resultat = cherche_seuil(2.99999)
-print(&quot;Le plus petit entier n est :&quot;, resultat)
-</code></pre>
-<h3 id="partie-b-modelisation-et-suite-arithmetico-geometrique">Partie B : Modélisation et Suite Arithmético-géométrique</h3>
-<p>Un investisseur place <span class="arithmatex">\(1\,000\)</span> € le 1er janvier 2024 sur un compte d'épargne. Chaque année, ce capital augmente de <span class="arithmatex">\(5\%\)</span> grâce aux intérêts, mais l'investisseur retire <span class="arithmatex">\(40\)</span> € de frais de gestion à la fin de l'année.<br />
-On note <span class="arithmatex">\(v_n\)</span> le capital au 1er janvier de l'année <span class="arithmatex">\(2024 + n\)</span>. On a <span class="arithmatex">\(v_0 = 1\,000\)</span>.</p>
+<hr />
+<h2 id="partie-c-optimisation-boite">Partie C : Optimisation (Boîte)</h2>
 <ol>
-<li>Calculer <span class="arithmatex">\(v_1\)</span> et <span class="arithmatex">\(v_2\)</span>.</li>
-<li>Justifier que pour tout <span class="arithmatex">\(n \in \mathbb{N}\)</span> : <span class="arithmatex">\(v_{n+1} = 1,05v_n - 40\)</span>.</li>
-<li>On considère la suite auxiliaire <span class="arithmatex">\((w_n)\)</span> définie par <span class="arithmatex">\(w_n = v_n - 800\)</span>.
-   a. Démontrer que <span class="arithmatex">\((w_n)\)</span> est une suite géométrique de raison <span class="arithmatex">\(q = 1,05\)</span>. Préciser son premier terme <span class="arithmatex">\(w_0\)</span>.
-   b. Exprimer <span class="arithmatex">\(w_n\)</span> en fonction de <span class="arithmatex">\(n\)</span>.
-   c. En déduire que pour tout <span class="arithmatex">\(n \in \mathbb{N}\)</span> : <span class="arithmatex">\(v_n = 200 \times 1,05^n + 800\)</span>.</li>
-</ol>
-<h3 id="partie-c-calcul-de-somme-et-cumul">Partie C : Calcul de somme et cumul</h3>
-<p>On souhaite calculer la somme totale des capitaux présents sur le compte entre l'année 2024 et l'année 2033 incluse (soit de <span class="arithmatex">\(n=0\)</span> à <span class="arithmatex">\(n=9\)</span>).<br />
-On note <span class="arithmatex">\(S = v_0 + v_1 + v_2 + \dots + v_9\)</span>.</p>
-<ol>
-<li>Exprimer <span class="arithmatex">\(S\)</span> en fonction de la somme des termes de la suite <span class="arithmatex">\((w_n)\)</span>.</li>
-<li>En déduire la valeur exacte de <span class="arithmatex">\(S\)</span>, puis une valeur arrondie à l'euro près.</li>
+<li>
+<p><strong>Volume :</strong> La base est un carré de côté <span class="arithmatex">\((20-2x)\)</span> et la hauteur est <span class="arithmatex">\(x\)</span>.
+   <span class="arithmatex">\(V(x) = \text{Aire de la base} \times \text{hauteur} = (20-2x)^2 \times x\)</span>.</p>
+</li>
+<li>
+<p><strong>Maximum :</strong> On dérive <span class="arithmatex">\(V(x) = x(400 - 80x + 4x^2) = 4x^3 - 80x^2 + 400x\)</span>.
+   <span class="arithmatex">\(V'(x) = 12x^2 - 160x + 400\)</span>.
+   <span class="arithmatex">\(\Delta = (-160)^2 - 4(12)(400) = 25600 - 19200 = 6400\)</span>.
+   <span class="arithmatex">\(\sqrt{\Delta} = 80\)</span>.
+   <span class="arithmatex">\(x_1 = \frac{160-80}{24} = \frac{80}{24} = \frac{10}{3} \approx 3,33\)</span> cm.
+   <span class="arithmatex">\(x_2 = \frac{160+80}{24} = 10\)</span> (Volume nul, correspond au minimum).
+   <strong>Le volume est maximal pour <span class="arithmatex">\(x = 10/3\)</span> cm.</strong></p>
+</li>
 </ol>
 
 
