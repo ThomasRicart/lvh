@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactif - Suites Numériques</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen py-10 px-4">
+    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-blue-600 mb-6 text-center border-b pb-4">Quiz : Les Suites Numériques</h1>
+        
+        <div id="quiz-container">
+            </div>
+
+        <div id="result-area" class="mt-8 p-6 bg-blue-50 rounded-lg hidden text-center">
+            <h2 class="text-2xl font-bold mb-2">Résultat Final</h2>
+            <p id="score-text" class="text-xl"></p>
+            <button onclick="location.reload()" class="mt-4 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Recommencer</button>
+        </div>
+    </div>
+
+    <script>
+        async function loadQuiz() {
+            // Simulation de chargement (ou fetch('quiz-data.json'))
+            const response = await fetch('quiz-data.json');
+            const questions = await response.json();
+            const container = document.getElementById('quiz-container');
+
+            questions.forEach((q, index) => {
+                const qDiv = document.createElement('div');
+                qDiv.className = "mb-8 p-6 border border-gray-200 rounded-lg bg-white shadow-sm";
+                
+                qDiv.innerHTML = `
+                    <p class="text-lg font-semibold mb-4 text-gray-800">${index + 1}. ${q.question}</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="options-${index}">
+                        ${q.options.map((opt, i) => `
+                            <button onclick="checkAnswer(${index}, ${i}, ${q.answer})" 
+                                    class="option-btn p-3 text-left border rounded hover:bg-blue-50 transition-colors border-gray-300">
+                                ${opt}
+                            </button>
+                        `).join('')}
+                    </div>
+                    <div id="feedback-${index}" class="mt-4 p-3 bg-gray-50 rounded hidden text-sm italic text-gray-600 border-l-4 border-blue-500">
+                        ${q.feedback}
+                    </div>
+                `;
+                container.appendChild(qDiv);
+            });
+            // Re-traiter le LaTeX après injection
+            MathJax.typeset();
+        }
+
+        function checkAnswer(qIdx, selectedIdx, correctIdx) {
+            const buttons = document.querySelectorAll(`#options-${qIdx} button`);
+            const feedback = document.getElementById(`feedback-${qIdx}`);
+            
+            buttons.forEach((btn, i) => {
+                btn.disabled = true; // Empêcher de changer de réponse
+                if (i === correctIdx) {
+                    btn.classList.add('bg-green-100', 'border-green-500', 'text-green-700', 'font-bold');
+                } else if (i === selectedIdx) {
+                    btn.classList.add('bg-red-100', 'border-red-500', 'text-red-700');
+                }
+            });
+            feedback.classList.remove('hidden');
+        }
+
+        window.onload = loadQuiz;
+    </script>
+</body>
+</html>

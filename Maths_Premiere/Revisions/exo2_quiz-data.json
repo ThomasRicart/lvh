@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Soit la suite $(u_n)$ définie par $u_n = 2n^2 - 3$. Quel est le terme $u_3$ ?",
+    "options": ["9", "15", "33", "5"],
+    "answer": 1,
+    "feedback": "En remplaçant n par 3 : $2 \\times 3^2 - 3 = 18 - 3 = 15$."
+  },
+  {
+    "question": "Une suite $(u_n)$ est définie par $u_{n+1} = u_n - 5$. De quel type de suite s'agit-il ?",
+    "options": ["Géométrique", "Arithmétique", "Explicite", "Constante"],
+    "answer": 1,
+    "feedback": "Chaque terme est obtenu en soustrayant une constante au précédent."
+  },
+  {
+    "question": "Quelle est la somme $S = 1 + 2 + \\dots + n$ ?",
+    "options": ["$n^2$", "$\\frac{n(n-1)}{2}$", "$\\frac{n(n+1)}{2}$", "$2n+1$"],
+    "answer": 2,
+    "feedback": "C'est la formule classique de la somme des $n$ premiers entiers."
+  }
+]
