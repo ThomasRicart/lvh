@@ -12,7 +12,7 @@
     "feedback": "C'est la propriété fondamentale : $\\vec{u} \\cdot \\vec{v} = 0 \\iff \\vec{u} \\perp \\vec{v}$."
   },
   {
-    "question": "Quelle est la valeur de $\\vec{u} \\cdot \\vec{v}$ si $|\\vec{u}|| = 3$, $|\\vec{v}|| = 4$ et $(\\vec{u}, \\vec{v}) = 60^\\circ$ ?",
+    "question": "Quelle est la valeur de $\\vec{u} \\cdot \\vec{v}$ si $||\\vec{u}|| = 3$, $||\\vec{v}|| = 4$ et $(\\vec{u}, \\vec{v}) = 60^\\circ$ ?",
     "options": ["12", "6", "$6\\sqrt{3}$", "0"],
     "answer": 1,
     "feedback": "$3 \\times 4 \\times \\cos(60^\\circ) = 12 \\times 0,5 = 6$."
