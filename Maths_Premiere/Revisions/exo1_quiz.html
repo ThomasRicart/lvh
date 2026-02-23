@@ -39,7 +39,7 @@
 
         async function initQuiz() {
             try {
-                const response = await fetch('exo1_quiz.json');
+                const response = await fetch('exo1_quiz-data.json');
                 const questions = await response.json();
                 totalQuestions = questions.length;
                 const container = document.getElementById('quiz-container');
