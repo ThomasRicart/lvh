@@ -35,7 +35,10 @@
     <script>
         async function initQuiz() {
             try {
+                // Chargement du fichier JSON externe
                 const response = await fetch('exo3_quiz-data.json');
+                if (!response.ok) throw new Error('Erreur réseau');
+                
                 const questions = await response.json();
                 const container = document.getElementById('quiz-container');
                 container.innerHTML = '';
@@ -62,7 +65,8 @@
 
                 if (window.MathJax) MathJax.typesetPromise();
             } catch (e) {
-                document.getElementById('quiz-container').innerHTML = `<p class="text-red-500 text-center">Erreur de chargement du JSON.</p>`;
+                console.error(e);
+                document.getElementById('quiz-container').innerHTML = `<p class="text-red-500 text-center">Erreur de chargement du JSON. Vérifiez que le fichier exo3_quiz-data.json est présent et valide.</p>`;
             }
         }
 
