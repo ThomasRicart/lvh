@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/Maths_Premiere/Revisions/exo2_suites/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/Maths_Premiere/Revisions/exo04_produit_scalaire_correction/">
       
       
-        <link rel="prev" href="../exo04_produit_scalaire_correction/">
+        <link rel="prev" href="../exo04_produit_scalaire/">
       
       
-        <link rel="next" href="../exo2_suites_correction/">
+        <link rel="next" href="../exo2_suites/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Exercice 2 : Étude de suites numériques (Modélisation et Sommes) - Cours de M. Ricart</title>
+        <title>Correction : Vecteurs et Produit Scalaire - Cours de M. Ricart</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-2-etude-de-suites-numeriques-modelisation-et-sommes" class="md-skip">
+        <a href="#correction-vecteurs-et-produit-scalaire" class="md-skip">
           Aller au contenu
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercice 2 : Étude de suites numériques (Modélisation et Sommes)
+              Correction : Vecteurs et Produit Scalaire
             
           </span>
         </div>
@@ -841,52 +841,35 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enonce" class="md-nav__link">
+  <a href="#partie-a-repere-orthonorme" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Énoncé
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Énoncé">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#partie-a-etude-dune-suite-explicite" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Partie A : Étude d'une suite explicite
+        Partie A : Repère orthonormé
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#partie-b-modelisation-et-suite-arithmetico-geometrique" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-geometrie-plane" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie B : Modélisation et Suite Arithmético-géométrique
+        Partie B : Géométrie plane
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#partie-c-calcul-de-somme-et-cumul" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-al-kashi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie C : Calcul de somme et cumul
+        Partie C : Al-Kashi
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -907,51 +890,57 @@
 
 
 
-<h1 id="exercice-2-etude-de-suites-numeriques-modelisation-et-sommes">Exercice 2 : Étude de suites numériques (Modélisation et Sommes)</h1>
-<p><strong>Niveau :</strong> Première Spécialité Mathématiques<br />
-<strong>Thème :</strong> Suites explicites, récurrence arithmético-géométrique et calcul de sommes.</p>
+<h1 id="correction-vecteurs-et-produit-scalaire">Correction : Vecteurs et Produit Scalaire</h1>
+<h2 id="partie-a-repere-orthonorme">Partie A : Repère orthonormé</h2>
+<ol>
+<li>
+<p><strong>Coordonnées :</strong>
+   <span class="arithmatex">\(\vec{AB} = (4 - (-2) ; 3 - 1) = (6 ; 2)\)</span>
+   <span class="arithmatex">\(\vec{AC} = (1 - (-2) ; 5 - 1) = (3 ; 4)\)</span></p>
+</li>
+<li>
+<p><strong>Produit scalaire :</strong>
+   <span class="arithmatex">\(\vec{AB} \cdot \vec{AC} = xx' + yy' = 6 \times 3 + 2 \times 4 = 18 + 8 = 26\)</span>.</p>
+</li>
+<li>
+<p><strong>Angle <span class="arithmatex">\(\widehat{BAC}\)</span> :</strong>
+   On sait que <span class="arithmatex">\(\vec{AB} \cdot \vec{AC} = AB \times AC \times \cos(\widehat{BAC})\)</span>.
+   <span class="arithmatex">\(AB = \sqrt{6^2 + 2^2} = \sqrt{40}\)</span>
+   <span class="arithmatex">\(AC = \sqrt{3^2 + 4^2} = \sqrt{25} = 5\)</span>
+   <span class="arithmatex">\(26 = \sqrt{40} \times 5 \times \cos(\widehat{BAC}) \Rightarrow \cos(\widehat{BAC}) = \frac{26}{5\sqrt{40}} \approx 0,822\)</span>.
+   L'angle <span class="arithmatex">\(\widehat{BAC} \approx \arccos(0,822) \approx 35^\circ\)</span>.</p>
+</li>
+<li>
+<p><strong>Orthogonalité :</strong>
+   <span class="arithmatex">\(\vec{AB} \cdot \vec{AC} = 26 \neq 0\)</span>, donc les vecteurs ne sont pas orthogonaux. Le triangle n'est pas rectangle en <span class="arithmatex">\(A\)</span>.</p>
+</li>
+</ol>
 <hr />
-<h2 id="enonce">Énoncé</h2>
-<h3 id="partie-a-etude-dune-suite-explicite">Partie A : Étude d'une suite explicite</h3>
-<p>Soit <span class="arithmatex">\((u_n)\)</span> la suite définie pour tout entier naturel <span class="arithmatex">\(n \geq 0\)</span> par :<br />
-\[u_n = \frac{3n - 1}{n + 2}\]</p>
+<h2 id="partie-b-geometrie-plane">Partie B : Géométrie plane</h2>
 <ol>
-<li>Calculer les termes <span class="arithmatex">\(u_0\)</span>, <span class="arithmatex">\(u_1\)</span> et <span class="arithmatex">\(u_2\)</span>.</li>
-<li>Étudier les variations de la suite <span class="arithmatex">\((u_n)\)</span> sur <span class="arithmatex">\(\mathbb{N}\)</span>.</li>
-<li>Déterminer, par le calcul, le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n &gt; 2,5\)</span>.</li>
-<li>Compléter l'algorithme de recherche de seuil qui calcule le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n&gt;cible\)</span>, <span class="arithmatex">\(cible\)</span> étant un réel strictement inférieur à 3. </li>
+<li><strong>Relation de Chasles :</strong> <span class="arithmatex">\(\vec{DI} = \vec{DA} + \vec{AI} = \vec{DA} + \frac{1}{2}\vec{AB}\)</span>.</li>
+<li><strong>Projection :</strong> Pour <span class="arithmatex">\(\vec{AC} \cdot \vec{AB}\)</span>, le projeté orthogonal de <span class="arithmatex">\(C\)</span> sur <span class="arithmatex">\((AB)\)</span> est le point <span class="arithmatex">\(B\)</span>.
+   Donc <span class="arithmatex">\(\vec{AC} \cdot \vec{AB} = \vec{AB} \cdot \vec{AB} = AB^2 = 8^2 = 64\)</span>.</li>
+<li><strong>Calcul de <span class="arithmatex">\(\vec{DI} \cdot \vec{AC}\)</span> :</strong>
+   <span class="arithmatex">\(\vec{DI} \cdot \vec{AC} = (\vec{DA} + \frac{1}{2}\vec{AB}) \cdot (\vec{AB} + \vec{AD})\)</span>
+   <span class="arithmatex">\(= \vec{DA} \cdot \vec{AB} + \vec{DA} \cdot \vec{AD} + \frac{1}{2}\vec{AB} \cdot \vec{AB} + \frac{1}{2}\vec{AB} \cdot \vec{AD}\)</span>
+   Comme <span class="arithmatex">\(ABCD\)</span> est un rectangle, les produits scalaires de vecteurs orthogonaux sont nuls.
+   <span class="arithmatex">\(= 0 - AD^2 + \frac{1}{2}AB^2 + 0 = -4^2 + \frac{1}{2}(8^2) = -16 + 32 = 16\)</span>.
+   Le produit scalaire est non nul, donc les droites ne sont pas perpendiculaires.</li>
 </ol>
-<pre><code>def cherche_seuil(cible):
-    n = 0
-    u = -0.5  # Valeur de u_0
-
-    while u .........:
-        n = .........
-        u = .........
-
-    return n
-
-# Appel de la fonction pour la valeur demandée
-resultat = cherche_seuil(2.99999)
-print(&quot;Le plus petit entier n est :&quot;, resultat)
-</code></pre>
-<h3 id="partie-b-modelisation-et-suite-arithmetico-geometrique">Partie B : Modélisation et Suite Arithmético-géométrique</h3>
-<p>Un investisseur place <span class="arithmatex">\(1\,000\)</span> € le 1er janvier 2024 sur un compte d'épargne. Chaque année, ce capital augmente de <span class="arithmatex">\(5\%\)</span> grâce aux intérêts, mais l'investisseur retire <span class="arithmatex">\(40\)</span> € de frais de gestion à la fin de l'année.<br />
-On note <span class="arithmatex">\(v_n\)</span> le capital au 1er janvier de l'année <span class="arithmatex">\(2024 + n\)</span>. On a <span class="arithmatex">\(v_0 = 1\,000\)</span>.</p>
+<hr />
+<h2 id="partie-c-al-kashi">Partie C : Al-Kashi</h2>
 <ol>
-<li>Calculer <span class="arithmatex">\(v_1\)</span> et <span class="arithmatex">\(v_2\)</span>.</li>
-<li>Justifier que pour tout <span class="arithmatex">\(n \in \mathbb{N}\)</span> : <span class="arithmatex">\(v_{n+1} = 1,05v_n - 40\)</span>.</li>
-<li>On considère la suite auxiliaire <span class="arithmatex">\((w_n)\)</span> définie par <span class="arithmatex">\(w_n = v_n - 800\)</span>.
-   a. Démontrer que <span class="arithmatex">\((w_n)\)</span> est une suite géométrique de raison <span class="arithmatex">\(q = 1,05\)</span>. Préciser son premier terme <span class="arithmatex">\(w_0\)</span>.
-   b. Exprimer <span class="arithmatex">\(w_n\)</span> en fonction de <span class="arithmatex">\(n\)</span>.
-   c. En déduire que pour tout <span class="arithmatex">\(n \in \mathbb{N}\)</span> : <span class="arithmatex">\(v_n = 200 \times 1,05^n + 800\)</span>.</li>
-</ol>
-<h3 id="partie-c-calcul-de-somme-et-cumul">Partie C : Calcul de somme et cumul</h3>
-<p>On souhaite calculer la somme totale des capitaux présents sur le compte entre l'année 2024 et l'année 2033 incluse (soit de <span class="arithmatex">\(n=0\)</span> à <span class="arithmatex">\(n=9\)</span>).<br />
-On note <span class="arithmatex">\(S = v_0 + v_1 + v_2 + \dots + v_9\)</span>.</p>
-<ol>
-<li>Exprimer <span class="arithmatex">\(S\)</span> en fonction de la somme des termes de la suite <span class="arithmatex">\((w_n)\)</span>.</li>
-<li>En déduire la valeur exacte de <span class="arithmatex">\(S\)</span>, puis une valeur arrondie à l'euro près.</li>
+<li>
+<p><strong>Longueur <span class="arithmatex">\(FG\)</span> :</strong>
+   D'après le théorème d'Al-Kashi : <span class="arithmatex">\(FG^2 = EF^2 + EG^2 - 2 \times EF \times EG \times \cos(60^\circ)\)</span>.
+   <span class="arithmatex">\(FG^2 = 5^2 + 8^2 - 2 \times 5 \times 8 \times 0,5 = 25 + 64 - 40 = 49\)</span>.
+   Donc <strong><span class="arithmatex">\(FG = 7\)</span></strong>.</p>
+</li>
+<li>
+<p><strong>Produit scalaire :</strong>
+   <span class="arithmatex">\(\vec{EF} \cdot \vec{EG} = 5 \times 8 \times \cos(60^\circ) = 40 \times 0,5 = 20\)</span>.</p>
+</li>
 </ol>
 
 
