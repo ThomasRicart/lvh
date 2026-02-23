@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/Maths_Premiere/Revisions/exo2_suites/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/Maths_Premiere/Revisions/exo02_suites_correction/">
       
       
-        <link rel="prev" href="../exo04_produit_scalaire_correction/">
+        <link rel="prev" href="../exo02_suites/">
       
       
-        <link rel="next" href="../exo2_suites_correction/">
+        <link rel="next" href="../exo03_derivation/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Exercice 2 : Étude de suites numériques (Modélisation et Sommes) - Cours de M. Ricart</title>
+        <title>Exercice 2: Correction : Étude de suites numériques - Cours de M. Ricart</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#exercice-2-etude-de-suites-numeriques-modelisation-et-sommes" class="md-skip">
+        <a href="#exercice-2-correction-etude-de-suites-numeriques" class="md-skip">
           Aller au contenu
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Exercice 2 : Étude de suites numériques (Modélisation et Sommes)
+              Exercice 2: Correction : Étude de suites numériques
             
           </span>
         </div>
@@ -841,22 +841,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enonce" class="md-nav__link">
+  <a href="#partie-a-suite-explicite" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Énoncé
+        Partie A : Suite explicite
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Énoncé">
+    <nav class="md-nav" aria-label="Partie A : Suite explicite">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#partie-a-etude-dune-suite-explicite" class="md-nav__link">
+  <a href="#1-calcul-des-termes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie A : Étude d'une suite explicite
+        1. Calcul des termes
       
     </span>
   </a>
@@ -864,10 +864,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#partie-b-modelisation-et-suite-arithmetico-geometrique" class="md-nav__link">
+  <a href="#2-variations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie B : Modélisation et Suite Arithmético-géométrique
+        2. Variations
       
     </span>
   </a>
@@ -875,10 +875,110 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#partie-c-calcul-de-somme-et-cumul" class="md-nav__link">
+  <a href="#3-recherche-de-seuil" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie C : Calcul de somme et cumul
+        3. Recherche de seuil
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-recherche-de-seuil-avec-un-algorithme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Recherche de seuil avec un algorithme
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-suite-arithmetico-geometrique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie B : Suite Arithmético-géométrique
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie B : Suite Arithmético-géométrique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-premiers-termes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Premiers termes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-relation-de-recurrence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Relation de récurrence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-suite-auxiliaire-w_n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Suite auxiliaire \((w_n)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-calcul-de-somme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partie C : Calcul de somme
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie C : Calcul de somme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-expression-de-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Expression de \(S\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-calcul-final" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Calcul final
       
     </span>
   </a>
@@ -907,27 +1007,44 @@
 
 
 
-<h1 id="exercice-2-etude-de-suites-numeriques-modelisation-et-sommes">Exercice 2 : Étude de suites numériques (Modélisation et Sommes)</h1>
-<p><strong>Niveau :</strong> Première Spécialité Mathématiques<br />
-<strong>Thème :</strong> Suites explicites, récurrence arithmético-géométrique et calcul de sommes.</p>
-<hr />
-<h2 id="enonce">Énoncé</h2>
-<h3 id="partie-a-etude-dune-suite-explicite">Partie A : Étude d'une suite explicite</h3>
-<p>Soit <span class="arithmatex">\((u_n)\)</span> la suite définie pour tout entier naturel <span class="arithmatex">\(n \geq 0\)</span> par :<br />
-\[u_n = \frac{3n - 1}{n + 2}\]</p>
-<ol>
-<li>Calculer les termes <span class="arithmatex">\(u_0\)</span>, <span class="arithmatex">\(u_1\)</span> et <span class="arithmatex">\(u_2\)</span>.</li>
-<li>Étudier les variations de la suite <span class="arithmatex">\((u_n)\)</span> sur <span class="arithmatex">\(\mathbb{N}\)</span>.</li>
-<li>Déterminer, par le calcul, le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n &gt; 2,5\)</span>.</li>
-<li>Compléter l'algorithme de recherche de seuil qui calcule le plus petit entier <span class="arithmatex">\(n\)</span> tel que <span class="arithmatex">\(u_n&gt;cible\)</span>, <span class="arithmatex">\(cible\)</span> étant un réel strictement inférieur à 3. </li>
-</ol>
+<h1 id="exercice-2-correction-etude-de-suites-numeriques">Exercice 2: Correction : Étude de suites numériques</h1>
+<h2 id="partie-a-suite-explicite">Partie A : Suite explicite</h2>
+<h3 id="1-calcul-des-termes">1. Calcul des termes</h3>
+<ul>
+<li><span class="arithmatex">\(u_0 = \frac{3(0) - 1}{0 + 2} = -0,5\)</span></li>
+<li><span class="arithmatex">\(u_1 = \frac{3(1) - 1}{1 + 2} = \frac{2}{3} \approx 0,67\)</span></li>
+<li><span class="arithmatex">\(u_2 = \frac{3(2) - 1}{2 + 2} = \frac{5}{4} = 1,25\)</span></li>
+</ul>
+<h3 id="2-variations">2. Variations</h3>
+<p>Soit <span class="arithmatex">\(f\)</span> la fonction définie sur <span class="arithmatex">\([0 ; +\infty[\)</span> par <span class="arithmatex">\(f(x) = \frac{3x-1}{x+2}\)</span>.<br />
+<span class="arithmatex">\(f\)</span> est de la forme <span class="arithmatex">\(\frac{u}{v}\)</span> avec <span class="arithmatex">\(u(x)=3x-1\)</span> et <span class="arithmatex">\(v(x)=x+2\)</span>.<br />
+<span class="arithmatex">\(f'(x) = \frac{3(x+2) - 1(3x-1)}{(x+2)^2} = \frac{3x+6-3x+1}{(x+2)^2} = \frac{7}{(x+2)^2}\)</span>.</p>
+<p>Comme <span class="arithmatex">\(f'(x) &gt; 0\)</span> sur <span class="arithmatex">\([0 ; +\infty[\)</span>, la fonction <span class="arithmatex">\(f\)</span> est croissante. On en déduit que la suite <span class="arithmatex">\((u_n)\)</span> est <strong>croissante</strong>.</p>
+<p>\[
+\begin{array}{c|ccc}
+x &amp; 0 &amp; &amp; +\infty \\
+\hline
+f'(x) &amp; &amp; + &amp; \\
+\hline
+ &amp; &amp; &amp; 3 \\
+f(x) &amp; &amp; \nearrow &amp; \\
+ &amp; -0,5 &amp; &amp; 
+\end{array}
+\]</p>
+<h3 id="3-recherche-de-seuil">3. Recherche de seuil</h3>
+<p><span class="arithmatex">\(u_n &gt; 2,5 \iff \frac{3n-1}{n+2} &gt; 2,5\)</span>  </p>
+<p><span class="arithmatex">\(3n - 1 &gt; 2,5(n + 2)\)</span>  </p>
+<p><span class="arithmatex">\(3n - 1 &gt; 2,5n + 5\)</span> </p>
+<p><span class="arithmatex">\(0,5n &gt; 6 \iff n &gt; 12\)</span>.  </p>
+<p>Le plus petit entier est <strong><span class="arithmatex">\(n = 13\)</span></strong>.</p>
+<h3 id="4-recherche-de-seuil-avec-un-algorithme">4. Recherche de seuil avec un algorithme</h3>
 <pre><code>def cherche_seuil(cible):
     n = 0
     u = -0.5  # Valeur de u_0
 
-    while u .........:
-        n = .........
-        u = .........
+    while u &lt;= cible:
+        n = n + 1
+        u = (3 * n - 1) / (n + 2)
 
     return n
 
@@ -935,24 +1052,34 @@
 resultat = cherche_seuil(2.99999)
 print(&quot;Le plus petit entier n est :&quot;, resultat)
 </code></pre>
-<h3 id="partie-b-modelisation-et-suite-arithmetico-geometrique">Partie B : Modélisation et Suite Arithmético-géométrique</h3>
-<p>Un investisseur place <span class="arithmatex">\(1\,000\)</span> € le 1er janvier 2024 sur un compte d'épargne. Chaque année, ce capital augmente de <span class="arithmatex">\(5\%\)</span> grâce aux intérêts, mais l'investisseur retire <span class="arithmatex">\(40\)</span> € de frais de gestion à la fin de l'année.<br />
-On note <span class="arithmatex">\(v_n\)</span> le capital au 1er janvier de l'année <span class="arithmatex">\(2024 + n\)</span>. On a <span class="arithmatex">\(v_0 = 1\,000\)</span>.</p>
-<ol>
-<li>Calculer <span class="arithmatex">\(v_1\)</span> et <span class="arithmatex">\(v_2\)</span>.</li>
-<li>Justifier que pour tout <span class="arithmatex">\(n \in \mathbb{N}\)</span> : <span class="arithmatex">\(v_{n+1} = 1,05v_n - 40\)</span>.</li>
-<li>On considère la suite auxiliaire <span class="arithmatex">\((w_n)\)</span> définie par <span class="arithmatex">\(w_n = v_n - 800\)</span>.
-   a. Démontrer que <span class="arithmatex">\((w_n)\)</span> est une suite géométrique de raison <span class="arithmatex">\(q = 1,05\)</span>. Préciser son premier terme <span class="arithmatex">\(w_0\)</span>.
-   b. Exprimer <span class="arithmatex">\(w_n\)</span> en fonction de <span class="arithmatex">\(n\)</span>.
-   c. En déduire que pour tout <span class="arithmatex">\(n \in \mathbb{N}\)</span> : <span class="arithmatex">\(v_n = 200 \times 1,05^n + 800\)</span>.</li>
-</ol>
-<h3 id="partie-c-calcul-de-somme-et-cumul">Partie C : Calcul de somme et cumul</h3>
-<p>On souhaite calculer la somme totale des capitaux présents sur le compte entre l'année 2024 et l'année 2033 incluse (soit de <span class="arithmatex">\(n=0\)</span> à <span class="arithmatex">\(n=9\)</span>).<br />
-On note <span class="arithmatex">\(S = v_0 + v_1 + v_2 + \dots + v_9\)</span>.</p>
-<ol>
-<li>Exprimer <span class="arithmatex">\(S\)</span> en fonction de la somme des termes de la suite <span class="arithmatex">\((w_n)\)</span>.</li>
-<li>En déduire la valeur exacte de <span class="arithmatex">\(S\)</span>, puis une valeur arrondie à l'euro près.</li>
-</ol>
+<hr />
+<h2 id="partie-b-suite-arithmetico-geometrique">Partie B : Suite Arithmético-géométrique</h2>
+<h3 id="1-premiers-termes">1. Premiers termes</h3>
+<ul>
+<li><span class="arithmatex">\(v_1 = 1\,000 \times 1,05 - 40 = 1\,010\)</span> €</li>
+<li><span class="arithmatex">\(v_2 = 1\,010 \times 1,05 - 40 = 1\,020,50\)</span> €</li>
+</ul>
+<h3 id="2-relation-de-recurrence">2. Relation de récurrence</h3>
+<p>Une augmentation de <span class="arithmatex">\(5\%\)</span> correspond à un coefficient multiplicateur de <span class="arithmatex">\(1 + \frac{5}{100} = 1,05\)</span>. En retirant les 40 € de frais, on a bien : <strong><span class="arithmatex">\(v_{n+1} = 1,05v_n - 40\)</span></strong>.</p>
+<h3 id="3-suite-auxiliaire-w_n">3. Suite auxiliaire <span class="arithmatex">\((w_n)\)</span></h3>
+<p>a. <span class="arithmatex">\(w_{n+1} = v_{n+1} - 800 = (1,05v_n - 40) - 800 = 1,05v_n - 840\)</span>.<br />
+En factorisant par 1,05 : <span class="arithmatex">\(w_{n+1} = 1,05(v_n - \frac{840}{1,05}) = 1,05(v_n - 800) = 1,05w_n\)</span>.<br />
+La suite <span class="arithmatex">\((w_n)\)</span> est donc <strong>géométrique de raison <span class="arithmatex">\(q = 1,05\)</span></strong>.<br />
+Premier terme : <span class="arithmatex">\(w_0 = v_0 - 800 = 1\,000 - 800 = 200\)</span>.</p>
+<p>b. Expression fonctionnelle : <strong><span class="arithmatex">\(w_n = 200 \times 1,05^n\)</span></strong>.</p>
+<p>c. Comme <span class="arithmatex">\(w_n = v_n - 800\)</span>, alors <span class="arithmatex">\(v_n = w_n + 800\)</span>.<br />
+D'où : <strong><span class="arithmatex">\(v_n = 200 \times 1,05^n + 800\)</span></strong>.</p>
+<hr />
+<h2 id="partie-c-calcul-de-somme">Partie C : Calcul de somme</h2>
+<h3 id="1-expression-de-s">1. Expression de <span class="arithmatex">\(S\)</span></h3>
+<p><span class="arithmatex">\(S = \sum_{k=0}^{9} v_k = \sum_{k=0}^{9} (w_k + 800) = \left( \sum_{k=0}^{9} w_k \right) + 10 \times 800\)</span></p>
+<h3 id="2-calcul-final">2. Calcul final</h3>
+<p>Somme des termes de <span class="arithmatex">\((w_n)\)</span> :<br />
+<span class="arithmatex">\(\sum_{k=0}^{9} w_k = 200 \times \frac{1 - 1,05^{10}}{1 - 1,05} = 200 \times \frac{1 - 1,05^{10}}{-0,05} = 4\,000 \times (1,05^{10} - 1)\)</span></p>
+<p>Calcul de <span class="arithmatex">\(S\)</span> :<br />
+<span class="arithmatex">\(S = 4\,000 \times (1,05^{10} - 1) + 8\,000\)</span><br />
+<span class="arithmatex">\(S \approx 4\,000 \times (1,62889 - 1) + 8\,000 \approx 2\,515,56 + 8\,000\)</span><br />
+<strong><span class="arithmatex">\(S \approx 10\,516\)</span> €</strong>.</p>
 
 
 
