@@ -1271,10 +1271,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-structure-en-arbre" class="md-nav__link">
+  <a href="#2-structure-en-arbre-dom" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Structure en arbre
+        2. Structure en arbre (DOM)
       
     </span>
   </a>
@@ -1375,11 +1375,16 @@
 <p><strong>Attributs</strong>: Les balises peuvent être personnalisées (ex: <code>&lt;a href = "..."&gt; ou &lt;img src = "..."&gt;</code>)</p>
 </li>
 </ul>
-<h2 id="2-structure-en-arbre">2. Structure en arbre</h2>
-<p>Le <strong>HTML</strong> structure les données de manière hiérarchique. On parle de <strong>DOM</strong> (Document Object Model).</p>
+<h2 id="2-structure-en-arbre-dom">2. Structure en arbre (DOM)</h2>
+<p>Le <strong>HTML</strong> structure les données de manière hiérarchique. On parle de <strong>DOM</strong> (Document Object Model). Chaque balise ouverte à l'intérieur d'une autre devient sont "enfant".</p>
 <ul>
-<li><strong>Structure minimale</strong>: <code>html</code> (la page en entier), <code>head</code> (métadonnées) et <code>body</code> (contenu visible)</li>
-<li><strong>Sémantique</strong>: Ouverture et fermeture de balises.</li>
+<li><strong>Structure minimale</strong>: <ul>
+<li><code>html</code>: la racine qui englobe tout,</li>
+<li><code>head</code>:  les métadonnées (titre de l'onglet, encodage UTF-8),</li>
+<li><code>body</code>: le contenu visible par l'utilisateur</li>
+</ul>
+</li>
+<li><strong>Regles d'indentation:</strong> Pour rendre le code lisible, on décale (touche Tab) chaque balise enfant par rapport à sa balise parente.</li>
 </ul>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;fr&quot;&gt;
@@ -1478,7 +1483,7 @@
 <p><strong>Cahier des charges :</strong></p>
 <ul>
 <li>
-<p>Structure : Utiliser les balises html, head et body.</p>
+<p>Structure : Respecter les balises obligatoires  <code>html</code>, <code>head</code> et <code>body</code>.</p>
 </li>
 <li>
 <p>Contenu :</p>
@@ -1498,7 +1503,7 @@
 <p>Interactions : Insérer deux balises <code>&lt;button&gt;</code> : <code>Allumer</code> et <code>Éteindre</code>.</p>
 </li>
 <li>
-<p>Médias : Une image <code>&lt;img&gt;</code> avec l'attribut <code>alt</code>.</p>
+<p>Médias : Une image <code>&lt;img&gt;</code> avec l'attribut <code>alt</code> (obligatoire pour l'accessibilité des malvoyants).</p>
 </li>
 <li>
 <p>Lien : Un lien <code>&lt;a&gt;</code> vers un site météo.</p>
@@ -1521,10 +1526,15 @@
 <p>☐ <strong>Toutes mes balises ouvertes sont refermées.</strong></p>
 <p>☐ <strong>L'attribut <code>alt</code> est présent sur mon image.</strong></p>
 <p>☐ <strong>Les boutons s'affichent correctement dans le navigateur.</strong></p>
+<p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
+<p>☐ <strong>Défi (Optionnel): ajouter une balise <code>&lt;input type="range"&gt;</code> pour simuler un variateur de lumière.</strong></p>
 <h2 id="5-synthese">5. Synthèse</h2>
 <ul>
 <li>
 <p>Le <strong>HTML5</strong> permet de structurer les données de manière hiérarchique (structure en arbre).</p>
+</li>
+<li>
+<p>on sépare le <strong>fond</strong> (HTML) de la <strong>forme</strong> (CSS) et du <strong>comportement</strong> (JS).</p>
 </li>
 <li>
 <p>Les <strong>balises</strong> :</p>
