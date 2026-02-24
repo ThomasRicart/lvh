@@ -1,1 +1,14 @@
-# NSI Première
+# Présentation de la spécialité NSI
+
+Voici le programme interactif :
+
+<iframe src="./presentation.html" width="100%" height="600px" frameborder="0"></iframe>
+
+
+## Le programme officiel
+
+<iframe src="./docs/NSI_premiere_programme.pdf" width="100%" height="600px">
+    Ce navigateur ne supporte pas la visualisation de PDFs. 
+    Veuillez télécharger le fichier pour le consulter : 
+    <a href="./docs/NSI_premiere_programme.pdf">Télécharger le PDF</a>.
+</iframe>
