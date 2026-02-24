@@ -30,7 +30,7 @@
 
         async function initQuiz() {
             try {
-                const response = await fetch('s37_quiz-data.json');
+                const response = await fetch('WEB01_quiz-data.json');
                 const questions = await response.json();
                 totalQuestions = questions.length;
                 const container = document.getElementById('quiz-container');

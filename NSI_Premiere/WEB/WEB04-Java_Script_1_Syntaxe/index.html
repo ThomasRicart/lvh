@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/S39-Interaction_client_serveur/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/WEB04-Java_Script_1_Syntaxe/">
       
       
-        <link rel="prev" href="../S38-Langage_web_CSS3/">
+        <link rel="prev" href="../WEB03-Interaction_client_serveur/">
       
       
-        <link rel="next" href="../S40-Java_Script_1_Syntaxe/">
+        <link rel="next" href="../WEB05-Java_Script_2_conditions_interactivite/">
       
       
         
@@ -1430,10 +1430,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-le-modele-client-serveur" class="md-nav__link">
+  <a href="#1-introduction-au-javascript-js" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Le modèle Client - Serveur
+        1. Introduction au Javascript (JS)
       
     </span>
   </a>
@@ -1441,33 +1441,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-les-formulaires-html-la-balise-form" class="md-nav__link">
+  <a href="#2-syntaxe-de-base-variables-et-fonctions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Les Formulaires HTML : La balise &lt;form&gt;
+        2. Syntaxe de base : Variables et Fonctions
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-get-vs-post-quelle-difference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. GET vs POST : Quelle différence ?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. GET vs POST : Quelle différence ?">
+    <nav class="md-nav" aria-label="2. Syntaxe de base : Variables et Fonctions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#la-methode-get" class="md-nav__link">
+  <a href="#declarer-des-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
-        La méthode GET
+        Déclarer des variables
       
     </span>
   </a>
@@ -1475,10 +1464,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#la-methode-post" class="md-nav__link">
+  <a href="#les-fonctions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        La méthode POST
+        Les Fonctions
       
     </span>
   </a>
@@ -1491,10 +1480,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-mini-projet-dashboard-domotique-phase-3" class="md-nav__link">
+  <a href="#3-le-dom-linterface-entre-js-et-html" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Mini-projet : Dashboard Domotique (Phase 3)
+        3. Le DOM : L'interface entre JS et HTML
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Le DOM : L&#39;interface entre JS et HTML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cibler-un-element" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cibler un élément
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modifier-lelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modifier l'élément
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-les-evenements-reagir-a-lutilisateur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Les Événements : Réagir à l'utilisateur
       
     </span>
   </a>
@@ -1502,10 +1530,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-synthese" class="md-nav__link">
+  <a href="#5-mini-projet-dashboard-domotique-phase-4-interactivite-js" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Synthèse
+        5. Mini-projet : Dashboard Domotique (Phase 4) — Interactivité JS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-synthese-de-la-seance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Synthèse de la séance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lattribut-onclick-permet-de-declencher-une-fonction-lors-dune-interaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        L'attribut onclick permet de déclencher une fonction lors d'une interaction.
       
     </span>
   </a>
@@ -1531,7 +1581,7 @@
 
 <h1 id="s39-interaction-client-serveur-requetes-http-getpost-et-formulaires">S39 — Interaction Client-Serveur : Requêtes HTTP (GET/POST) et Formulaires</h1>
 <p>🎯Objectifs et Compétences</p>
-<p>L'objectif est de comprendre comment les données saisies par un utilisateur sont transmises à un serveur pour être traitées.</p>
+<p>L'objectif est d'apprendre à rendre une page web interactive en utilisant JavaScript pour réagir aux actions de l'utilisateur et modifier le contenu en temps réel.</p>
 <h3 id="capacites-attendues">Capacités attendues</h3>
 <table>
 <thead>
@@ -1542,130 +1592,144 @@
 </thead>
 <tbody>
 <tr>
-<td>Identifier</td>
-<td>Comprendre le cycle requête/réponse entre le navigateur et le serveur.</td>
+<td>Manipuler</td>
+<td>Déclarer et utiliser des variables (<code>let</code>, <code>const</code>) et des fonctions.</td>
 </tr>
 <tr>
-<td>Construire</td>
-<td>Créer un formulaire HTML pour collecter des données  utilisateur.</td>
+<td>Accéder</td>
+<td>Identifier et cibler un élément HTML via son identifiant (<code>ID</code>).</td>
 </tr>
 <tr>
-<td>Distinguer</td>
-<td>Choisir entre la méthode GET et la méthode POST selon le contexte.</td>
+<td>Interagir</td>
+<td>Modifier le texte ou le style d'un élément suite à un événement (<code>clic</code>).</td>
 </tr>
 </tbody>
 </table>
-<h2 id="1-le-modele-client-serveur">1. Le modèle Client - Serveur</h2>
-<p>Le Web fonctionne sur un dialogue :</p>
+<h2 id="1-introduction-au-javascript-js">1. Introduction au Javascript (JS)</h2>
+<p>Alors que le HTML structure le contenu et le CSS gère l'apparence, le JavaScript apporte le comportement. C'est un langage de programmation "côté client", ce qui signifie qu'il s'exécute directement dans le navigateur de l'utilisateur.</p>
+<p>Pour l'utiliser, on insère une balise spécifique, généralement juste avant la fermeture de <code>&lt;/body&gt;</code> :</p>
+<pre><code class="language-html">&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<h2 id="2-syntaxe-de-base-variables-et-fonctions">2. Syntaxe de base : Variables et Fonctions</h2>
+<h3 id="declarer-des-variables">Déclarer des variables</h3>
+<p>On utilise deux mots-clés principaux pour stocker des données :</p>
 <ul>
 <li>
-<p>Le <strong>Client</strong> (Navigateur) : Envoie une requête <code>HTTP</code> (ex: "Donne-moi la page accueil.html" ou "Envoie ces données de température").</p>
+<p><code>let</code> : Pour une variable dont la valeur peut changer (ex: une température qui évolue).</p>
 </li>
 <li>
-<p>Le <strong>Serveur</strong> : Traite la demande et renvoie une réponse (la page Web ou une confirmation).</p>
+<p><code>const</code> : Pour une valeur qui reste fixe (ex: le nom d'un capteur).</p>
 </li>
 </ul>
-<p><img alt="Image alt" src="../images/ClientServeur.png" /></p>
-<h2 id="2-les-formulaires-html-la-balise-form">2. Les Formulaires HTML : La balise <code>&lt;form&gt;</code></h2>
-<p>On utilise un formulaire pour collecter des données.</p>
-<ul>
-<li>
-<p>L'attribut <code>action</code> : Définit l'adresse (URL) du programme sur le serveur qui va recevoir les données.</p>
-</li>
-<li>
-<p>L'attribut <code>method</code> : Définit la manière dont les données voyagent (<strong>GET</strong> ou <strong>POST</strong>).</p>
-</li>
-</ul>
-<h2 id="3-get-vs-post-quelle-difference">3. GET vs POST : Quelle différence ?</h2>
-<table>
-<thead>
-<tr>
-<th>Méthode</th>
-<th>Fonctionnement</th>
-<th>Visibilité</th>
-<th>Utilisation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>GET</strong></td>
-<td>Les données sont ajoutées à l'URL.</td>
-<td>Visible dans la barre d'adresse.</td>
-<td>Recherches, consultation (ex: Google).</td>
-</tr>
-<tr>
-<td><strong>POST</strong></td>
-<td>Les données sont cachées dans le corps de la requête.</td>
-<td>Invisible dans l'URL.</td>
-<td>Mots de passe, formulaires lourds, envois sensibles.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="la-methode-get">La méthode <strong>GET</strong></h3>
-<p>Elle est utilisée pour demander des données.</p>
-<pre><code class="language-html">&lt;form action=&quot;traitement.php&quot; method=&quot;GET&quot;&gt;
-    &lt;label&gt;Recherche de capteur :&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;id_capteur&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;Rechercher&lt;/button&gt;
-&lt;/form&gt;
+<pre><code class="language-javascript">let temperature = 19; // Type nombre
+const piece = &quot;Salon&quot;; // Type chaîne de caractères (String)
+
+temperature = 20; // Autorisé
+// piece = &quot;Cuisine&quot;; // ERREUR : on ne peut pas modifier une constante
 </code></pre>
-<p>Si tu tapes "Salon" dans le champ, après avoir cliqué sur le bouton, l'URL dans ton navigateur deviendra :
-<code>http://mon-serveur.fr/traitement.php?id_capteur=Salon</code></p>
-<h3 id="la-methode-post">La méthode <strong>POST</strong></h3>
-<p>Elle est utilisée pour envoyer ou modifier des données sensibles ou volumineuses. Les informations sont "cachées" dans le corps de la requête <strong>HTTP</strong> et n'apparaissent pas dans l'URL.</p>
-<pre><code class="language-html">&lt;form action=&quot;config.php&quot; method=&quot;POST&quot;&gt;
-    &lt;label&gt;Nouveau mot de passe du Hub :&lt;/label&gt;
-    &lt;input type=&quot;password&quot; name=&quot;code_admin&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;Mettre à jour&lt;/button&gt;
-&lt;/form&gt;
+<h3 id="les-fonctions">Les Fonctions</h3>
+<p>Une fonction est un bloc de code qui ne s'exécute que lorsqu'on l'appelle.</p>
+<pre><code class="language-javascript">function direBonjour() {
+    console.log(&quot;Le système domotique est prêt.&quot;);
+}
 </code></pre>
-<p>L'URL reste simplement <code>http://mon-serveur.fr/config.php</code>. Le mot de passe est envoyé de manière invisible pour l'utilisateur, ce qui est beaucoup plus sécurisé.</p>
-<p>Les composants de saisie (<code>&lt;input&gt;</code>)</p>
-<p>Chaque champ doit posséder un attribut <code>name</code> (c'est l'étiquette qui permettra au serveur de reconnaître la donnée).</p>
-<h2 id="4-mini-projet-dashboard-domotique-phase-3">4. Mini-projet : Dashboard Domotique (Phase 3)</h2>
-<p><strong>Objectif</strong> : Ajouter une interface de paramétrage à votre dashboard du <strong>S38</strong>.</p>
+<h2 id="3-le-dom-linterface-entre-js-et-html">3. Le DOM : L'interface entre JS et HTML</h2>
+<p>Le <strong>DOM</strong> (<em>Document Object Model</em>) est une représentation de votre page HTML sous forme d'arbre. JavaScript utilise cet arbre pour modifier la page sans avoir besoin de la recharger.</p>
+<h3 id="cibler-un-element">Cibler un élément</h3>
+<p>Pour modifier un élément précis (comme l'affichage de la température dans votre Dashboard), il doit posséder un <code>id</code> unique.</p>
+<pre><code class="language-javascript">// On récupère l'élément qui a l'id &quot;affichage-temp&quot;
+const afficheur = document.getElementById(&quot;affichage-temp&quot;);
+</code></pre>
+<h3 id="modifier-lelement">Modifier l'élément</h3>
+<p>Une fois l'élément sélectionné, on peut changer son texte ou son apparence :</p>
+<pre><code class="language-javascript">afficheur.textContent = &quot;22°C&quot;; // Change le texte
+afficheur.style.color = &quot;red&quot;;  // Change la couleur en CSS
+</code></pre>
+<h2 id="4-les-evenements-reagir-a-lutilisateur">4. Les Événements : Réagir à l'utilisateur</h2>
+<p>Le JavaScript devient utile lorsqu'il réagit à un événement, comme un clic sur un bouton. On utilise l'attribut <code>onclick</code> dans le HTML pour lier les deux.</p>
+<p>Exemple concret pour le Dashboard :</p>
+<p><em>Dans le fichier HTML :</em></p>
+<pre><code class="language-html">&lt;p id=&quot;statut&quot;&gt;Chauffage éteint&lt;/p&gt;
+&lt;button onclick=&quot;allumerChauffage()&quot;&gt;Allumer&lt;/button&gt;
+</code></pre>
+<p><em>Dans le fichier JS :</em></p>
+<pre><code class="language-javascript">function allumerChauffage() {
+    const texteStatut = document.getElementById(&quot;statut&quot;);
+    texteStatut.textContent = &quot;Chauffage en cours...&quot;;
+    texteStatut.style.color = &quot;orange&quot;;
+}
+</code></pre>
+<h2 id="5-mini-projet-dashboard-domotique-phase-4-interactivite-js">5. Mini-projet : Dashboard Domotique (Phase 4) — Interactivité JS</h2>
+<p><strong>Objectif:</strong></p>
+<p>Dans la phase précédente, vous avez créé un formulaire envoyant des données vers une page de confirmation. Aujourd'hui, nous allons utiliser JavaScript pour mettre à jour les indicateurs du Dashboard en temps réel.</p>
+<p><strong>Préparation de l'interface (HTML)</strong></p>
+<p>Dans votre fichier <code>index.html</code>, assurez-vous que vos éléments importants possèdent des identifiants (<code>id</code>) pour être ciblés par le script.</p>
+<pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
+    &lt;h3&gt;Température actuelle&lt;/h3&gt;
+    &lt;p id=&quot;affichage-temp&quot;&gt;19°C&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;section id=&quot;configuration&quot;&gt;
+    &lt;h3&gt;Réglages&lt;/h3&gt;
+    &lt;input type=&quot;range&quot; id=&quot;curseur-temp&quot; min=&quot;15&quot; max=&quot;30&quot; value=&quot;19&quot;&gt;
+    &lt;button onclick=&quot;mettreAJourDashboard()&quot;&gt;Appliquer la consigne&lt;/button&gt;
+&lt;/section&gt;
+
+&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p><strong>Programmation de l'interactivité (JS)</strong>
+Créez un fichier <code>script.js</code> et ajoutez le code suivant. Ce script utilise des variables (<code>let</code>, <code>const</code>) et accède au <code>DOM</code> pour modifier le contenu.</p>
+<pre><code class="language-javascript">// Fonction pour mettre à jour l'affichage
+function mettreAJourDashboard() {
+    // 1. Sélection des éléments
+    const curseur = document.getElementById(&quot;curseur-temp&quot;);
+    const affichage = document.getElementById(&quot;affichage-temp&quot;);
+
+    // 2. Récupération de la nouvelle valeur
+    let nouvelleTemp = curseur.value;
+
+    // 3. Modification du texte affiché
+    affichage.textContent = nouvelleTemp + &quot;°C&quot;;
+
+    // 4. Feedback visuel (Optionnel)
+    if (nouvelleTemp &gt; 25) {
+        affichage.style.color = &quot;red&quot;; // Alerte chaleur
+    } else {
+        affichage.style.color = &quot;blue&quot;;
+    }
+}
+</code></pre>
 <p><strong>Etapes à réaliser:</strong></p>
 <ol>
 <li>
-<p>Reprenez vos fichiers <code>S38-dashboard.html</code> et <code>S38-style.css</code>.</p>
+<p>Liaison du script : Vérifiez que le fichier <code>script.js</code> est correctement appelé dans votre <code>HTML</code>.</p>
 </li>
 <li>
-<p>Ajoutez une nouvelle <code>&lt;section class="card"&gt;</code> nommée "Configuration".</p>
+<p>Ciblage ID : Assurez-vous que l'ID utilisé dans document.<code>getElementById</code> correspond exactement à celui écrit dans le HTML.</p>
 </li>
 <li>
-<p>Créez un formulaire utilisant la méthode <strong>GET</strong>.</p>
+<p>Gestion de l'événement : Ajoutez l'attribut <code>onclick</code> sur votre bouton pour déclencher la fonction.</p>
 </li>
 <li>
-<p>Ajoutez un champ texte (<code>name="piece"</code>) et un curseur (<code>type="range"</code>, <code>name="temp_consigne"</code>).</p>
+<p>'Défi (Optionnel): Modifiez votre fonction pour qu'elle change aussi le titre de la pièce (ex: "Salon", "Cuisine") en utilisant un champ <code>&lt;input type="text"&gt;</code> et la propriété <code>textContent</code>.</p>
 </li>
 </ol>
-<p><strong>Analyse de la transmission</strong></p>
-<p>Une fois le formulaire rempli (par exemple : Pièce = "Cuisine" et Température = "19") et clique sur le bouton :</p>
-<ol>
-<li>
-<p>L'URL change : Elle devient <code>confirmation.html?piece=Cuisine&amp;temp_consigne=19</code>.</p>
-</li>
-<li>
-<p>Le couple Clé/Valeur : Les noms utilisés dans l'URL (<code>piece</code>, <code>temp_consigne</code>) correspondent exactement aux attributs <code>name</code> définis dans le code HTML.</p>
-</li>
-</ol>
-<p>✅ <strong>Liste de contrôle du projet</strong></p>
-<p>☐ Chaque <code>&lt;input&gt;</code> possède un attribut <code>name</code> unique.</p>
-<p>☐ Le bouton de validation est de type <code>type="submit"</code>.</p>
-<p>☐ Je peux observer les données dans l'URL après avoir cliqué sur "Appliquer".</p>
+<p>Liste de contrôle de fin de séance</p>
+<p>☐ <strong>Mon fichier JS est lié et ne contient pas d'erreurs dans la console (F12)</strong>.</p>
+<p>☐ <strong>Le clic sur le bouton modifie instantanément le texte de la page</strong>.</p>
+<p>☐ <strong>J'ai bien utilisé const pour les éléments qui ne changent pas de référence</strong>.</p>
 <p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
-<h2 id="4-synthese">4. Synthèse</h2>
+<h2 id="6-synthese-de-la-seance">6. Synthèse de la séance</h2>
 <ul>
 <li>
-<p>Le client fait une <strong>requête</strong>, le serveur envoie une <strong>réponse</strong>.</p>
+<p><code>let</code> et <code>const</code> servent à mémoriser des informations.</p>
 </li>
 <li>
-<p>Les formulaires collectent les données via des <code>input</code>.</p>
-</li>
-<li>
-<p><strong>GET</strong> est public (URL), <strong>POST</strong> est privé (Corps de la requête).</p>
+<p><code>document.getElementById()</code> est la porte d'entrée pour modifier le HTML.</p>
 </li>
 </ul>
+<p>Le DOM est la structure que JavaScript manipule.</p>
+<h2 id="lattribut-onclick-permet-de-declencher-une-fonction-lors-dune-interaction">L'attribut <code>onclick</code> permet de déclencher une fonction lors d'une interaction.</h2>
 <hr />
 
 

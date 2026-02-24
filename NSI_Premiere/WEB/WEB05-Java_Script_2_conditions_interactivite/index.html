@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/S42-IHM_Capteurs_actionneurs/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/WEB05-Java_Script_2_conditions_interactivite/">
       
       
-        <link rel="prev" href="../S41-Java_Script_2_conditions_interactivite/">
+        <link rel="prev" href="../WEB04-Java_Script_1_Syntaxe/">
       
       
-        <link rel="next" href="../../../NSI_Terminale/">
+        <link rel="next" href="../WEB06-IHM_Capteurs_actionneurs/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>S42 : IHM : Capteurs, actionneurs et interfaces homme-machine. - Cours de M. Ricart</title>
+        <title>S41 — JavaScript (2) – Logique Conditionnelle et États du Système - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#s42-ihm-capteurs-actionneurs-et-interfaces-homme-machine" class="md-skip">
+        <a href="#s41-javascript-2-logique-conditionnelle-et-etats-du-systeme" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              S42 : IHM : Capteurs, actionneurs et interfaces homme-machine.
+              S41 — JavaScript (2) – Logique Conditionnelle et États du Système
             
           </span>
         </div>
@@ -1419,10 +1419,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-point-de-cours-la-boucle-de-controle" class="md-nav__link">
+  <a href="#1-point-de-cours-prendre-des-decisions-en-js" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Point de cours : La boucle de contrôle
+        1. Point de cours : Prendre des décisions en JS
       
     </span>
   </a>
@@ -1430,10 +1430,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-activite-analyse-du-dashboard-s41" class="md-nav__link">
+  <a href="#2-application-au-mini-projet-dashboard-intelligent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Activité : Analyse du Dashboard S41
+        2. Application au Mini-Projet : Dashboard Intelligent
       
     </span>
   </a>
@@ -1441,10 +1441,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-travail-pratique-simuler-un-nouvel-actionneur" class="md-nav__link">
+  <a href="#3-etapes-a-realiser" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Travail Pratique : Simuler un nouvel Actionneur
+        3. Étapes à réaliser
       
     </span>
   </a>
@@ -1452,10 +1452,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-defi-lihm-bidirectionnelle" class="md-nav__link">
+  <a href="#4-liste-de-controle-de-fin-de-seance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Défi : L'IHM Bidirectionnelle
+        4. Liste de contrôle de fin de séance
       
     </span>
   </a>
@@ -1463,21 +1463,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-liste-de-controle-de-fin-de-seance" class="md-nav__link">
+  <a href="#5-synthese-de-la-seance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Liste de contrôle de fin de séance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-synthese-de-la-seance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Synthèse de la séance
+        5. Synthèse de la séance
       
     </span>
   </a>
@@ -1501,90 +1490,203 @@
 
 
 
-<h1 id="s42-ihm-capteurs-actionneurs-et-interfaces-homme-machine">S42 : IHM : Capteurs, actionneurs et interfaces homme-machine.</h1>
+<h1 id="s41-javascript-2-logique-conditionnelle-et-etats-du-systeme">S41 — JavaScript (2) – Logique Conditionnelle et États du Système</h1>
 <p>🎯Objectifs et Compétences</p>
-<p>Dans cette séance, on s'éloigne un peu du pur code pour comprendre l'architecture d'un système connecté : comment les capteurs (entrées) et les actionneurs (sorties) communiquent avec l'IHM (Interface Homme-Machine).</p>
-<ul>
-<li>Théorie : Identifier les composants d'une chaîne d'information (Capteurs, Traitement, Actionneurs).</li>
-<li>Analyse : Distinguer les flux de données entrants et sortants.</li>
-<li>Architecture : Comprendre le rôle central de l'IHM dans le pilotage d'un système.</li>
-</ul>
-<h2 id="1-point-de-cours-la-boucle-de-controle">1. Point de cours : La boucle de contrôle</h2>
-<p>Un système domotique (comme notre Dashboard) ne fonctionne pas de manière isolée. Il suit une boucle logique précise :</p>
+<p>L'objectif est de rendre le Dashboard "intelligent". Le programme doit analyser la donnée et réagir visuellement (alertes, couleurs, icônes) en fonction de seuils critiques.</p>
 <ul>
 <li>
-<p>Le Capteur (Entrée) : Il "mesure" le monde réel (Température, Humidité, Présence) et transforme cette grandeur physique en signal numérique.</p>
+<p>Utiliser des structures conditionnelles (<code>if</code>, <code>else if</code>, <code>else</code>).</p>
 </li>
 <li>
-<p>Le Traitement (Cerveau) : C'est notre code JavaScript (<code>if / else</code>). Il décide de l'action à prendre en fonction des données reçues.</p>
+<p>Modifier les classes CSS dynamiquement via JavaScript.</p>
 </li>
 <li>
-<p>L'Actionneur (Sortie) : Il "agit" sur le monde réel (Allumer un radiateur, fermer un volet, déclencher une alarme).</p>
+<p>Créer des alertes visuelles basées sur des seuils de données.</p>
 </li>
 </ul>
-<h2 id="2-activite-analyse-du-dashboard-s41">2. Activité : Analyse du Dashboard S41</h2>
-<p>Nous allons faire évoluer le Dashboard de la S41</p>
-<p>Complétez le tableau suivant en vous basant sur votre projet S41 :</p>
-<table>
-<thead>
-<tr>
-<th>Composant</th>
-<th>Role dans le projet</th>
-<th>Type (Capteur ou Actionneur)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Le Curseur (Range)</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>L'Écran (IHM)</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Le Bouton ON/OFF</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Le Fond de page (Couleur)</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="3-travail-pratique-simuler-un-nouvel-actionneur">3. Travail Pratique : Simuler un nouvel Actionneur</h2>
-<p>Nous allons ajouter un nouveau composant à notre Dashboard : un Actionneur de Ventilation.</p>
-<p><strong>Étape 1 : Modification du HTML (S42-dashboard.html)</strong></p>
-<p>Ajoutez une zone pour visualiser l'état de la ventilation dans la section des capteurs.</p>
-<pre><code class="language-html">&lt;li&gt;Ventilation : &lt;span id=&quot;etat-ventilo&quot;&gt;ARRÊT&lt;/span&gt;&lt;/li&gt;
-</code></pre>
-<p><strong>Étape 2 : Modification de la logique (S42-script.js)</strong></p>
-<p>L'actionneur doit s'activer automatiquement. Si la température est chaude (≥26°C), on lance la ventilation. Sinon, on l'arrête.</p>
-<pre><code class="language-javascript">// Dans la fonction mettreAJourDashboard(), ajoutez :
-const affichageVentilo = document.getElementById(&quot;etat-ventilo&quot;);
+<h2 id="1-point-de-cours-prendre-des-decisions-en-js">1. Point de cours : Prendre des décisions en JS</h2>
+<p><strong>La Structure if / else</strong></p>
+<p>Pour qu'un script soit interactif, il doit tester des conditions. On utilise le bloc if (si) et else (sinon).</p>
+<pre><code class="language-javascript">let temperature = 26;
 
-if (nouvelleTemp &gt;= 26) {
-    affichageVentilo.textContent = &quot;EN MARCHE (Refroidissement...)&quot;;
-    affichageVentilo.style.color = &quot;blue&quot;;
+if (temperature &gt;= 26) {
+    // Exécuté si la condition est VRAIE
+    console.log(&quot;Alerte Chaleur !&quot;);
 } else {
-    affichageVentilo.textContent = &quot;ARRÊT&quot;;
-    affichageVentilo.style.color = &quot;grey&quot;;
+    // Exécuté dans tous les autres cas
+    console.log(&quot;Température normale.&quot;);
 }
 </code></pre>
-<h2 id="4-defi-lihm-bidirectionnelle">4. Défi : L'IHM Bidirectionnelle</h2>
-<p>Une bonne IHM permet de voir (Lire les capteurs) et d'agir (Piloter les actionneurs).</p>
-<p>Consigne : Créez un nouveau bouton "<strong>AUTO-CONFORT</strong>". Lorsqu'on clique dessus, le script doit automatiquement régler le curseur de température à 21°C et mettre à jour tout le dashboard.</p>
-<h2 id="5-liste-de-controle-de-fin-de-seance">5. Liste de contrôle de fin de séance</h2>
-<p>☐ Je sais définir ce qu'est un capteur et un actionneur.</p>
-<p>☐ J'ai identifié le flux de données : Capteur → JS → IHM.</p>
-<p>☐ Mon dashboard commande désormais un actionneur virtuel (la ventilation).</p>
+<p><strong>Les Opérateurs de Comparaison</strong></p>
+<ul>
+<li>
+<p><code>&gt; / &lt;</code> : Supérieur / Inférieur</p>
+</li>
+<li>
+<p><code>&gt;= / &lt;=</code> : Supérieur ou égal / Inférieur ou égal</p>
+</li>
+<li>
+<p><code>==</code> : Égal à</p>
+</li>
+<li>
+<p><code>!=</code> : Différent de</p>
+</li>
+</ul>
+<p><strong>Manipuler les classes CSS (<code>classList</code>)</strong></p>
+<p>Au lieu de modifier les styles un par un, il est plus performant d'ajouter ou de retirer une "classe" CSS complète définie dans votre fichier `.css.</p>
+<ul>
+<li>
+<p><code>element.classList.add("nom-classe")</code> : Ajoute un style.</p>
+</li>
+<li>
+<p><code>element.classList.remove("nom-classe")</code> : Retire un style.</p>
+</li>
+</ul>
+<h2 id="2-application-au-mini-projet-dashboard-intelligent">2. Application au Mini-Projet : Dashboard Intelligent</h2>
+<p>Nous allons faire évoluer le Dashboard de la S40 pour qu'il gère des états visuels :</p>
+<ul>
+<li>
+<p>État Chaud : Si la température est ≥26°C.</p>
+</li>
+<li>
+<p>État Froid : Si la température est ≤17°C.</p>
+</li>
+<li>
+<p>État Normal : Entre 18 et 25°C.</p>
+</li>
+</ul>
+<h2 id="3-etapes-a-realiser">3. Étapes à réaliser</h2>
+<p><strong>Étape 1 : Préparer le CSS (S41-style.css)</strong></p>
+<p>Ouvrez votre fichier S41-style.css et ajoutez ce code exactement à la fin du fichier :</p>
+<pre><code class="language-css">/* --- COPIER-COLLER CI-DESSOUS --- */
+
+/* Style activé en cas de forte chaleur (T &gt;= 26) */
+.chaud {
+    background-color: #fdf2f2 !important; 
+    border-left: 10px solid #e74c3c !important;
+    transition: all 0.5s ease;
+}
+
+/* Style activé en cas de froid (T &lt;= 17) */
+.froid {
+    background-color: #f0f7ff !important;
+    border-left: 10px solid #3498db !important;
+    transition: all 0.5s ease;
+}
+
+</code></pre>
+<p><strong>Étape 2 : Préparer le HTML (S41-dashboard.html)</strong></p>
+<p>Pour que le script puisse cibler les éléments, assurez-vous d'avoir ces id :</p>
+<ul>
+<li>
+<p>La section des capteurs doit avoir l'identifiant : <code>&lt;section id="card-temp"&gt;</code>.</p>
+</li>
+<li>
+<p>Dans la liste, ajoutez l'icône : <code>&lt;li&gt;Statut : &lt;span id="icon-status"&gt;✅&lt;/span&gt;&lt;/li&gt;</code>.</p>
+</li>
+</ul>
+<p>Mets à jour ton fichier en ajoutant les id pour que le JavaScript puisse "trouver" les éléments :</p>
+<pre><code class="language-html">&lt;section id=&quot;card-temp&quot;&gt;
+    &lt;h2&gt;Statut des Capteurs&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Statut : &lt;span id=&quot;icon-status&quot;&gt;✅&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;Température : &lt;span id=&quot;valeur-temp&quot;&gt;22&lt;/span&gt;°C&lt;/li&gt;
+        &lt;li&gt;Humidité : 40%&lt;/li&gt;
+        &lt;li&gt;Luminosité : 500 lux&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre>
+<p><strong>Étape 3 : Coder la logique dans S41-script.js</strong></p>
+<p>Remplace ton ancienne fonction par celle-ci :</p>
+<pre><code class="language-javascript">function mettreAJourDashboard() {
+    const curseur = document.getElementById(&quot;consigne&quot;);
+    const affichageTemp = document.getElementById(&quot;valeur-temp&quot;);
+    const zoneCard = document.getElementById(&quot;card-temp&quot;);
+    const icone = document.getElementById(&quot;icon-status&quot;);
+
+    const t = parseFloat(curseur.value);
+    affichageTemp.textContent = t;
+
+    // Logique de seuils
+    zoneCard.classList.remove(&quot;chaud&quot;, &quot;froid&quot;);
+
+    if (t &gt;= 26) {
+        zoneCard.classList.add(&quot;chaud&quot;);
+        icone.textContent = &quot;🔥&quot;;
+    } else if (t &lt;= 17) {
+        zoneCard.classList.add(&quot;froid&quot;);
+        icone.textContent = &quot;❄️&quot;;
+    } else {
+        icone.textContent = &quot;✅&quot;;
+    }
+}
+</code></pre>
+<p><strong>Etape 4: Gestion de la lumière:</strong></p>
+<ul>
+<li>Il faut ajouter l'attribut onclick sur les boutons pour qu'ils appellent une fonction (que nous allons créer juste après).</li>
+</ul>
+<p><em>Dans le fichier <code>html</code></em></p>
+<pre><code class="language-html">&lt;section&gt;
+    &lt;h2&gt;Commandes&lt;/h2&gt;
+    &lt;button type=&quot;button&quot; onclick=&quot;gererLumiere('allumer')&quot;&gt;Allumer&lt;/button&gt;
+    &lt;button type=&quot;button&quot; onclick=&quot;gererLumiere('eteindre')&quot;&gt;Éteindre&lt;/button&gt;
+&lt;/section&gt;
+</code></pre>
+<ul>
+<li>Pour que l'effet "éteint" soit visible, on ajoute une classe qui change la couleur du fond de page (<code>body</code>).</li>
+</ul>
+<p><em>Dans le fichier <code>css</code></em></p>
+<pre><code class="language-css">/* Style pour simuler l'extinction des feux */
+.mode-nuit {
+    background-color: #1a1a1a !important; /* Gris très sombre */
+    transition: background-color 0.5s ease;
+}
+</code></pre>
+<ul>
+<li>Ajout de la fonction lumière</li>
+</ul>
+<p><em>Dans le fichier <code>js</code></em></p>
+<pre><code class="language-javascript">/**
+ * Gère l'allumage et l'extinction visuelle du dashboard
+ * @param {string} action - Reçoit 'allumer' ou 'eteindre'
+ */
+function gererLumiere(action) {
+    const corpsPage = document.body;
+
+    if (action === 'eteindre') {
+        corpsPage.classList.add(&quot;mode-nuit&quot;);
+        console.log(&quot;Lumières éteintes&quot;);
+    } else {
+        corpsPage.classList.remove(&quot;mode-nuit&quot;);
+        console.log(&quot;Lumières allumées&quot;);
+    }
+}
+</code></pre>
+<h2 id="4-liste-de-controle-de-fin-de-seance">4. Liste de contrôle de fin de séance</h2>
+<p>☐ Interaction : Le changement de température déclenche-t-il une modification visuelle immédiate ?</p>
+<p>☐ Nettoyage : Utilisez-vous <code>classList.remove()</code> pour éviter que les couleurs "chaud" et "froid" ne se superposent ?</p>
+<p>☐ Logique : Avez-vous bien utilisé <code>parseFloat()</code> ou <code>Number()</code> pour comparer des nombres et non des textes ?</p>
 <p>☐ Validation : Votre code HTML passe-t-il toujours le validateur W3C ?</p>
-<h2 id="6-synthese-de-la-seance">6. Synthèse de la séance</h2>
-<p>L'IHM est le pont entre l'humain et la machine. Elle permet de visualiser l'état des capteurs et d'envoyer des ordres aux actionneurs. En informatique, tout système connecté (objet connecté, robot, voiture autonome) repose sur cette structure.</p>
+<h2 id="5-synthese-de-la-seance">5. Synthèse de la séance</h2>
+<ul>
+<li>
+<p>La structure <code>if / else if / else</code> permet de gérer plusieurs scénarios possibles.</p>
+</li>
+<li>
+<p>Le JavaScript peut modifier la structure du document (DOM) mais aussi son apparence en pilotant les classes CSS.</p>
+</li>
+<li>
+<p>Une application interactive réussie doit fournir un feedback visuel clair à l'utilisateur (changement de couleur, icône, message d'alerte).</p>
+</li>
+<li>
+<p>Plutôt que de modifier le style ligne par ligne (ex: <code>style.color</code>), il est plus propre d'ajouter ou retirer une classe CSS définie au préalable.</p>
+<ul>
+<li><code>element.classList.add("ma-classe")</code> : Ajoute une classe.</li>
+<li><code>element.classList.remove("ma-classe")</code> : Supprime une classe.</li>
+</ul>
+<hr />
+</li>
+</ul>
 
 
 
