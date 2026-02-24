@@ -1,0 +1,11 @@
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+.md-sidebar--primary {
+  width: 100px;
+}
+
+.md-content {
+  margin-left: 200px;
+}
