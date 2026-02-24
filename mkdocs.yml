@@ -10,8 +10,6 @@ theme:
     - navigation.sections
     - navigation.indexes
     - search.suggest
-extra_css:
-  - stylesheets/extra.css
 
 plugins:
   - search
@@ -25,3 +23,5 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
+extra_css:
+    - stylesheets/extra.css
