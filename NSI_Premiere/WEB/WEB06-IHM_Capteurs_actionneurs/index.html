@@ -25,7 +25,7 @@
     
     
       
-        <title>S42 : IHM : Capteurs, actionneurs et interfaces homme-machine. - Cours de M. Ricart</title>
+        <title>WEB06 : IHM : Capteurs, actionneurs et interfaces homme-machine. - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#s42-ihm-capteurs-actionneurs-et-interfaces-homme-machine" class="md-skip">
+        <a href="#web06-ihm-capteurs-actionneurs-et-interfaces-homme-machine" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              S42 : IHM : Capteurs, actionneurs et interfaces homme-machine.
+              WEB06 : IHM : Capteurs, actionneurs et interfaces homme-machine.
             
           </span>
         </div>
@@ -1501,7 +1501,7 @@
 
 
 
-<h1 id="s42-ihm-capteurs-actionneurs-et-interfaces-homme-machine">S42 : IHM : Capteurs, actionneurs et interfaces homme-machine.</h1>
+<h1 id="web06-ihm-capteurs-actionneurs-et-interfaces-homme-machine">WEB06 : IHM : Capteurs, actionneurs et interfaces homme-machine.</h1>
 <p>🎯Objectifs et Compétences</p>
 <p>Dans cette séance, on s'éloigne un peu du pur code pour comprendre l'architecture d'un système connecté : comment les capteurs (entrées) et les actionneurs (sorties) communiquent avec l'IHM (Interface Homme-Machine).</p>
 <ul>
@@ -1558,11 +1558,11 @@
 </table>
 <h2 id="3-travail-pratique-simuler-un-nouvel-actionneur">3. Travail Pratique : Simuler un nouvel Actionneur</h2>
 <p>Nous allons ajouter un nouveau composant à notre Dashboard : un Actionneur de Ventilation.</p>
-<p><strong>Étape 1 : Modification du HTML (S42-dashboard.html)</strong></p>
+<p><strong>Étape 1 : Modification du HTML (WEB06-dashboard.html)</strong></p>
 <p>Ajoutez une zone pour visualiser l'état de la ventilation dans la section des capteurs.</p>
 <pre><code class="language-html">&lt;li&gt;Ventilation : &lt;span id=&quot;etat-ventilo&quot;&gt;ARRÊT&lt;/span&gt;&lt;/li&gt;
 </code></pre>
-<p><strong>Étape 2 : Modification de la logique (S42-script.js)</strong></p>
+<p><strong>Étape 2 : Modification de la logique (WEB06-script.js)</strong></p>
 <p>L'actionneur doit s'activer automatiquement. Si la température est chaude (≥26°C), on lance la ventilation. Sinon, on l'arrête.</p>
 <pre><code class="language-javascript">// Dans la fonction mettreAJourDashboard(), ajoutez :
 const affichageVentilo = document.getElementById(&quot;etat-ventilo&quot;);
