@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.12)  24 FEB 2026 15:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.12)  24 FEB 2026 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"d:/--- LYCEE ---/ENSEIGNEMENT_G/lvh/docs/NSI_Premiere/WEB/exercices/S38_exercices.tex"
-(d:/--- LYCEE ---/ENSEIGNEMENT_G/lvh/docs/NSI_Premiere/WEB/exercices/S38_exercices.tex
+**"d:/--- LYCEE ---/ENSEIGNEMENT_G/lvh/docs/NSI_Premiere/WEB/exercices/S39_exercices.tex"
+(d:/--- LYCEE ---/ENSEIGNEMENT_G/lvh/docs/NSI_Premiere/WEB/exercices/S39_exercices.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -1203,7 +1203,7 @@ Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
 \c@currfiledepth=\count524
 )
 \pytx@codefile=\write5
-\openout5 = `S38_exercices.pytxcode'.
+\openout5 = `S39_exercices.pytxcode'.
 
 \c@pytx@FancyVerbLineTemp=\count525
 \c@pytx@py@default@default=\count526
@@ -1630,34 +1630,38 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box260
 ) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 44.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 45.
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (S38_exercices.aux)
-\openout1 = `S38_exercices.aux'.
+ (S39_exercices.aux)
+\openout1 = `S39_exercices.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count675
@@ -1681,7 +1685,7 @@ Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 ) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 44.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 45.
 \c@lstlisting=\count681
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
@@ -1730,15 +1734,15 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 44.
-(S38_exercices.out) (S38_exercices.out)
+Package hyperref Info: Link coloring OFF on input line 45.
+(S39_exercices.out) (S39_exercices.out)
 \@outlinefile=\write7
-\openout7 = `S38_exercices.out'.
+\openout7 = `S39_exercices.out'.
 
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
 
-No file pythontex-files-S38_exercices/S38_exercices.pytxmcr.
+No file pythontex-files-S39_exercices/S39_exercices.pytxmcr.
 Run PythonTeX to create it.
 (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1751,18 +1755,18 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
 (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 52.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 54.
 \tf@thm=\write8
-\openout8 = `S38_exercices.thm'.
+\openout8 = `S39_exercices.thm'.
 
 
 
@@ -1770,26 +1774,26 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(S38_exercices.aux)
+(S39_exercices.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `S38_exercices.out' has not changed.
+Package rerunfilecheck Info: File `S39_exercices.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 82697 strings out of 473530
- 1974881 string characters out of 5714794
- 2776354 words of memory out of 5000000
- 104781 multiletter control sequences out of 15000+600000
- 563036 words of font info for 49 fonts, out of 8000000 for 9000
+ 82924 strings out of 473530
+ 1977541 string characters out of 5714794
+ 2917811 words of memory out of 5000000
+ 105013 multiletter control sequences out of 15000+600000
+ 563387 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 147i,11n,149p,2846b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on S38_exercices.pdf (1 page, 66333 bytes).
+ 147i,11n,149p,2846b,1360s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on S39_exercices.pdf (1 page, 81479 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
+ 258 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

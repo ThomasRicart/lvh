@@ -1,12 +1,12 @@
-/* Style spécifique pour le formulaire */
-form div {
+/* Styles spécifiques au formulaire S39 */
+.form-group {
     margin-bottom: 15px;
 }
 
 label {
-    font-weight: bold;
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input[type="text"] {
@@ -14,20 +14,21 @@ input[type="text"] {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Pour que le padding ne dépasse pas */
+    box-sizing: border-box; /* Évite que le champ ne déborde de la carte */
 }
 
 input[type="range"] {
     width: 100%;
-    cursor: pointer;
 }
 
-/* On réutilise le style des boutons pour le bouton submit */
-button[type="submit"] {
-    background-color: #27ae60; /* Vert pour symboliser la validation */
+.btn-submit {
+    background-color: #27ae60; /* Vert pour la validation */
+    color: white;
     width: 100%;
+    margin-top: 10px;
 }
 
-button[type="submit"]:hover {
+.btn-submit:hover {
     background-color: #219150;
+    transform: translateY(-2px);
 }

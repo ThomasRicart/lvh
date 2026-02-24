@@ -1556,7 +1556,7 @@
 </tbody>
 </table>
 <h2 id="1-le-modele-client-serveur">1. Le modèle Client - Serveur</h2>
-<p>Le Web fonctionne sur un dialogue permanent :</p>
+<p>Le Web fonctionne sur un dialogue :</p>
 <ul>
 <li>
 <p>Le <strong>Client</strong> (Navigateur) : Envoie une requête <code>HTTP</code> (ex: "Donne-moi la page accueil.html" ou "Envoie ces données de température").</p>
@@ -1567,7 +1567,7 @@
 </ul>
 <p><img alt="Image alt" src="../images/ClientServeur.png" /></p>
 <h2 id="2-les-formulaires-html-la-balise-form">2. Les Formulaires HTML : La balise <code>&lt;form&gt;</code></h2>
-<p>Pour qu'un utilisateur puisse envoyer des données (identifiant, réglage de consigne), on utilise un formulaire.</p>
+<p>On utilise un formulaire pour collecter des données.</p>
 <ul>
 <li>
 <p>L'attribut <code>action</code> : Définit l'adresse (URL) du programme sur le serveur qui va recevoir les données.</p>
@@ -1623,31 +1623,20 @@
 <p>Les composants de saisie (<code>&lt;input&gt;</code>)</p>
 <p>Chaque champ doit posséder un attribut <code>name</code> (c'est l'étiquette qui permettra au serveur de reconnaître la donnée).</p>
 <h2 id="4-mini-projet-dashboard-domotique-phase-3">4. Mini-projet : Dashboard Domotique (Phase 3)</h2>
-<p><strong>Objectif</strong> : Ajouter une interface de paramétrage à votre dashboard pour modifier la température de consigne et le nom de la pièce.</p>
+<p><strong>Objectif</strong> : Ajouter une interface de paramétrage à votre dashboard du <strong>S38</strong>.</p>
 <p><strong>Etapes à réaliser:</strong></p>
 <ol>
 <li>
-<p>Ouvrez votre fichier <code>index.html</code></p>
+<p>Reprenez vos fichiers <code>S38-dashboard.html</code> et <code>S38-style.css</code>.</p>
 </li>
 <li>
-<p>Ajoutez une nouvelle <code>&lt;section&gt;</code> nommée "Configuration".</p>
+<p>Ajoutez une nouvelle <code>&lt;section class="card"&gt;</code> nommée "Configuration".</p>
 </li>
 <li>
-<p>Créez un formulaire (<code>&lt;form&gt;</code>) utilisant la méthode GET.</p>
+<p>Créez un formulaire utilisant la méthode <strong>GET</strong>.</p>
 </li>
 <li>
-<p>À l'intérieur, ajoutez :</p>
-<ul>
-<li>
-<p>Un champ texte pour renommer la pièce.</p>
-</li>
-<li>
-<p>Un curseur (<code>range</code>) pour régler la température souhaitée (de 15 à 30°C).</p>
-</li>
-<li>
-<p>Un bouton d'envoi (<code>submit</code>).</p>
-</li>
-</ul>
+<p>Ajoutez un champ texte (<code>name="piece"</code>) et un curseur (<code>type="range"</code>, <code>name="temp_consigne"</code>).</p>
 </li>
 </ol>
 <p><strong>Analyse de la transmission</strong></p>
@@ -1661,10 +1650,9 @@
 </li>
 </ol>
 <p>✅ <strong>Liste de contrôle du projet</strong></p>
-<p>☐ <strong>Mon formulaire possède les attributs <code>action</code> et <code>method</code>.</strong></p>
-<p>☐ <strong>Chaque balise <code>&lt;input&gt;</code> a un attribut <code>name</code> unique.</strong></p>
-<p>☐ <strong>Je sais expliquer pourquoi on ne doit pas envoyer un mot de passe en GET.</strong></p>
-<p>☐ <strong>Défi (Optionnel) : Ajouter l'attribut <code>placeholder</code> dans le champ texte pour guider l'utilisateur.</strong></p>
+<p>☐ Chaque <code>&lt;input&gt;</code> possède un attribut <code>name</code> unique.</p>
+<p>☐ Le bouton de validation est de type <code>type="submit"</code>.</p>
+<p>☐ Je peux observer les données dans l'URL après avoir cliqué sur "Appliquer".</p>
 <p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
 <h2 id="4-synthese">4. Synthèse</h2>
 <ul>
