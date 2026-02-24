@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.12)  24 FEB 2026 16:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.12)  24 FEB 2026 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1637,8 +1637,7 @@ Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-
-No file WEB02_exercices.aux.
+ (WEB02_exercices.aux)
 \openout1 = `WEB02_exercices.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -1659,7 +1658,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
-(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count675
 \scratchdimen=\dimen489
@@ -1732,11 +1731,13 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 44.
+(WEB02_exercices.out) (WEB02_exercices.out)
 \@outlinefile=\write7
 \openout7 = `WEB02_exercices.out'.
 
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
+
 No file pythontex-files-WEB02_exercices/WEB02_exercices.pytxmcr.
 Run PythonTeX to create it.
 (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
@@ -1784,30 +1785,24 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `WEB02_exercices.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `WEB02_exercices.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `WEB02_exercices.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 Package lastpage Warning: Rerun to get the references right on input line 139.
 
  ) 
 Here is how much of TeX's memory you used:
- 82689 strings out of 473530
- 1974555 string characters out of 5714794
- 2776251 words of memory out of 5000000
- 104779 multiletter control sequences out of 15000+600000
+ 82697 strings out of 473530
+ 1974937 string characters out of 5714794
+ 2776367 words of memory out of 5000000
+ 104781 multiletter control sequences out of 15000+600000
  563036 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  147i,11n,149p,2848b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on WEB02_exercices.pdf (1 page, 66091 bytes).
+Output written on WEB02_exercices.pdf (1 page, 65787 bytes).
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
+ 216 PDF objects out of 1000 (max. 8388607)
  27 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
