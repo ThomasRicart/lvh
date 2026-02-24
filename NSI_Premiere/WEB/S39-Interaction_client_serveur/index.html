@@ -1491,10 +1491,14 @@
 <p><img alt="Image alt" src="../images/ClientServeur.png" /></p>
 <h2 id="2-les-formulaires-html-la-balise-form">2. Les Formulaires HTML : La balise <code>&lt;form&gt;</code></h2>
 <p>Pour qu'un utilisateur puisse envoyer des données (identifiant, réglage de consigne), on utilise un formulaire.</p>
-<pre><code>* L'attribut `action` : Définit l'adresse (URL) du programme sur le serveur qui va recevoir les données.
-
-* L'attribut `method` : Définit la manière dont les données voyagent (**GET** ou **POST**).
-</code></pre>
+<ul>
+<li>
+<p>L'attribut <code>action</code> : Définit l'adresse (URL) du programme sur le serveur qui va recevoir les données.</p>
+</li>
+<li>
+<p>L'attribut <code>method</code> : Définit la manière dont les données voyagent (<strong>GET</strong> ou <strong>POST</strong>).</p>
+</li>
+</ul>
 <h2 id="3-get-vs-post-quelle-difference">3. GET vs POST : Quelle différence ?</h2>
 <table>
 <thead>
@@ -1571,10 +1575,14 @@
 </ol>
 <p><strong>Analyse de la transmission</strong></p>
 <p>Une fois le formulaire rempli (par exemple : Pièce = "Cuisine" et Température = "19") et clique sur le bouton :</p>
-<pre><code>1. L'URL change : Elle devient `confirmation.html?piece=Cuisine&amp;temp_consigne=19`.
-
-2. Le couple Clé/Valeur : Les noms utilisés dans l'URL (`piece`, `temp_consigne`) correspondent exactement aux attributs `name` définis dans le code HTML.
-</code></pre>
+<ol>
+<li>
+<p>L'URL change : Elle devient <code>confirmation.html?piece=Cuisine&amp;temp_consigne=19</code>.</p>
+</li>
+<li>
+<p>Le couple Clé/Valeur : Les noms utilisés dans l'URL (<code>piece</code>, <code>temp_consigne</code>) correspondent exactement aux attributs <code>name</code> définis dans le code HTML.</p>
+</li>
+</ol>
 <p>✅ <strong>Liste de contrôle du projet</strong></p>
 <p>☐ <strong>Mon formulaire possède les attributs <code>action</code> et <code>method</code>.</strong></p>
 <p>☐ <strong>Chaque balise <code>&lt;input&gt;</code> a un attribut <code>name</code> unique.</strong></p>
