@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz S41 - Logique & Interactivité</title>
+    <title>Quiz WEB05 - Logique & Interactivité</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 min-h-screen py-10 px-4">
     <div class="max-w-3xl mx-auto bg-white shadow-xl rounded-xl p-8 border border-slate-200">
-        <h1 class="text-3xl font-extrabold text-indigo-600 mb-2 text-center">Séance S41 : JavaScript (2)</h1>
+        <h1 class="text-3xl font-extrabold text-indigo-600 mb-2 text-center">Séance WEB05 : JavaScript (2)</h1>
         <p class="text-center text-slate-500 mb-8 italic">Logique conditionnelle et États du système</p>
         
         <div id="quiz-container" class="space-y-8">
@@ -31,7 +31,7 @@
 
         async function loadQuiz() {
             try {
-                const response = await fetch('s41_quiz-data.json');
+                const response = await fetch('WEB05_quiz-data.json');
                 const questions = await response.json();
                 totalQuestions = questions.length;
                 const container = document.getElementById('quiz-container');
