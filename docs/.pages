@@ -1,9 +1,7 @@
 nav:
   - index.md
   - SNT
-  - NSI_PREMIERE
-  - NSI_TERMINALE
+  - NSI_Premiere
   - BTS
-  - Ressources
-  - Docs_divers
-  - ...
+  - Maths_Premiere
+  - Divers
