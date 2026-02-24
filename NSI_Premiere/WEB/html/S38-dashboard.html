@@ -2,40 +2,47 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Correction S38 - Dashboard Domotique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Dashboard Domotique - Salon</title>
     <link rel="stylesheet" href="S38-style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Mon Dashboard Connecté</h1>
-    </header>
+    <h1>Interface de Contrôle : Maison Connectée</h1>
+    <p>Statut global : <strong>Système opérationnel</strong></p>
 
-    <main>
-        <section>
-            <h2>Statut des Capteurs</h2>
-            <ul>
-                <li>Température : 22°C</li>
-                <li>Humidité : 40%</li>
-                <li>Luminosité : 500 lux</li>
-            </ul>
-        </section>
+    <hr> 
+    
+    <section class="card">
+        <h2>État du Salon</h2>
+        <ul>
+            <li><strong>Température :</strong> 21.5 °C</li>
+            <li><strong>Humidité :</strong> 45 %</li>
+            <li><strong>Luminosité :</strong> 350 Lux</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>Commandes</h2>
-            <button type="button">Allumer</button>
-            <button type="button">Éteindre</button>
-        </section>
+    <section class="card">
+        <h2>Actions rapides</h2>
+        
+        <p>Lumière principale :</p>
+        <button type="button" class="btn-on">Allumer</button>
+        <button type="button" class="btn-off">Éteindre</button>
 
-        <section>
-            <h2>Procédure de Maintenance</h2>
-            <ol>
-                <li>Couper l'alimentation.</li>
-                <li>Nettoyer les capteurs.</li>
-                <li>Redémarrer le système.</li>
-            </ol>
-        </section>
-    </main>
+        <p>Volets roulants :</p>
+        <button type="button">Ouvrir</button>
+        <button type="button">Fermer</button>
+    </section>
+
+    <section class="card">
+        <h2>Aperçu de la pièce</h2>
+        <img src="./images/Nonjetable-Amenagement-Salon-Vue-sur-Lac.webp" alt="Vue du salon avec les capteurs installés" width="400">
+        
+        <p>
+            Pour plus d'informations, consultez la 
+            <a href="https://meteofrance.com" target="_blank">météo locale</a>.
+        </p>
+    </section>
 
 </body>
 </html>

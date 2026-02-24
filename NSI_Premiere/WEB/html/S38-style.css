@@ -1,63 +1,58 @@
-/* Style général */
+/* 1. Style Global */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f2f5;
     color: #333;
+    margin: 0;
     padding: 20px;
 }
 
-/* En-tête */
+/* 2. En-tête */
 header h1 {
     text-align: center;
     color: #2c3e50;
-    text-transform: uppercase;
     border-bottom: 3px solid #e67e22;
+    padding-bottom: 10px;
 }
 
-/* Mise en forme des sections (Modèle de boîte) */
-section {
+/* 3. Modèle de Boîte appliqué aux sections */
+.card {
     background: white;
-    margin: 20px auto;
-    padding: 15px;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px auto;    /* Margin : espace extérieur */
+    padding: 20px;         /* Padding : espace intérieur */
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
     color: #e67e22;
-    border-left: 4px solid #2c3e50;
-    padding-left: 10px;
+    margin-top: 0;
 }
 
-/* Style des listes */
-ul { list-style-type: square; }
-ol { font-weight: bold; color: #2c3e50; }
-
-/* Style des boutons (Interaction) */
+/* 4. Boutons et Interactivité */
 button {
-    background-color: #3498db;
-    color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 1em;
-    transition: 0.3s;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Animation fluide */
 }
 
-/* Changement au survol */
-button:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
+.btn-on {
+    background-color: #27ae60;
+    color: white;
 }
 
-/* Bouton spécifique "Éteindre" (sélecteur avancé) */
-button:nth-of-type(2) {
+.btn-off {
     background-color: #e74c3c;
+    color: white;
     margin-left: 10px;
 }
 
-button:nth-of-type(2):hover {
-    background-color: #c0392b;
+/* Effets au survol (Hover) */
+button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px); /* Petit effet de levier */
 }

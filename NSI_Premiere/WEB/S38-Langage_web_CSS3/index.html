@@ -1441,10 +1441,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-syntaxe-et-selecteurs" class="md-nav__link">
+  <a href="#2-le-modele-de-boite-box-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Syntaxe et Sélecteurs
+        2. Le Modèle de Boîte (Box Model) 📦
       
     </span>
   </a>
@@ -1452,10 +1452,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-mini-projet-dashboard-domotique-phase-2" class="md-nav__link">
+  <a href="#3-syntaxe-et-selecteurs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Mini-projet : Dashboard Domotique (Phase 2)
+        3. Syntaxe et Sélecteurs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mini-projet-dashboard-domotique-phase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Mini-projet : Dashboard Domotique (Phase 2)
       
     </span>
   </a>
@@ -1518,15 +1529,10 @@
 </table>
 <h2 id="1-introduction-quel-est-le-role-du-css">1. Introduction : Quel est le rôle du CSS ?</h2>
 <ul>
-<li>
-<p><strong>Notion:</strong> Le CSS (<em>Cascading Style Sheets</em>) est le langage qui définit l'apparence visuelle.</p>
-</li>
-<li>
-<p><strong>Analogie:</strong> Si le HTML est le squelette (la structure) et les briques de la maison, le CSS est la peinture, la décoration et la disposition des meubles.</p>
-</li>
-<li>
-<p><strong>Intégration:</strong>  On lie une feuille de style externe au document HTML via la balise <code>&lt;link&gt;</code> placée dans le <code>&lt;head&gt;</code>.</p>
-</li>
+<li><strong>Notion :</strong> Le CSS (<em>Cascading Style Sheets</em>) définit l'apparence visuelle.</li>
+<li><strong>Analogie :</strong> Si le HTML est le squelette et les briques, le CSS est la peinture, la décoration et la disposition des meubles.</li>
+<li><strong>Liaison :</strong> On lie le CSS au HTML via la balise <code>&lt;link&gt;</code> dans le <code>&lt;head&gt;</code>. 
+  ⚠️ <em>Attention : le nom du fichier dans le code doit être exactement le même que celui enregistré sur votre ordinateur.</em></li>
 </ul>
 <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;fr&quot;&gt;
@@ -1621,8 +1627,25 @@ img {
     margin: 10px 0;
 }
 </code></pre>
-<h2 id="2-syntaxe-et-selecteurs">2. Syntaxe et Sélecteurs</h2>
-<p>Une <strong>règle CSS</strong> se compose d'un <strong>sélecteur</strong> (quelle balise viser ?) et d'un <strong>bloc de déclaration</strong> (quelles modifications appliquer ?).</p>
+<h2 id="2-le-modele-de-boite-box-model">2. Le Modèle de Boîte (Box Model) 📦</h2>
+<p>C'est le concept le plus important du CSS. Chaque élément HTML est considéré comme une boîte.</p>
+<ul>
+<li>
+<p><strong>Content</strong> : Le texte ou l'image.</p>
+</li>
+<li>
+<p><strong>Padding</strong> (Marge intérieure) : L'espace entre le contenu et la bordure (le "rembourrage").</p>
+</li>
+<li>
+<p><strong>Border</strong> (Bordure) : Le contour de l'élément.</p>
+</li>
+<li>
+<p><strong>Margin</strong> (Marge extérieure) : L'espace pour s'éloigner des autres éléments voisins.</p>
+</li>
+</ul>
+<p><strong>Astuce</strong> : Utilisez l'inspecteur du navigateur (F12) pour visualiser ces zones en couleurs !</p>
+<h2 id="3-syntaxe-et-selecteurs">3. Syntaxe et Sélecteurs</h2>
+<p>Une <strong>règle CSS</strong>: <code>selecteur { propriete: valeur; }</code></p>
 <ul>
 <li>
 <p><strong>Sélecteurs de balises</strong> : Ciblent tous les éléments d'un type (ex: <code>h1</code>, <code>p</code>, <code>button</code>).</p>
@@ -1651,135 +1674,112 @@ img {
 <th style="text-align: left;">Thématique</th>
 <th style="text-align: left;">Propriété</th>
 <th style="text-align: left;">Description</th>
-<th style="text-align: left;">Exemple de valeur</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Texte</strong></td>
 <td style="text-align: left;"><code>color</code></td>
-<td style="text-align: left;">Couleur du texte</td>
-<td style="text-align: left;"><code>red</code>, <code>#FF5733</code>, <code>rgb(0,0,0)</code></td>
+<td style="text-align: left;">Couleur (ex: <code>red</code>, <code>#FF5733</code>, <code>rgb(0,0,0)</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>font-family</code></td>
-<td style="text-align: left;">Choix de la police</td>
-<td style="text-align: left;"><code>'Arial'</code>, <code>sans-serif</code></td>
+<td style="text-align: left;">Choix de la police (ex: <code>'Arial'</code>, <code>sans-serif</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>font-size</code></td>
-<td style="text-align: left;">Taille du texte</td>
-<td style="text-align: left;"><code>16px</code>, <code>1.2em</code>, <code>large</code></td>
+<td style="text-align: left;">Taille du texte (ex: <code>16px</code>, <code>1.2em</code>, <code>large</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>text-align</code></td>
-<td style="text-align: left;">Alignement horizontal</td>
-<td style="text-align: left;"><code>left</code>, <code>center</code>, <code>right</code>, <code>justify</code></td>
+<td style="text-align: left;">Alignement horizontal (ex: <code>left</code>, <code>center</code>, <code>right</code>, <code>justify</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>font-weight</code></td>
-<td style="text-align: left;">Épaisseur (gras)</td>
-<td style="text-align: left;"><code>bold</code>, <code>normal</code>, <code>600</code></td>
+<td style="text-align: left;">Épaisseur (gras) (ex: <code>bold</code>, <code>normal</code>, <code>600</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Fond</strong></td>
 <td style="text-align: left;"><code>background-color</code></td>
-<td style="text-align: left;">Couleur de l'arrière-plan</td>
-<td style="text-align: left;"><code>white</code>, <code>transparent</code></td>
+<td style="text-align: left;">Couleur de l'arrière-plan (ex: <code>white</code>, <code>transparent</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>background-image</code></td>
-<td style="text-align: left;">Image d'arrière-plan</td>
-<td style="text-align: left;"><code>url('fond.jpg')</code></td>
+<td style="text-align: left;">Image d'arrière-plan (ex: <code>url('fond.jpg')</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Modèle de Boîte</strong></td>
 <td style="text-align: left;"><code>width</code> / <code>height</code></td>
-<td style="text-align: left;">Largeur et Hauteur</td>
-<td style="text-align: left;"><code>200px</code>, <code>50%</code>, <code>auto</code></td>
+<td style="text-align: left;">Largeur et Hauteur (ex: <code>200px</code>, <code>50%</code>, <code>auto</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>padding</code></td>
-<td style="text-align: left;">Marge <strong>intérieure</strong></td>
-<td style="text-align: left;"><code>10px</code> (entre contenu et bordure)</td>
+<td style="text-align: left;">Marge <strong>intérieure</strong> (ex: <code>10px</code> (entre contenu et bordure) )</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>margin</code></td>
-<td style="text-align: left;">Marge <strong>extérieure</strong></td>
-<td style="text-align: left;"><code>20px</code> (entre l'élément et ses voisins)</td>
+<td style="text-align: left;">Marge <strong>extérieure</strong> (ex: <code>20px</code> (entre l'élément et ses voisins) )</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>border</code></td>
-<td style="text-align: left;">Bordure (taille, style, couleur)</td>
-<td style="text-align: left;"><code>2px solid black</code></td>
+<td style="text-align: left;">Bordure (taille, style, couleur) (ex: <code>2px solid black</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>border-radius</code></td>
 <td style="text-align: left;">Coins arrondis</td>
-<td style="text-align: left;"><code>10px</code>, <code>50%</code> (pour un cercle)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Affichage</strong></td>
 <td style="text-align: left;"><code>display</code></td>
-<td style="text-align: left;">Type d'affichage</td>
-<td style="text-align: left;"><code>block</code>, <code>inline</code>, <code>flex</code>, <code>none</code></td>
+<td style="text-align: left;">Type d'affichage (ex: <code>block</code>, <code>inline</code>, <code>flex</code>, <code>none</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>box-shadow</code></td>
-<td style="text-align: left;">Ombre portée</td>
-<td style="text-align: left;"><code>2px 2px 5px grey</code></td>
+<td style="text-align: left;">Ombre portée (ex: <code>2px 2px 5px grey</code>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>opacity</code></td>
-<td style="text-align: left;">Transparence</td>
-<td style="text-align: left;"><code>0.5</code> (de 0 à 1)</td>
+<td style="text-align: left;">Transparence (ex: <code>0.5</code> (de 0 à 1) )</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Interactivité</strong></td>
+<td style="text-align: left;"><code>:hover</code></td>
+<td style="text-align: left;">Change l'aspect au survol de la souris</td>
 </tr>
 </tbody>
 </table>
-<h2 id="3-mini-projet-dashboard-domotique-phase-2">3. Mini-projet : Dashboard Domotique (Phase 2)</h2>
-<p><strong>Objectif</strong> : Transformer votre fichier brut de la séance S37 en une interface moderne.</p>
-<p><strong>Etapes à réaliser:</strong></p>
-<ol>
-<li>
-<p>Création : Créez un fichier <code>style.css</code> dans le même dossier que votre <code>index.html</code>.</p>
-</li>
-<li>
-<p>Liaison : Ajoutez <code>&lt;link rel="stylesheet" href="style.css"&gt;</code> dans le <code>&lt;head&gt;</code> de votre HTML.</p>
-</li>
-<li>
-<p>Mise en forme :</p>
+<h2 id="4-mini-projet-dashboard-domotique-phase-2">4. Mini-projet : Dashboard Domotique (Phase 2)</h2>
+<p><strong>Objectif</strong> : Transformer votre dashboard brut en interface moderne.</p>
 <ul>
 <li>
-<p>Changez la couleur de fond de la page (<code>body</code>).</p>
+<p>Créez style.css et liez-le dans votre HTML.</p>
 </li>
 <li>
-<p>Modifiez la police et la couleur des titres (<code>h1</code>, <code>h2</code>).</p>
+<p>Appliquez une police sans-serif au body.</p>
 </li>
 <li>
-<p>Donnez une apparence "bouton moderne" à vos balises <code>&lt;button&gt;</code> (couleur vive, bordure arrondie, changement au survol).</p>
+<p>Ajoutez des ombres (box-shadow) et des arrondis (border-radius) à vos sections.</p>
 </li>
 <li>
-<p>Utilisez les <code>margins</code> et <code>paddings</code> pour aérer vos sections de capteurs.</p>
+<p>Défi : Créez une transition fluide sur vos boutons avec transition: 0.3s;.</p>
 </li>
 </ul>
-</li>
-</ol>
+<p><strong>Objectif</strong> : Transformer votre fichier brut de la séance S37 en une interface moderne.</p>
 <p>✅ <strong>Liste de contrôle du projet</strong></p>
 <p>☐ <strong>Le fichier <code>style.css</code> est correctement lié (les changements sont visibles).</strong></p>
-<p>☐ <strong>Les sélecteurs correspondent bien aux balises HTML utilisées..</strong></p>
+<p>☐ <strong>Distinction nette entre <code>margin</code> et <code>padding</code>.</strong></p>
 <p>☐ <strong>L'interface est plus lisible et aérée que la version HTML pure.</strong></p>
-<p>☐ <strong>Défi (Optionnel) : Utiliser la propriété <code>border-radius</code> pour arrondir les coins des boutons et des images..</strong></p>
 <p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
 <h2 id="4-synthese">4. Synthèse</h2>
 <ul>
