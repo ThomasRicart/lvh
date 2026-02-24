@@ -1376,10 +1376,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#a-declarer-des-variables" class="md-nav__link">
+  <a href="#declarer-des-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
-        A. Déclarer des variables
+        Déclarer des variables
       
     </span>
   </a>
@@ -1387,10 +1387,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#b-les-fonctions" class="md-nav__link">
+  <a href="#les-fonctions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        B. Les Fonctions
+        Les Fonctions
       
     </span>
   </a>
@@ -1446,6 +1446,28 @@
     <span class="md-ellipsis">
       
         4. Les Événements : Réagir à l'utilisateur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-mini-projet-dashboard-domotique-phase-4-interactivite-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Mini-projet : Dashboard Domotique (Phase 4) — Interactivité JS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-synthese-de-la-seance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Synthèse de la séance
       
     </span>
   </a>
@@ -1512,7 +1534,7 @@
 <pre><code class="language-html">&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <h2 id="2-syntaxe-de-base-variables-et-fonctions">2. Syntaxe de base : Variables et Fonctions</h2>
-<h3 id="a-declarer-des-variables">A. Déclarer des variables</h3>
+<h3 id="declarer-des-variables">Déclarer des variables</h3>
 <p>On utilise deux mots-clés principaux pour stocker des données :</p>
 <ul>
 <li>
@@ -1528,7 +1550,7 @@ const piece = &quot;Salon&quot;; // Type chaîne de caractères (String)
 temperature = 20; // Autorisé
 // piece = &quot;Cuisine&quot;; // ERREUR : on ne peut pas modifier une constante
 </code></pre>
-<h3 id="b-les-fonctions">B. Les Fonctions</h3>
+<h3 id="les-fonctions">Les Fonctions</h3>
 <p>Une fonction est un bloc de code qui ne s'exécute que lorsqu'on l'appelle.</p>
 <pre><code class="language-javascript">function direBonjour() {
     console.log(&quot;Le système domotique est prêt.&quot;);
@@ -1560,14 +1582,10 @@ afficheur.style.color = &quot;red&quot;;  // Change la couleur en CSS
     texteStatut.style.color = &quot;orange&quot;;
 }
 </code></pre>
-<ol>
-<li>Mini-projet : Dashboard Domotique (Phase 4) — Interactivité JS</li>
-</ol>
+<h2 id="5-mini-projet-dashboard-domotique-phase-4-interactivite-js">5. Mini-projet : Dashboard Domotique (Phase 4) — Interactivité JS</h2>
 <p><strong>Objectif:</strong></p>
 <p>Dans la phase précédente, vous avez créé un formulaire envoyant des données vers une page de confirmation. Aujourd'hui, nous allons utiliser JavaScript pour mettre à jour les indicateurs du Dashboard en temps réel.</p>
-<ol>
-<li>Préparation de l'interface (HTML)</li>
-</ol>
+<p><strong>Préparation de l'interface (HTML)</strong></p>
 <p>Dans votre fichier <code>index.html</code>, assurez-vous que vos éléments importants possèdent des identifiants (<code>id</code>) pour être ciblés par le script.</p>
 <pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
     &lt;h3&gt;Température actuelle&lt;/h3&gt;
@@ -1582,10 +1600,8 @@ afficheur.style.color = &quot;red&quot;;  // Change la couleur en CSS
 
 &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
 </code></pre>
-<ol>
-<li>Programmation de l'interactivité (JS)</li>
-</ol>
-<p>Créez un fichier <code>script.js</code> et ajoutez le code suivant. Ce script utilise des variables (<code>let</code>, <code>const</code>) et accède au <code>DOM</code> pour modifier le contenu.</p>
+<p><strong>Programmation de l'interactivité (JS)</strong>
+Créez un fichier <code>script.js</code> et ajoutez le code suivant. Ce script utilise des variables (<code>let</code>, <code>const</code>) et accède au <code>DOM</code> pour modifier le contenu.</p>
 <pre><code class="language-javascript">// Fonction pour mettre à jour l'affichage
 function mettreAJourDashboard() {
     // 1. Sélection des éléments
@@ -1617,24 +1633,24 @@ function mettreAJourDashboard() {
 <li>
 <p>Gestion de l'événement : Ajoutez l'attribut <code>onclick</code> sur votre bouton pour déclencher la fonction.</p>
 </li>
+<li>
+<p>'Défi (Optionnel): Modifiez votre fonction pour qu'elle change aussi le titre de la pièce (ex: "Salon", "Cuisine") en utilisant un champ <code>&lt;input type="text"&gt;</code> et la propriété <code>textContent</code>.</p>
+</li>
 </ol>
-<p>'4. 'Défi (Optionnel): Modifiez votre fonction pour qu'elle change aussi le titre de la pièce (ex: "Salon", "Cuisine") en utilisant un champ <code>&lt;input type="text"&gt;</code> et la propriété <code>textContent</code>.</p>
 <p>Liste de contrôle de fin de séance</p>
 <p>☐ <strong>Mon fichier JS est lié et ne contient pas d'erreurs dans la console (F12)</strong>.</p>
 <p>☐ <strong>Le clic sur le bouton modifie instantanément le texte de la page</strong>.</p>
 <p>☐ <strong>J'ai bien utilisé const pour les éléments qui ne changent pas de référence</strong>.</p>
 <p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
-<ol>
-<li>
-<p>Synthèse de la séance</p>
-</li>
+<h2 id="6-synthese-de-la-seance">6. Synthèse de la séance</h2>
+<ul>
 <li>
 <p><code>let</code> et <code>const</code> servent à mémoriser des informations.</p>
 </li>
 <li>
 <p><code>document.getElementById()</code> est la porte d'entrée pour modifier le HTML.</p>
 </li>
-</ol>
+</ul>
 <p>Le DOM est la structure que JavaScript manipule.</p>
 <h2 id="lattribut-onclick-permet-de-declencher-une-fonction-lors-dune-interaction">L'attribut <code>onclick</code> permet de déclencher une fonction lors d'une interaction.</h2>
 <hr />
