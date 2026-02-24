@@ -2,38 +2,50 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Dashboard Domotique - S40</title>
+    <title>Mon Dashboard Connecté - S40</title>
     <link rel="stylesheet" href="S40-style.css">
 </head>
 <body>
 
-    <div class="dashboard-container">
-        <header>
-            <h1>Dashboard Domotique</h1>
-            <p>Contrôle en temps réel - Séance S40</p>
-        </header>
+    <header>
+        <h1>Mon Dashboard Connecté</h1>
+    </header>
 
-        <section class="display-section">
-            <div class="card">
-                <h3>Température du Salon</h3>
-                <p class="temp-display"><span id="affichage-temp">19</span>°C</p>
-                <p id="statut-message">Système prêt</p>
-            </div>
+    <main>
+        <section>
+            <h2>Statut des Capteurs</h2>
+            <ul>
+                <li>Température : <span id="valeur-temp">22</span>°C</li>
+                <li>Humidité : 40%</li>
+                <li>Luminosité : 500 lux</li>
+            </ul>
         </section>
 
-        <section class="control-section">
-            <h2>Réglages de la pièce</h2>
-            <div class="form-group">
-                <label for="curseur-temp">Consigne de température :</label>
-                <input type="range" id="curseur-temp" min="15" max="30" value="19">
-            </div>
-
-            <button onclick="mettreAJourDashboard()" class="btn-update">
-                Appliquer la consigne
-            </button>
+        <section>
+            <h2>Commandes</h2>
+            <button type="button">Allumer</button>
+            <button type="button">Éteindre</button>
         </section>
-    </div>
+
+        <section id="configuration">
+            <h2>Configuration de la pièce</h2>
+            <p>Utilisez ce formulaire pour modifier les paramètres de l'interface.</p>
+
+            <form id="form-config">
+                <div>
+                    <label for="nom_piece">Nom de la pièce :</label><br>
+                    <input type="text" id="nom_piece" name="piece" placeholder="ex: Salon de lecture">
+                </div>
+                <br>
+                <div>
+                    <label for="consigne">Température de consigne (15-30°C) :</label><br>
+                    <input type="range" id="consigne" name="temp_consigne" min="15" max="30" step="0.5">
+                </div>
+                <br>
+                <button type="button" onclick="mettreAJourDashboard()">Appliquer les changements</button>
+            </form>
+        </section>
+    </main>
 
     <script src="S40-script.js"></script>
 </body>

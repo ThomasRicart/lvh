@@ -1,27 +1,35 @@
 /**
- * Fonction déclenchée au clic sur le bouton
- * Elle modifie le contenu et le style du DOM
+ * Fonction de mise à jour du Dashboard
+ * Cette fonction lit les inputs et modifie le DOM
  */
 function mettreAJourDashboard() {
-    // 1. Sélection des éléments par leur ID
-    const curseur = document.getElementById("curseur-temp");
-    const affichage = document.getElementById("affichage-temp");
-    const message = document.getElementById("statut-message");
+    // 1. Sélection des éléments sources (le formulaire)
+    const inputPiece = document.getElementById("nom_piece");
+    const curseurTemp = document.getElementById("consigne");
 
-    // 2. Récupération de la valeur du curseur
-    let nouvelleValeur = curseur.value;
+    // 2. Sélection de l'élément à modifier (le statut des capteurs)
+    const affichageTemp = document.getElementById("valeur-temp");
+    const titreHeader = document.querySelector("h1");
 
-    // 3. Mise à jour du contenu textuel de la page
-    affichage.textContent = nouvelleValeur;
-    message.textContent = "Mise à jour effectuée à " + new Date().toLocaleTimeString();
+    // 3. Récupération des valeurs
+    let nouvellePiece = inputPiece.value;
+    let nouvelleTemp = curseurTemp.value;
 
-    // 4. Changement dynamique du style selon la valeur
-    if (nouvelleValeur >= 25) {
-        affichage.style.color = "#e67e22"; // Couleur chaude
+    // 4. Application des modifications au DOM
+    if (nouvellePiece !== "") {
+        titreHeader.textContent = "Dashboard : " + nouvellePiece;
+    }
+    
+    affichageTemp.textContent = nouvelleTemp;
+
+    // 5. Modification du style selon la température (Bonus S40)
+    if (nouvelleTemp > 25) {
+        affichageTemp.style.color = "red";
+        affichageTemp.style.fontWeight = "bold";
     } else {
-        affichage.style.color = "#2980b9"; // Couleur froide
+        affichageTemp.style.color = "black";
+        affichageTemp.style.fontWeight = "normal";
     }
 
-    // Debugging dans la console
-    console.log("Nouvelle température appliquée : " + nouvelleValeur + "°C");
+    console.log("Mise à jour effectuée : " + nouvellePiece + " à " + nouvelleTemp + "°C");
 }
