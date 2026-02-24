@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz S39 - Interaction Client-Serveur</title>
+    <title>Quiz WEB03 - Interaction Client-Serveur</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 min-h-screen py-10 px-4">
     <div class="max-w-3xl mx-auto bg-white shadow-xl rounded-xl p-8 border border-slate-200">
-        <h1 class="text-3xl font-extrabold text-amber-600 mb-2 text-center">Séance S39 : Client-Serveur</h1>
+        <h1 class="text-3xl font-extrabold text-amber-600 mb-2 text-center">Séance WEB03 : Client-Serveur</h1>
         <p class="text-center text-slate-500 mb-8 italic">Testez vos connaissances sur les formulaires et les requêtes HTTP</p>
         
         <div id="quiz-container" class="space-y-8">
@@ -33,7 +33,7 @@
 
         async function initQuiz() {
             try {
-                const response = await fetch('s39_quiz-data.json');
+                const response = await fetch('WEB03_quiz-data.json');
                 const questions = await response.json();
                 totalQuestions = questions.length;
                 const container = document.getElementById('quiz-container');
