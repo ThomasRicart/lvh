@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Dashboard Domotique - S40</title>
+    <link rel="stylesheet" href="S40-style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header>
+            <h1>Dashboard Domotique</h1>
+            <p>Contrôle en temps réel - Séance S40</p>
+        </header>
+
+        <section class="display-section">
+            <div class="card">
+                <h3>Température du Salon</h3>
+                <p class="temp-display"><span id="affichage-temp">19</span>°C</p>
+                <p id="statut-message">Système prêt</p>
+            </div>
+        </section>
+
+        <section class="control-section">
+            <h2>Réglages de la pièce</h2>
+            <div class="form-group">
+                <label for="curseur-temp">Consigne de température :</label>
+                <input type="range" id="curseur-temp" min="15" max="30" value="19">
+            </div>
+
+            <button onclick="mettreAJourDashboard()" class="btn-update">
+                Appliquer la consigne
+            </button>
+        </section>
+    </div>
+
+    <script src="S40-script.js"></script>
+</body>
+</html>
