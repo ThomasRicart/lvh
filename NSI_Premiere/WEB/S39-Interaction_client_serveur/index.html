@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/S37-Langage_web_HTML5_prof/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/S39-Interaction_client_serveur/">
       
       
-        <link rel="prev" href="../S37-Langage_web_HTML5/">
+        <link rel="prev" href="../S38-Langage_web_CSS3/">
       
       
-        <link rel="next" href="../S38-Langage_web_CSS3/">
+        <link rel="next" href="../../../NSI_Terminale/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>S37 Langage web HTML5 prof - Cours de M. Ricart</title>
+        <title>S39 — Interaction Client-Serveur : Requêtes HTTP (GET/POST) et Formulaires - Cours de M. Ricart</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#s39-interaction-client-serveur-requetes-http-getpost-et-formulaires" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -99,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              S37 Langage web HTML5 prof
+              S39 — Interaction Client-Serveur : Requêtes HTTP (GET/POST) et Formulaires
             
           </span>
         </div>
@@ -1327,6 +1332,110 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#capacites-attendues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capacités attendues
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-le-modele-client-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Le modèle Client - Serveur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-les-formulaires-html-la-balise-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Les Formulaires HTML : La balise &lt;form&gt;
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-get-vs-post-quelle-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. GET vs POST : Quelle différence ?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. GET vs POST : Quelle différence ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#la-methode-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La méthode GET
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-methode-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La méthode POST
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-mini-projet-dashboard-domotique-phase-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Mini-projet : Dashboard Domotique (Phase 3)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-synthese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Synthèse
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1343,9 +1452,148 @@
 
 
 
-  <h1>S37 Langage web HTML5 prof</h1>
+<h1 id="s39-interaction-client-serveur-requetes-http-getpost-et-formulaires">S39 — Interaction Client-Serveur : Requêtes HTTP (GET/POST) et Formulaires</h1>
+<p>🎯Objectifs et Compétences</p>
+<p>L'objectif est de comprendre comment les données saisies par un utilisateur sont transmises à un serveur pour être traitées.</p>
+<h3 id="capacites-attendues">Capacités attendues</h3>
+<table>
+<thead>
+<tr>
+<th>Capacités visées</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identifier</td>
+<td>Comprendre le cycle requête/réponse entre le navigateur et le serveur.</td>
+</tr>
+<tr>
+<td>Construire</td>
+<td>Créer un formulaire HTML pour collecter des données  utilisateur.</td>
+</tr>
+<tr>
+<td>Distinguer</td>
+<td>Choisir entre la méthode GET et la méthode POST selon le contexte.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-le-modele-client-serveur">1. Le modèle Client - Serveur</h2>
+<p>Le Web fonctionne sur un dialogue permanent :</p>
+<ul>
+<li>
+<p>Le <strong>Client</strong> (Navigateur) : Envoie une requête <code>HTTP</code> (ex: "Donne-moi la page accueil.html" ou "Envoie ces données de température").</p>
+</li>
+<li>
+<p>Le <strong>Serveur</strong> : Traite la demande et renvoie une réponse (la page Web ou une confirmation).</p>
+</li>
+</ul>
+<p><img alt="Image alt" src="../images/ClientServeur.png" /></p>
+<h2 id="2-les-formulaires-html-la-balise-form">2. Les Formulaires HTML : La balise <code>&lt;form&gt;</code></h2>
+<p>Pour qu'un utilisateur puisse envoyer des données (identifiant, réglage de consigne), on utilise un formulaire.</p>
+<pre><code>* L'attribut `action` : Définit l'adresse (URL) du programme sur le serveur qui va recevoir les données.
 
+* L'attribut `method` : Définit la manière dont les données voyagent (**GET** ou **POST**).
+</code></pre>
+<h2 id="3-get-vs-post-quelle-difference">3. GET vs POST : Quelle différence ?</h2>
+<table>
+<thead>
+<tr>
+<th>Méthode</th>
+<th>Fonctionnement</th>
+<th>Visibilité</th>
+<th>Utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GET</strong></td>
+<td>Les données sont ajoutées à l'URL.</td>
+<td>Visible dans la barre d'adresse.</td>
+<td>Recherches, consultation (ex: Google).</td>
+</tr>
+<tr>
+<td><strong>POST</strong></td>
+<td>Les données sont cachées dans le corps de la requête.</td>
+<td>Invisible dans l'URL.</td>
+<td>Mots de passe, formulaires lourds, envois sensibles.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="la-methode-get">La méthode <strong>GET</strong></h3>
+<p>Elle est utilisée pour demander des données.</p>
+<pre><code class="language-html">&lt;form action=&quot;traitement.php&quot; method=&quot;GET&quot;&gt;
+    &lt;label&gt;Recherche de capteur :&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;id_capteur&quot;&gt;
+    &lt;button type=&quot;submit&quot;&gt;Rechercher&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Si tu tapes "Salon" dans le champ, après avoir cliqué sur le bouton, l'URL dans ton navigateur deviendra :
+<code>http://mon-serveur.fr/traitement.php?id_capteur=Salon</code></p>
+<h3 id="la-methode-post">La méthode <strong>POST</strong></h3>
+<p>Elle est utilisée pour envoyer ou modifier des données sensibles ou volumineuses. Les informations sont "cachées" dans le corps de la requête <strong>HTTP</strong> et n'apparaissent pas dans l'URL.</p>
+<pre><code class="language-html">&lt;form action=&quot;config.php&quot; method=&quot;POST&quot;&gt;
+    &lt;label&gt;Nouveau mot de passe du Hub :&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;code_admin&quot;&gt;
+    &lt;button type=&quot;submit&quot;&gt;Mettre à jour&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<p>L'URL reste simplement <code>http://mon-serveur.fr/config.php</code>. Le mot de passe est envoyé de manière invisible pour l'utilisateur, ce qui est beaucoup plus sécurisé.</p>
+<p>Les composants de saisie (<code>&lt;input&gt;</code>)</p>
+<p>Chaque champ doit posséder un attribut <code>name</code> (c'est l'étiquette qui permettra au serveur de reconnaître la donnée).</p>
+<h2 id="4-mini-projet-dashboard-domotique-phase-3">4. Mini-projet : Dashboard Domotique (Phase 3)</h2>
+<p><strong>Objectif</strong> : Ajouter une interface de paramétrage à votre dashboard pour modifier la température de consigne et le nom de la pièce.</p>
+<p><strong>Etapes à réaliser:</strong></p>
+<ol>
+<li>
+<p>Ouvrez votre fichier <code>index.html</code></p>
+</li>
+<li>
+<p>Ajoutez une nouvelle <code>&lt;section&gt;</code> nommée "Configuration".</p>
+</li>
+<li>
+<p>Créez un formulaire (<code>&lt;form&gt;</code>) utilisant la méthode GET.</p>
+</li>
+<li>
+<p>À l'intérieur, ajoutez :</p>
+<ul>
+<li>
+<p>Un champ texte pour renommer la pièce.</p>
+</li>
+<li>
+<p>Un curseur (<code>range</code>) pour régler la température souhaitée (de 15 à 30°C).</p>
+</li>
+<li>
+<p>Un bouton d'envoi (<code>submit</code>).</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>Analyse de la transmission</strong></p>
+<p>Une fois le formulaire rempli (par exemple : Pièce = "Cuisine" et Température = "19") et clique sur le bouton :</p>
+<pre><code>1. L'URL change : Elle devient `confirmation.html?piece=Cuisine&amp;temp_consigne=19`.
 
+2. Le couple Clé/Valeur : Les noms utilisés dans l'URL (`piece`, `temp_consigne`) correspondent exactement aux attributs `name` définis dans le code HTML.
+</code></pre>
+<p>✅ <strong>Liste de contrôle du projet</strong></p>
+<p>☐ <strong>Mon formulaire possède les attributs <code>action</code> et <code>method</code>.</strong></p>
+<p>☐ <strong>Chaque balise <code>&lt;input&gt;</code> a un attribut <code>name</code> unique.</strong></p>
+<p>☐ <strong>Je sais expliquer pourquoi on ne doit pas envoyer un mot de passe en GET.</strong></p>
+<p>☐ <strong>Défi (Optionnel) : Ajouter l'attribut <code>placeholder</code> dans le champ texte pour guider l'utilisateur.</strong></p>
+<p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
+<h2 id="4-synthese">4. Synthèse</h2>
+<ul>
+<li>
+<p>Le client fait une <strong>requête</strong>, le serveur envoie une <strong>réponse</strong>.</p>
+</li>
+<li>
+<p>Les formulaires collectent les données via des <code>input</code>.</p>
+</li>
+<li>
+<p><strong>GET</strong> est public (URL), <strong>POST</strong> est privé (Corps de la requête).</p>
+</li>
+</ul>
+<hr />
 
 
 
