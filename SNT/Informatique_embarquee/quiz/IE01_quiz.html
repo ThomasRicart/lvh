@@ -31,7 +31,7 @@
         async function loadQuiz() {
             try {
                 // On charge le fichier JSON spécifique à la S01
-                const response = await fetch('S01_quiz-data.json');
+                const response = await fetch('IE01_quiz-data.json');
                 const data = await response.json();
                 totalQuestions = data.length;
                 const container = document.getElementById('quiz-container');
