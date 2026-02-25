@@ -20,3 +20,10 @@
   max-width: none;
   margin-left: 0; /* On remet à 0 car .md-grid gère déjà les marges */
 }
+
+/* Empêche les icônes de prendre toute la largeur et de sauter à la ligne */
+table img {
+    display: inline-block !important;
+    vertical-align: middle;
+    margin: 2px !important;
+}
