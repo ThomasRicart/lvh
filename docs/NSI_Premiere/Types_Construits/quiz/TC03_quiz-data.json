@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Quelle est la syntaxe correcte pour créer un dictionnaire vide en Python ?",
+    "options": ["mon_dico = []", "mon_dico = {}", "mon_dico = ( )", "mon_dico = dict[ ]"],
+    "answer": 1,
+    "feedback": "Les accolades {} définissent un dictionnaire vide."
+  },
+  {
+    "question": "Dans un dictionnaire, comment appelle-t-on l'élément utilisé pour indexer une valeur ?",
+    "options": ["L'indice", "La clé", "Le pointeur", "L'attribut"],
+    "answer": 1,
+    "feedback": "Un dictionnaire fonctionne par paires clé:valeur."
+  },
+  {
+    "question": "Soit d = {'nom': 'Alice', 'note': 19}. Quelle commande permet d'accéder à la note ?",
+    "options": ["d[1]", "d['note']", "d.get(1)", "d{note}"],
+    "answer": 1,
+    "feedback": "On accède à une valeur en plaçant sa clé entre crochets."
+  },
+  {
+    "question": "Quelle méthode permet d'obtenir uniquement toutes les valeurs d'un dictionnaire ?",
+    "options": [".keys()", ".items()", ".values()", ".all()"],
+    "answer": 2,
+    "feedback": "La méthode .values() extrait les données stockées sans leurs clés."
+  },
+  {
+    "question": "Que se passe-t-il si on exécute d['age'] = 16 alors que la clé n'existe pas ?",
+    "options": ["Erreur KeyError", "La paire 'age': 16 est ajoutée", "Le dictionnaire est réinitialisé", "Rien ne se passe"],
+    "answer": 1,
+    "feedback": "Si la clé est absente, Python crée automatiquement le nouveau couple."
+  },
+  {
+    "question": "Quelle instruction vérifie si la clé 'ville' est présente dans le dictionnaire d ?",
+    "options": ["if 'ville' in d:", "if d.has('ville'):", "if 'ville' == d:", "if d['ville'] != None:"],
+    "answer": 0,
+    "feedback": "L'opérateur 'in' teste la présence d'une clé dans un dictionnaire."
+  },
+  {
+    "question": "Lors d'un parcours avec 'for k, v in d.items():', que représente v ?",
+    "options": ["La clé", "La valeur", "L'indice", "Le dictionnaire"],
+    "answer": 1,
+    "feedback": ".items() renvoie des couples (clé, valeur)."
+  },
+  {
+    "question": "Quelle fonction donne le nombre de couples dans un dictionnaire ?",
+    "options": ["d.count()", "len(d)", "d.size()", "length(d)"],
+    "answer": 1,
+    "feedback": "La fonction len() renvoie la taille de tout type construit."
+  },
+  {
+    "question": "Dans l'algorithme de fréquences, à quoi sert 'if lettre in frequences:' ?",
+    "options": ["Trier les lettres", "Vérifier s'il faut incrémenter ou créer le compteur", "Effacer les doublons", "Changer le type"],
+    "answer": 1,
+    "feedback": "Cela permet d'initialiser la clé à 1 ou de faire +1 si elle existe déjà."
+  },
+  {
+    "question": "Quel est le type de : [{'nom': 'PC1'}, {'nom': 'PC2'}] ?",
+    "options": ["Dictionnaire", "Liste de dictionnaires", "Dictionnaire de listes", "Tuple"],
+    "answer": 1,
+    "feedback": "C'est une liste (crochets) contenant des dictionnaires (accolades)."
+  }
+]

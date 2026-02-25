@@ -1,9 +1,6 @@
-# Présentation de la spécialité NSI
-
-Voici le programme interactif :
+# NSI Premiere
 
 <iframe src="./presentation.html" width="100%" height="600px" frameborder="0"></iframe>
-
 
 ## Le programme officiel
 

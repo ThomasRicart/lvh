@@ -1,14 +1,26 @@
 # WEB
 
 
-| Séance | Programme | Séance | Synthèse | Quiz|Correction|
-|---------|------|-------------| ---------- | ----- |---|
-| S37 | Langage du Web HTML5 |  [Séance](./S37-Langage_web_HTML5.md) | [Synthèse](./S37-Synthese.html) | [Quiz](./quiz/s37_quiz.html)|[Correction](./html/S37-dashboard.html)|
-| S38 | Langage du Web CSS3 |  [Séance](./S38-Langage_web_CSS3.md) | [Synthèse](./S38-Synthese.html) | [Quiz](./quiz/s38_quiz.html) |[Correction](./html/S38-dashboard.html)|
-| S39 | Interaction Client-Serveur |  [Séance](./S39-Interaction_client_serveur.md) | [Synthèse](./S39-Synthese.html) | [Quiz](./quiz/s39_quiz.html) |[Correction](./html/S39-dashboard.html)|
-| S40 | JavaScript (1) : Syntaxe de base et modification du DOM. |  [Séance](./S40-Java_Script_1_Syntaxe.md) | [Synthèse](./S40-Synthese.html) | [Quiz](./quiz/s40_quiz.html) |[Correction](./html/S40-dashboard.html) |
-| S41 | JavaScript (2) : Conditions et Interactivité. |  [Séance](./S41-Java_Script_2_conditions_interactivite.md) | [Synthèse](./S41-Synthese.html) | [Quiz](./quiz/s41_quiz.html) |[Correction](./html/S41-dashboard.html) |
-| S42 | IHM : Capteurs, actionneurs et interfaces homme-machine. |  [Séance](./S42-IHM_Capteurs_actionneurs.md) | [Synthèse](./S42-Synthese.html) | [Quiz](./quiz/s42_quiz.html) |[Correction](./html/S42-dashboard.html) |
+| Séance | Programme | Séance |Correction| Synthèse | Quiz|Exercices| Correction Exercices |
+|---------|------|-------------| ---------- | ----- |---|---|---|
+| WEB01 | Langage du Web HTML5 |  [📚](./WEB01-Langage_web_HTML5.md) |[✅](./html/WEB01-dashboard.html)| [📃](./WEB01-Synthese.html) | [🎯](./quiz/WEB01_quiz.html)| [✏️](./exercices/WEB01_exercices.pdf)|[✅](./exercices/WEB01_exercice_correction.html)|
+| WEB02 | Langage du Web CSS3 |  [📚](./WEB02-Langage_web_CSS3.md) |[✅](./html/WEB02-dashboard.html)| [📃](./WEB02-Synthese.html) | [🎯](./quiz/WEB02_quiz.html) |[✏️](./exercices/WEB02_exercices.pdf)|[✅](./exercices/WEB02_exercice_correction.html)|
+| WEB03 | Interaction Client-Serveur |  [📚](./WEB03-Interaction_client_serveur.md) |[✅](./html/WEB03-dashboard.html)| [📃](./WEB03-Synthese.html) | [🎯](./quiz/WEB03_quiz.html) |[✏️](./exercices/WEB03_exercices.pdf)|[✅](./exercices/WEB03_exercice_correction.html)|
+| WEB04 | JavaScript (1) : Syntaxe de base. |  [📚](./WEB04-Java_Script_1_Syntaxe.md) | [✅](./html/WEB04-dashboard.html) |[📃](./WEB04-Synthese.html) | [🎯](./quiz/WEB04_quiz.html) |[✏️](./exercices/WEB04_exercices.pdf)|[✅](./exercices/WEB04_exercice_correction.html)|
+| WEB05 | JavaScript (2) : Conditions et Interactivité. |  [📚](./WEB05-Java_Script_2_conditions_interactivite.md) |[✅](./html/WEB05-dashboard.html) | [📃](./WEB05-Synthese.html) | [🎯](./quiz/WEB05_quiz.html) |[✏️](./exercices/WEB05_exercices.pdf)|[✅](./exercices/WEB05_exercice_correction.html)|
+| WEB06 | IHM : Capteurs, actionneurs. |  [📚](./WEB06-IHM_Capteurs_actionneurs.md) |[✅](./html/WEB06-dashboard.html) | [📃](./WEB06-Synthese.html) | [🎯](./quiz/WEB06_quiz.html) |[✏️](./exercices/WEB06_exercices.pdf)|[✅](./exercices/WEB06_exercice_correction.html)|
 
 
+### 📋 Tableau de Suivi des Compétences : Interaction Homme-Machine & Web
 
+| Contenus | Capacités attendues | Activités de référence (Fiches WEB) |
+| :--- | :--- | :--- |
+| **Modalités de l’interaction H/M** | Identifier les différents composants graphiques permettant d’interagir avec une application Web. | **WEB01** : Analyse des balises `<button>`, `<a>`, `<input>`. Exploration de l'inspecteur d'éléments (F12). |
+| **Événements** | Identifier les événements que les fonctions associées aux différents composants graphiques sont capables de traiter. | **WEB04** : Utilisation de l'attribut `onclick` pour déclencher une fonction JavaScript. |
+| **Comportement vs Description** | Distinguer ce qui relève de la description des composants (HTML) de leur comportement (programmé en JavaScript). | **WEB01 & WEB04** : Séparation des fichiers `.html` et `.js`. Comprendre que JS apporte le comportement dynamique. |
+| **Interaction utilisateur** | Analyser et modifier les méthodes exécutées lors d’un clic sur un bouton d’une page Web. | **WEB04 & WEB05** : Création et modification de fonctions (`direBonjour()`, `gererLumiere()`) modifiant le DOM. |
+| **Interaction client-serveur** | Distinguer ce qui est exécuté sur le client ou sur le serveur et dans quel ordre. | **WEB03** : Schéma du cycle requête/réponse. Distinction entre le navigateur (Client) et le fichier de réception (Serveur). |
+| **Requêtes HTTP** | Distinguer ce qui est mémorisé dans le client et retransmis au serveur. Reconnaître quand et pourquoi la transmission est chiffrée. | **WEB03** : Analyse du passage de paramètres via HTTP et discussion sur la confidentialité des données. |
+| **Formulaires Web** | Analyser le fonctionnement d’un formulaire simple. Distinguer les transmissions de paramètres par les requêtes **POST** ou **GET**. | **WEB03** : Création de la section "Configuration" avec `<form>`, `action` et `method`. Comparaison des méthodes GET/POST. |
+| **Interface Homme-Machine (IHM)** | Identifier le rôle des capteurs et actionneurs. | **WEB06** : Modélisation de la boucle de contrôle. Le curseur simule le capteur, le texte/couleur simule l'actionneur (ventilation). |
+| **Réalisation d'IHM** | Réaliser par programmation une IHM répondant à un cahier des charges donné. | **WEB01 à WEB06** : Projet fil rouge du **Dashboard Domotique** évolutif intégrant HTML, CSS et JavaScript. |
