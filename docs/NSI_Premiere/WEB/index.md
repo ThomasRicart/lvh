@@ -3,14 +3,16 @@
 
 | Séance | Programme | Séance |Correction| Synthèse | Quiz|Exercices| Correction Exercices |
 |---------|------|-------------| ---------- | ----- |---|---|---|
-| WEB01 | Langage du Web HTML5 |  [📚](./WEB01-Langage_web_HTML5.md) |[✅](./html/WEB01-dashboard.html)| [📃](./WEB01-Synthese.html) | [🎯](./quiz/WEB01_quiz.html)| [✏️](./exercices/WEB01_exercices.pdf)|[✅](./exercices/WEB01_exercice_correction.html)|
-| WEB02 | Langage du Web CSS3 |  [📚](./WEB02-Langage_web_CSS3.md) |[✅](./html/WEB02-dashboard.html)| [📃](./WEB02-Synthese.html) | [🎯](./quiz/WEB02_quiz.html) |[✏️](./exercices/WEB02_exercices.pdf)|[✅](./exercices/WEB02_exercice_correction.html)|
-| WEB03 | Interaction Client-Serveur |  [📚](./WEB03-Interaction_client_serveur.md) |[✅](./html/WEB03-dashboard.html)| [📃](./WEB03-Synthese.html) | [🎯](./quiz/WEB03_quiz.html) |[✏️](./exercices/WEB03_exercices.pdf)|[✅](./exercices/WEB03_exercice_correction.html)|
-| WEB04 | JavaScript (1) : Syntaxe de base. |  [📚](./WEB04-Java_Script_1_Syntaxe.md) | [✅](./html/WEB04-dashboard.html) |[📃](./WEB04-Synthese.html) | [🎯](./quiz/WEB04_quiz.html) |[✏️](./exercices/WEB04_exercices.pdf)|[✅](./exercices/WEB04_exercice_correction.html)|
-| WEB05 | JavaScript (2) : Conditions et Interactivité. |  [📚](./WEB05-Java_Script_2_conditions_interactivite.md) |[✅](./html/WEB05-dashboard.html) | [📃](./WEB05-Synthese.html) | [🎯](./quiz/WEB05_quiz.html) |[✏️](./exercices/WEB05_exercices.pdf)|[✅](./exercices/WEB05_exercice_correction.html)|
-| WEB06 | IHM : Capteurs, actionneurs. |  [📚](./WEB06-IHM_Capteurs_actionneurs.md) |[✅](./html/WEB06-dashboard.html) | [📃](./WEB06-Synthese.html) | [🎯](./quiz/WEB06_quiz.html) |[✏️](./exercices/WEB06_exercices.pdf)|[✅](./exercices/WEB06_exercice_correction.html)|
+| WEB01 | Langage du Web HTML5 |  [📚](./WEB01-Langage_web_HTML5.md) |[✅](./html/WEB01-dashboard.html)| [📃](./WEB01-Synthese.html) | [🎯](./quiz/WEB01_quiz.html)| [![PDF](./icones/icons8-pdf-30.png)](./exercices/WEB01_exercices.pdf)|[✅](./exercices/WEB01_exercice_correction.html)|
+| WEB02 | Langage du Web CSS3 |  [📚](./WEB02-Langage_web_CSS3.md) |[✅](./html/WEB02-dashboard.html)| [📃](./WEB02-Synthese.html) | [🎯](./quiz/WEB02_quiz.html) |[![PDF](./icones/icons8-pdf-30.png)](./exercices/WEB02_exercices.pdf)|[✅](./exercices/WEB02_exercice_correction.html)|
+| WEB03 | Interaction Client-Serveur |  [📚](./WEB03-Interaction_client_serveur.md) |[✅](./html/WEB03-dashboard.html)| [📃](./WEB03-Synthese.html) | [🎯](./quiz/WEB03_quiz.html) |[![PDF](./icones/icons8-pdf-30.png)](./exercices/WEB03_exercices.pdf)|[✅](./exercices/WEB03_exercice_correction.html)|
+| WEB04 | JavaScript (1) : Syntaxe de base. |  [📚](./WEB04-Java_Script_1_Syntaxe.md) | [✅](./html/WEB04-dashboard.html) |[📃](./WEB04-Synthese.html) | [🎯](./quiz/WEB04_quiz.html) |[![PDF](./icones/icons8-pdf-30.png)](./exercices/WEB04_exercices.pdf)|[✅](./exercices/WEB04_exercice_correction.html)|
+| WEB05 | JavaScript (2) : Conditions et Interactivité. |  [📚](./WEB05-Java_Script_2_conditions_interactivite.md) |[✅](./html/WEB05-dashboard.html) | [📃](./WEB05-Synthese.html) | [🎯](./quiz/WEB05_quiz.html) |[![PDF](./icones/icons8-pdf-30.png)](./exercices/WEB05_exercices.pdf)|[✅](./exercices/WEB05_exercice_correction.html)|
+| WEB06 | IHM : Capteurs, actionneurs. |  [📚](./WEB06-IHM_Capteurs_actionneurs.md) |[✅](./html/WEB06-dashboard.html) | [📃](./WEB06-Synthese.html) | [🎯](./quiz/WEB06_quiz.html) |[![PDF](./icones/icons8-pdf-30.png)](./exercices/WEB06_exercices.pdf)|[✅](./exercices/WEB06_exercice_correction.html)|
 
+✅
 
+![](./icones/icons8-pdf-30.png)
 ### 📋 Tableau de Suivi des Compétences : Interaction Homme-Machine & Web
 
 | Contenus | Capacités attendues | Activités de référence (Fiches WEB) |
