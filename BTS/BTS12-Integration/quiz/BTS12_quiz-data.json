@@ -36,7 +36,7 @@
     "feedback": "Une primitive de $x^2$ est $x^3/3$. On a donc $[1^3/3] - [0^3/3] = 1/3$."
   },
   {
-    "question": "Que vaut $\\int_{1}^{e} \\frac{1}{x} dx$ ?",
+    "question": "Que vaut $\\int_{1}^{e} \\dfrac{1}{x} dx$ ?",
     "options": ["$e$", "$1$", "$\\ln(e)$", "$0$"],
     "answer": 1,
     "feedback": "La primitive de $1/x$ est $\\ln(x)$. $\\ln(e) - \\ln(1) = 1 - 0 = 1$."
@@ -55,7 +55,7 @@
   },
   {
     "question": "Quelle est la valeur moyenne $\\mu$ de $f$ sur $[a;b]$ ?",
-    "options": ["$\\int_{a}^{b} f(t) dt$", "$\\frac{1}{b-a} \\int_{a}^{b} f(t) dt$", "$\\frac{f(a)+f(b)}{2}$", "$b-a$"],
+    "options": ["$\\int_{a}^{b} f(t) dt$", "$\\dfrac{1}{b-a} \\int_{a}^{b} f(t) dt$", "$\\dfrac{f(a)+f(b)}{2}$", "$b-a$"],
     "answer": 1,
     "feedback": "La valeur moyenne est l'intégrale divisée par la largeur de l'intervalle[cite: 33]."
   },
