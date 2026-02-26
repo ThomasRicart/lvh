@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards NSI - Dictionnaires</title>
+    <title>Flashcards Maths - Premiere</title>
     <style>
         :root { --primary: #2563eb; --bg: #f1f5f9; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
@@ -13,32 +13,32 @@
         .flashcard.flipped { transform: rotateY(180deg); }
 
         .front, .back {
-    position: absolute; 
-    width: 100%; 
-    height: 100%; 
-    backface-visibility: hidden;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-    padding: 30px; /* Augmenté pour la lisibilité */
-    border-radius: 15px; 
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1); 
-    box-sizing: border-box;
+			position: absolute; 
+			width: 100%; 
+			height: 100%; 
+			backface-visibility: hidden;
+			display: flex; 
+			align-items: center; 
+			justify-content: center; 
+			text-align: center;
+			padding: 30px; /* Augmenté pour la lisibilité */
+			border-radius: 15px; 
+			box-shadow: 0 8px 15px rgba(0,0,0,0.1); 
+			box-sizing: border-box;
     
-    /* --- CORRECTION : On autorise le flux de texte normal --- */
-    display: block;           /* On repasse en block pour le texte en ligne */
-    line-height: 400px;       /* Pour centrer verticalement avec la hauteur de la carte */
-    overflow-wrap: break-word; 
-    white-space: normal;     
-}
+			/* --- CORRECTION : On autorise le flux de texte normal --- */
+			display: block;           /* On repasse en block pour le texte en ligne */
+			line-height: 400px;       /* Pour centrer verticalement avec la hauteur de la carte */
+			overflow-wrap: break-word; 
+			white-space: normal;     
+		}
 
-/* Pour que le texte à l'intérieur soit bien centré verticalement malgré le mode block */
-.front span, .back span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1.4; /* Taille de ligne normale pour le texte */
-}
+		/* Pour que le texte à l'intérieur soit bien centré verticalement malgré le mode block */
+		.front span, .back span {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 1.4; /* Taille de ligne normale pour le texte */
+		}
 
         .front { background: white; color: #1e293b; font-size: 1.2rem; font-weight: bold; border: 2px solid var(--primary); }
         .back { background: var(--primary); color: white; transform: rotateY(180deg); font-size: 1.1rem; }
@@ -57,24 +57,24 @@
 			displayMath: [['$$', '$$'], ['\\[', '\\]']]
 			}
 		};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
-<body>
+	</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body>
 
-    <div id="progress" style="margin-bottom: 15px; color: #64748b;">Chargement...</div>
+		<div id="progress" style="margin-bottom: 15px; color: #64748b;">Chargement...</div>
 
-    <div class="flashcard-container" onclick="flipCard()">
-        <div class="flashcard" id="card">
-            <div class="front" id="recto">Question</div>
-            <div class="back" id="verso">Réponse</div>
-        </div>
-    </div>
+		<div class="flashcard-container" onclick="flipCard()">
+			<div class="flashcard" id="card">
+				<div class="front" id="recto">Question</div>
+				<div class="back" id="verso">Réponse</div>
+			</div>
+		</div>
 
-    <div class="controls">
-        <button onclick="prevCard(event)">Précédent</button>
-        <button onclick="nextCard(event)">Suivant</button>
-    </div>
+		<div class="controls">
+			<button onclick="prevCard(event)">Précédent</button>
+			<button onclick="nextCard(event)">Suivant</button>
+		</div>
 
     <script>
         let questions = [];
@@ -108,22 +108,22 @@
         }
 
         function updateCard() {
-    if (questions.length === 0) return;
-    
-    const card = document.getElementById('card');
-    card.classList.remove('flipped');
-    
-    setTimeout(() => {
-        // On entoure de <span> pour le centrage vertical défini dans le CSS
-        document.getElementById('recto').innerHTML = `<span>${questions[currentIndex].recto}</span>`;
-        document.getElementById('verso').innerHTML = `<span>${questions[currentIndex].verso}</span>`;
-        document.getElementById('progress').innerText = `Carte ${currentIndex + 1} / ${questions.length}`;
-        
-        if (window.MathJax && MathJax.typesetPromise) {
-            MathJax.typesetPromise();
-        }
-    }, 150);
-}
+			if (questions.length === 0) return;
+			
+			const card = document.getElementById('card');
+			card.classList.remove('flipped');
+			
+			setTimeout(() => {
+				// On entoure de <span> pour le centrage vertical défini dans le CSS
+				document.getElementById('recto').innerHTML = `<span>${questions[currentIndex].recto}</span>`;
+				document.getElementById('verso').innerHTML = `<span>${questions[currentIndex].verso}</span>`;
+				document.getElementById('progress').innerText = `Carte ${currentIndex + 1} / ${questions.length}`;
+				
+				if (window.MathJax && MathJax.typesetPromise) {
+					MathJax.typesetPromise();
+				}
+			}, 150);
+		}
 
         function nextCard(e) {
             e.stopPropagation();
