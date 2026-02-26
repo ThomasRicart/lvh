@@ -1,7 +1,16 @@
 # Informatique Embarquée
 
+
+
 ## Fichiers de la séquence
 
+| Séance | Programme | Fichier | Notebook local | Quiz |
+|--------|-----------|----------|----------------| ---- |
+| S01 | Présentation |  | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/thomasricart/lvh/main?filepath=docs/SNT/Informatique_embarquee/IE01_presentation_informatique_embarquee.ipynb) | [![HTML](../../icones/icons8-html-30.png)](./quiz/IE01_quiz.html)|
+| S02 | Activité IHM Micro:Bit Tinkercad | | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/thomasricart/lvh/main?filepath=docs/SNT/Informatique_embarquee/IE02_IHM_microbit_tinkercad.ipynb) |[![HTML](../../icones/icons8-html-30.png)](./quiz/IE02_quiz.html)|
+| S03 | Projet IHM | | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/thomasricart/lvh/main?filepath=docs/SNT/Informatique_embarquee/IE03_projet_IHM_autonomie.ipynb.ipynb)|[![HTML](../../icones/icons8-html-30.png)](./quiz/IE03_quiz.html)|
+| Synthèse | | [![HTML](../../icones/icons8-html-30.png)](./IE_synthese_informatique_embarquee.html)[![PDF](../../icones/icons8-pdf-30.png)](./IE_synthese_informatique_embarquee.pdf) | |
+| S04 | Evaluation |[![PDF](../../icones/icons8-pdf-30.png)]() | ||
 
 | Fichier | Type | Remarque |
 |---------|------|-------------|
