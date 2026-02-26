@@ -60,15 +60,23 @@
         }
 
         function updateCard() {
-            const card = document.getElementById('card');
-            card.classList.remove('flipped'); // Reset face avant
-            
-            setTimeout(() => {
-                document.getElementById('recto').innerHTML = questions[currentIndex].recto;
-                document.getElementById('verso').innerHTML = questions[currentIndex].verso;
-                document.getElementById('progress').innerText = `Carte ${currentIndex + 1} / ${questions.length}`;
-            }, 150); // Petit délai pour changer le texte pendant que la carte est de profil
-        }
+			const card = document.getElementById('card');
+			card.classList.remove('flipped'); // Reset face avant
+    
+			setTimeout(() => {
+				document.getElementById('recto').innerHTML = questions[currentIndex].recto;
+				document.getElementById('verso').innerHTML = questions[currentIndex].verso;
+				document.getElementById('progress').innerText = `Carte ${currentIndex + 1} / ${questions.length}`;
+
+				// --- LIGNE À AJOUTER CI-DESSOUS ---
+				// Demande à MathJax de retraiter les nouvelles formules insérées
+				if (window.MathJax && MathJax.typesetPromise) {
+					MathJax.typesetPromise();
+				}
+				// ----------------------------------
+
+			}, 150); 
+		}
 
         function nextCard(e) {
             e.stopPropagation();
