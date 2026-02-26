@@ -49,7 +49,7 @@
         let currentIndex = 0;
 
         async function loadQuestions() {
-            const response = await fetch('questions.json');
+            const response = await fetch('exo01_questions.json');
             questions = await response.json();
             updateCard();
         }
