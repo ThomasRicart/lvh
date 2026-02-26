@@ -25,7 +25,7 @@
     
     
       
-        <title>Correction : BTS10 – Les Nombres Complexes - Cours de M. Ricart</title>
+        <title>📝 Corrigé : BTS11 – Les Primitives - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#correction-bts10-les-nombres-complexes" class="md-skip">
+        <a href="#corrige-bts11-les-primitives" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Correction : BTS10 – Les Nombres Complexes
+              📝 Corrigé : BTS11 – Les Primitives
             
           </span>
         </div>
@@ -1492,10 +1492,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exercice-1-comprehension-et-forme-algebrique" class="md-nav__link">
+  <a href="#exercice-1-calculs-de-primitives-usuelles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercice 1 : Compréhension et Forme Algébrique
+        Exercice 1 : Calculs de Primitives Usuelles
       
     </span>
   </a>
@@ -1503,10 +1503,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-2-operations-et-puissances-de-i" class="md-nav__link">
+  <a href="#exercice-2-primitive-particuliere-et-exponentielle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercice 2 : Opérations et Puissances de \(i\)
+        Exercice 2 : Primitive particulière et Exponentielle
       
     </span>
   </a>
@@ -1514,10 +1514,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-3-resolution-dequations" class="md-nav__link">
+  <a href="#exercice-3-condition-initiale-logarithme" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercice 3 : Résolution d'Équations
+        Exercice 3 : Condition Initiale (Logarithme)
       
     </span>
   </a>
@@ -1525,10 +1525,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-4-formes-trigonometrique-et-exponentielle" class="md-nav__link">
+  <a href="#exercice-4-application-aux-sciences-physiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercice 4 : Formes Trigonométrique et Exponentielle
+        Exercice 4 : Application aux Sciences Physiques
       
     </span>
   </a>
@@ -1552,85 +1552,120 @@
 
 
 
-<h1 id="correction-bts10-les-nombres-complexes">Correction : BTS10 – Les Nombres Complexes</h1>
-<h2 id="exercice-1-comprehension-et-forme-algebrique">Exercice 1 : Compréhension et Forme Algébrique</h2>
-<p>Soit <span class="arithmatex">\(z = 3 - 4i\)</span>.</p>
+<h1 id="corrige-bts11-les-primitives">📝 Corrigé : BTS11 – Les Primitives</h1>
+<hr />
+<h2 id="exercice-1-calculs-de-primitives-usuelles">Exercice 1 : Calculs de Primitives Usuelles</h2>
+<p><em>Rappel : La primitive de <span class="arithmatex">\(x^n\)</span> est <span class="arithmatex">\(\frac{x^{n+1}}{n+1}\)</span> et celle de <span class="arithmatex">\(e^{ax}\)</span> est <span class="arithmatex">\(\frac{1}{a}e^{ax}\)</span>.</em></p>
 <ol>
-<li><strong>Terminologie</strong> : <ul>
-<li>La partie réelle est <span class="arithmatex">\(\text{Re}(z) = 3\)</span>.</li>
-<li>La partie imaginaire est <span class="arithmatex">\(\text{Im}(z) = -4\)</span> (attention, le <span class="arithmatex">\(i\)</span> ne fait pas partie de la valeur de la partie imaginaire).</li>
+<li>
+<p><strong><span class="arithmatex">\(f(x) = 4x^3 - 6x^2 + 2\)</span></strong></p>
+<ul>
+<li>Terme <span class="arithmatex">\(4x^3\)</span> : <span class="arithmatex">\(4 \times \frac{x^4}{4} = x^4\)</span></li>
+<li>Terme <span class="arithmatex">\(6x^2\)</span> : <span class="arithmatex">\(6 \times \frac{x^3}{3} = 2x^3\)</span></li>
+<li>Terme <span class="arithmatex">\(2\)</span> : <span class="arithmatex">\(2x\)</span></li>
+<li><strong><span class="arithmatex">\(F(x) = x^4 - 2x^3 + 2x + k\)</span></strong></li>
 </ul>
 </li>
-<li><strong>Conjugué</strong> : <ul>
-<li>Le conjugué est <span class="arithmatex">\(\overline{z} = 3 + 4i\)</span>[cite: 304].</li>
+<li>
+<p><strong><span class="arithmatex">\(g(x) = 5e^x\)</span></strong></p>
+<ul>
+<li>La primitive de <span class="arithmatex">\(e^x\)</span> reste <span class="arithmatex">\(e^x\)</span>.</li>
+<li><strong><span class="arithmatex">\(G(x) = 5e^x + k\)</span></strong></li>
 </ul>
 </li>
-<li><strong>Module</strong> : <ul>
-<li><span class="arithmatex">\(|z| = \sqrt{3^2 + (-4)^2} = \sqrt{9 + 16} = \sqrt{25} = 5\)</span>.</li>
+<li>
+<p><strong><span class="arithmatex">\(h(x) = 3\cos(x) + 2\sin(x)\)</span></strong></p>
+<ul>
+<li>Primitive de <span class="arithmatex">\(\cos(x)\)</span> est <span class="arithmatex">\(\sin(x)\)</span>.</li>
+<li>Primitive de <span class="arithmatex">\(\sin(x)\)</span> est <span class="arithmatex">\(-\cos(x)\)</span>.</li>
+<li><strong><span class="arithmatex">\(H(x) = 3\sin(x) - 2\cos(x) + k\)</span></strong></li>
 </ul>
 </li>
-<li><strong>Opposé</strong> : <ul>
-<li>L'affixe du point <span class="arithmatex">\(P\)</span> symétrique par rapport à l'origine est <span class="arithmatex">\(-z = -3 + 4i\)</span>.</li>
+<li>
+<p><strong><span class="arithmatex">\(k(x) = e^{-2x}\)</span></strong></p>
+<ul>
+<li>On utilise la forme <span class="arithmatex">\(e^{ax}\)</span> avec <span class="arithmatex">\(a = -2\)</span>.</li>
+<li><strong><span class="arithmatex">\(K(x) = -\frac{1}{2}e^{-2x} + k\)</span></strong></li>
 </ul>
 </li>
 </ol>
 <hr />
-<h2 id="exercice-2-operations-et-puissances-de-i">Exercice 2 : Opérations et Puissances de <span class="arithmatex">\(i\)</span></h2>
+<h2 id="exercice-2-primitive-particuliere-et-exponentielle">Exercice 2 : Primitive particulière et Exponentielle</h2>
+<p><em>Objectif : Déterminer la valeur exacte de la constante <span class="arithmatex">\(k\)</span> à partir d'une condition initiale.</em></p>
 <ol>
-<li><strong>Puissances de <span class="arithmatex">\(i\)</span></strong> :<ul>
-<li><span class="arithmatex">\(i^2 = -1\)</span>.</li>
-<li><span class="arithmatex">\(i^3 = i^2 \times i = -1 \times i = -i\)</span>.</li>
+<li>
+<p><strong>Forme générale des primitives de <span class="arithmatex">\(f(t) = 12e^{-4t}\)</span> :</strong></p>
+<ul>
+<li>On applique la formule <span class="arithmatex">\(\frac{1}{a}e^{at}\)</span> avec <span class="arithmatex">\(a = -4\)</span>.</li>
+<li><span class="arithmatex">\(F(t) = 12 \times \left( \frac{1}{-4} e^{-4t} \right) + k\)</span></li>
+<li><strong><span class="arithmatex">\(F(t) = -3e^{-4t} + k\)</span></strong></li>
 </ul>
 </li>
-<li><strong>Identité remarquable</strong> :<ul>
-<li><span class="arithmatex">\((1+i)^2 = 1^2 + 2i + i^2 = 1 + 2i - 1 = 2i\)</span>.</li>
+<li>
+<p><strong>Détermination de <span class="arithmatex">\(k\)</span> avec la condition <span class="arithmatex">\(F_0(0) = 10\)</span> :</strong></p>
+<ul>
+<li><span class="arithmatex">\(F_0(0) = -3e^{-4 \times 0} + k = 10\)</span></li>
+<li><span class="arithmatex">\(-3e^{0} + k = 10\)</span>  <em>(Rappel : <span class="arithmatex">\(e^0 = 1\)</span>)</em></li>
+<li><span class="arithmatex">\(-3 + k = 10\)</span></li>
+<li><span class="arithmatex">\(k = 10 + 3 = 13\)</span></li>
 </ul>
 </li>
-<li><strong>Quotient</strong> :<ul>
-<li>Pour <span class="arithmatex">\(z = \dfrac{3-i}{4-3i}\)</span>, on multiplie par le conjugué du dénominateur, soit <strong><span class="arithmatex">\(4+3i\)</span></strong>.</li>
-<li><em>Calcul détaillé :</em> <span class="arithmatex">\(z = \dfrac{(3-i)(4+3i)}{(4-3i)(4+3i)} = \dfrac{12 + 9i - 4i - 3i^2}{16 + 9} = \dfrac{15 + 5i}{25} = \dfrac{3}{5} + \dfrac{1}{5}i\)</span>.</li>
+<li>
+<p><strong>Expression complète :</strong></p>
+<ul>
+<li><strong><span class="arithmatex">\(F_0(t) = -3e^{-4t} + 13\)</span></strong></li>
 </ul>
 </li>
 </ol>
 <hr />
-<h2 id="exercice-3-resolution-dequations">Exercice 3 : Résolution d'Équations</h2>
-<p>Soit <span class="arithmatex">\(4z^2 - 4z + 5 = 0\)</span>.</p>
+<h2 id="exercice-3-condition-initiale-logarithme">Exercice 3 : Condition Initiale (Logarithme)</h2>
+<p><em>Rappel : La primitive de <span class="arithmatex">\(\frac{1}{x}\)</span> est <span class="arithmatex">\(\ln(x)\)</span> sur <span class="arithmatex">\(]0 ; +\infty[\)</span>.</em></p>
 <ol>
-<li><strong>Discriminant</strong> : <ul>
-<li><span class="arithmatex">\(\Delta = (-4)^2 - 4(4)(5) = 16 - 80 = -64\)</span>.</li>
+<li>
+<p><strong>Forme générale de <span class="arithmatex">\(g(x) = \frac{1}{x} + 1\)</span> :</strong></p>
+<ul>
+<li><strong><span class="arithmatex">\(G(x) = \ln(x) + x + k\)</span></strong></li>
 </ul>
 </li>
-<li><strong>Nature des solutions</strong> : <ul>
-<li>Comme <span class="arithmatex">\(\Delta &lt; 0\)</span>, il existe deux solutions complexes conjuguées.</li>
+<li>
+<p><strong>Détermination de <span class="arithmatex">\(G_0\)</span> telle que <span class="arithmatex">\(G_0(1) = 5\)</span> :</strong></p>
+<ul>
+<li><span class="arithmatex">\(G_0(1) = \ln(1) + 1 + k = 5\)</span></li>
+<li><span class="arithmatex">\(0 + 1 + k = 5\)</span>  <em>(Rappel : <span class="arithmatex">\(\ln(1) = 0\)</span>)</em></li>
+<li><span class="arithmatex">\(k = 4\)</span></li>
+<li><strong><span class="arithmatex">\(G_0(x) = \ln(x) + x + 4\)</span></strong></li>
 </ul>
 </li>
-<li><strong>Valeurs des solutions</strong> : <ul>
-<li><span class="arithmatex">\(z_1 = \dfrac{-(-4) - i\sqrt{64}}{2(4)} = \dfrac{4 - 8i}{8} = \dfrac{1}{2} - i\)</span>.</li>
-<li><span class="arithmatex">\(z_2 = \overline{z_1} = \dfrac{1}{2} + i\)</span>.</li>
+<li>
+<p><strong>Valeur exacte de <span class="arithmatex">\(G_0(e)\)</span> :</strong></p>
+<ul>
+<li><span class="arithmatex">\(G_0(e) = \ln(e) + e + 4\)</span></li>
+<li><span class="arithmatex">\(G_0(e) = 1 + e + 4\)</span>  <em>(Rappel : <span class="arithmatex">\(\ln(e) = 1\)</span>)</em></li>
+<li><strong><span class="arithmatex">\(G_0(e) = e + 5\)</span></strong></li>
 </ul>
 </li>
 </ol>
 <hr />
-<h2 id="exercice-4-formes-trigonometrique-et-exponentielle">Exercice 4 : Formes Trigonométrique et Exponentielle</h2>
-<p>Soit <span class="arithmatex">\(z_A = -2 + 2i\)</span>.</p>
+<h2 id="exercice-4-application-aux-sciences-physiques">Exercice 4 : Application aux Sciences Physiques</h2>
+<p><em>Contexte : <span class="arithmatex">\(u(t)\)</span> est la primitive de <span class="arithmatex">\(\frac{i(t)}{C}\)</span>.</em></p>
 <ol>
-<li><strong>Module</strong> : <ul>
-<li><span class="arithmatex">\(r = \sqrt{(-2)^2 + 2^2} = \sqrt{8} = 2\sqrt{2}\)</span>.</li>
+<li>
+<p><strong>Expression de la tension <span class="arithmatex">\(u(t)\)</span> :</strong></p>
+<ul>
+<li>On calcule d'abord le coefficient : <span class="arithmatex">\(\frac{1}{C} = \frac{1}{500 \times 10^{-6}} = 2000\)</span>.</li>
+<li>On doit intégrer : <span class="arithmatex">\(\frac{i(t)}{C} = 2000 \times 0,05 \sin(100\pi t) = 100 \sin(100\pi t)\)</span>.</li>
+<li>La primitive de <span class="arithmatex">\(\sin(at)\)</span> est <span class="arithmatex">\(-\frac{1}{a}\cos(at)\)</span>.</li>
+<li><span class="arithmatex">\(u(t) = 100 \times \left( -\frac{1}{100\pi} \cos(100\pi t) \right) + k\)</span></li>
+<li><strong><span class="arithmatex">\(u(t) = -\frac{1}{\pi} \cos(100\pi t) + k\)</span></strong></li>
 </ul>
 </li>
-<li><strong>Argument</strong> : <ul>
-<li><span class="arithmatex">\(\cos \theta = \dfrac{-2}{2\sqrt{2}} = -\dfrac{\sqrt{2}}{2}\)</span> et <span class="arithmatex">\(\sin \theta = \dfrac{2}{2\sqrt{2}} = \dfrac{\sqrt{2}}{2}\)</span>.</li>
-<li>L'angle correspondant est <span class="arithmatex">\(\theta = \dfrac{3\pi}{4}\)</span> rad.</li>
-</ul>
-</li>
-<li><strong>Forme exponentielle</strong> : <ul>
-<li><span class="arithmatex">\(z_A = 2\sqrt{2} e^{i\frac{3\pi}{4}}\)</span>.</li>
-</ul>
-</li>
-<li><strong>Application Électronique</strong> (<span class="arithmatex">\(Z = 10 + 10i\)</span>) :<ul>
-<li><span class="arithmatex">\(|Z| = \sqrt{10^2 + 10^2} = 10\sqrt{2}\)</span>.</li>
-<li><span class="arithmatex">\(\text{arg}(Z) = \dfrac{\pi}{4}\)</span> (car <span class="arithmatex">\(\cos \theta\)</span> et <span class="arithmatex">\(\sin \theta\)</span> sont positifs et égaux).</li>
-<li><span class="arithmatex">\(Z = 10\sqrt{2} e^{i\frac{\pi}{4}}\)</span>.</li>
+<li>
+<p><strong>Calcul de la constante avec <span class="arithmatex">\(u(0) = 0\)</span> :</strong></p>
+<ul>
+<li><span class="arithmatex">\(u(0) = -\frac{1}{\pi} \cos(0) + k = 0\)</span></li>
+<li><span class="arithmatex">\(-\frac{1}{\pi} \times 1 + k = 0\)</span></li>
+<li><span class="arithmatex">\(k = \frac{1}{\pi}\)</span></li>
+<li><strong>Expression finale : <span class="arithmatex">\(u(t) = -\frac{1}{\pi} \cos(100\pi t) + \frac{1}{\pi}\)</span> ou <span class="arithmatex">\(u(t) = \frac{1}{\pi} \left( 1 - \cos(100\pi t) \right)\)</span></strong></li>
 </ul>
 </li>
 </ol>
