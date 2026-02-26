@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/BTS/BTS11-Primitives/exercices/BTS11_correction/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/BTS/BTS12-Integration/exercices/BTS12_correction/">
       
       
-        <link rel="prev" href="../../../BTS10-Nombres_Complexes/tp/BTS10-complexes_TP3/">
+        <link rel="prev" href="../../../BTS11-Primitives/exercices/BTS11_correction/">
       
       
-        <link rel="next" href="../../../BTS12-Integration/exercices/BTS12_correction/">
+        <link rel="next" href="../../tp/BTS10-complexes_TP1/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>📝 Corrigé : BTS11 – Les Primitives - Cours de M. Ricart</title>
+        <title>📝 Corrigé : BTS12 – Intégration - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#corrige-bts11-les-primitives" class="md-skip">
+        <a href="#corrige-bts12-integration" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              📝 Corrigé : BTS11 – Les Primitives
+              📝 Corrigé : BTS12 – Intégration
             
           </span>
         </div>
@@ -1492,10 +1492,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#exercice-1-calculs-de-primitives-usuelles" class="md-nav__link">
+  <a href="#exercice-1-calculs-dintegrales-basiques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercice 1 : Calculs de Primitives Usuelles
+        Exercice 1 : Calculs d'intégrales basiques
       
     </span>
   </a>
@@ -1503,10 +1503,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-2-primitive-particuliere-et-exponentielle" class="md-nav__link">
+  <a href="#exercice-2-valeur-moyenne-et-exponentielle-composee" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercice 2 : Primitive particulière et Exponentielle
+        Exercice 2 : Valeur moyenne et exponentielle composée
       
     </span>
   </a>
@@ -1514,10 +1514,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-3-condition-initiale-logarithme" class="md-nav__link">
+  <a href="#exercice-3-application-au-signal-valeur-efficace" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercice 3 : Condition Initiale (Logarithme)
+        Exercice 3 : Application au signal (Valeur efficace)
       
     </span>
   </a>
@@ -1525,10 +1525,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exercice-4-application-aux-sciences-physiques" class="md-nav__link">
+  <a href="#exercice-4-interpretation-graphique" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exercice 4 : Application aux Sciences Physiques
+        Exercice 4 : Interprétation graphique
       
     </span>
   </a>
@@ -1552,122 +1552,93 @@
 
 
 
-<h1 id="corrige-bts11-les-primitives">📝 Corrigé : BTS11 – Les Primitives</h1>
+<h1 id="corrige-bts12-integration">📝 Corrigé : BTS12 – Intégration</h1>
 <hr />
-<h2 id="exercice-1-calculs-de-primitives-usuelles">Exercice 1 : Calculs de Primitives Usuelles</h2>
-<p><em>Rappel : La primitive de <span class="arithmatex">\(x^n\)</span> est <span class="arithmatex">\(\frac{x^{n+1}}{n+1}\)</span> et celle de <span class="arithmatex">\(e^{ax}\)</span> est <span class="arithmatex">\(\frac{1}{a}e^{ax}\)</span>.</em></p>
+<h2 id="exercice-1-calculs-dintegrales-basiques">Exercice 1 : Calculs d'intégrales basiques</h2>
+<p><em>Rappel : <span class="arithmatex">\(\int_{a}^{b} f(x) dx = [F(x)]_{a}^{b} = F(b) - F(a)\)</span></em></p>
 <ol>
+<li><strong><span class="arithmatex">\(I_1 = \int_{1}^{2} (3x^2 - 2x) dx\)</span></strong></li>
+<li>Primitive : <span class="arithmatex">\(F(x) = x^3 - x^2\)</span></li>
+<li>Calcul : <span class="arithmatex">\(I_1 = [2^3 - 2^2] - [1^3 - 1^2]\)</span></li>
+<li><span class="arithmatex">\(I_1 = (8 - 4) - (1 - 1) = 4 - 0\)</span></li>
 <li>
-<p><strong><span class="arithmatex">\(f(x) = 4x^3 - 6x^2 + 2\)</span></strong></p>
-<ul>
-<li>Terme <span class="arithmatex">\(4x^3\)</span> : <span class="arithmatex">\(4 \times \frac{x^4}{4} = x^4\)</span></li>
-<li>Terme <span class="arithmatex">\(6x^2\)</span> : <span class="arithmatex">\(6 \times \frac{x^3}{3} = 2x^3\)</span></li>
-<li>Terme <span class="arithmatex">\(2\)</span> : <span class="arithmatex">\(2x\)</span></li>
-<li><strong><span class="arithmatex">\(F(x) = x^4 - 2x^3 + 2x + k\)</span></strong></li>
-</ul>
+<p><strong><span class="arithmatex">\(I_1 = 4\)</span></strong></p>
 </li>
 <li>
-<p><strong><span class="arithmatex">\(g(x) = 5e^x\)</span></strong></p>
-<ul>
-<li>La primitive de <span class="arithmatex">\(e^x\)</span> reste <span class="arithmatex">\(e^x\)</span>.</li>
-<li><strong><span class="arithmatex">\(G(x) = 5e^x + k\)</span></strong></li>
-</ul>
+<p><strong><span class="arithmatex">\(I_2 = \int_{0}^{\pi} \cos(t) dt\)</span></strong></p>
+</li>
+<li>Primitive : <span class="arithmatex">\(F(t) = \sin(t)\)</span></li>
+<li>Calcul : <span class="arithmatex">\(I_2 = \sin(\pi) - \sin(0)\)</span></li>
+<li><span class="arithmatex">\(I_2 = 0 - 0\)</span></li>
+<li>
+<p><strong><span class="arithmatex">\(I_2 = 0\)</span></strong> <em>(L'aire positive entre <span class="arithmatex">\(0\)</span> et <span class="arithmatex">\(\pi/2\)</span> compense l'aire négative entre <span class="arithmatex">\(\pi/2\)</span> et <span class="arithmatex">\(\pi\)</span>)</em></p>
 </li>
 <li>
-<p><strong><span class="arithmatex">\(h(x) = 3\cos(x) + 2\sin(x)\)</span></strong></p>
-<ul>
-<li>Primitive de <span class="arithmatex">\(\cos(x)\)</span> est <span class="arithmatex">\(\sin(x)\)</span>.</li>
-<li>Primitive de <span class="arithmatex">\(\sin(x)\)</span> est <span class="arithmatex">\(-\cos(x)\)</span>.</li>
-<li><strong><span class="arithmatex">\(H(x) = 3\sin(x) - 2\cos(x) + k\)</span></strong></li>
-</ul>
+<p><strong><span class="arithmatex">\(I_3 = \int_{0}^{1} e^{3t} dt\)</span></strong></p>
 </li>
-<li>
-<p><strong><span class="arithmatex">\(k(x) = e^{-2x}\)</span></strong></p>
-<ul>
-<li>On utilise la forme <span class="arithmatex">\(e^{ax}\)</span> avec <span class="arithmatex">\(a = -2\)</span>.</li>
-<li><strong><span class="arithmatex">\(K(x) = -\frac{1}{2}e^{-2x} + k\)</span></strong></li>
-</ul>
-</li>
+<li>Primitive : <span class="arithmatex">\(F(t) = \frac{1}{3}e^{3t}\)</span></li>
+<li>Calcul : <span class="arithmatex">\(I_3 = \frac{1}{3}e^{3 \times 1} - \frac{1}{3}e^{3 \times 0}\)</span></li>
+<li><strong><span class="arithmatex">\(I_3 = \frac{1}{3}(e^3 - 1) \approx 6,36\)</span></strong></li>
 </ol>
 <hr />
-<h2 id="exercice-2-primitive-particuliere-et-exponentielle">Exercice 2 : Primitive particulière et Exponentielle</h2>
-<p><em>Objectif : Déterminer la valeur exacte de la constante <span class="arithmatex">\(k\)</span> à partir d'une condition initiale.</em></p>
+<h2 id="exercice-2-valeur-moyenne-et-exponentielle-composee">Exercice 2 : Valeur moyenne et exponentielle composée</h2>
+<p><em>Fonction : <span class="arithmatex">\(f(t) = 4t e^{t^2}\)</span> sur <span class="arithmatex">\([0 ; 2]\)</span></em></p>
 <ol>
+<li><strong>Justification de la primitive <span class="arithmatex">\(F(t) = 2e^{t^2}\)</span> :</strong></li>
+<li>On pose <span class="arithmatex">\(u(t) = t^2\)</span>, d'où <span class="arithmatex">\(u'(t) = 2t\)</span>.</li>
+<li>La dérivée de <span class="arithmatex">\(e^{u}\)</span> est <span class="arithmatex">\(u'e^u\)</span>.</li>
+<li><span class="arithmatex">\(F'(t) = 2 \times (2t e^{t^2}) = 4t e^{t^2}\)</span>. </li>
 <li>
-<p><strong>Forme générale des primitives de <span class="arithmatex">\(f(t) = 12e^{-4t}\)</span> :</strong></p>
-<ul>
-<li>On applique la formule <span class="arithmatex">\(\frac{1}{a}e^{at}\)</span> avec <span class="arithmatex">\(a = -4\)</span>.</li>
-<li><span class="arithmatex">\(F(t) = 12 \times \left( \frac{1}{-4} e^{-4t} \right) + k\)</span></li>
-<li><strong><span class="arithmatex">\(F(t) = -3e^{-4t} + k\)</span></strong></li>
-</ul>
+<p>On retrouve bien <span class="arithmatex">\(f(t)\)</span>, donc <span class="arithmatex">\(F\)</span> est une primitive de <span class="arithmatex">\(f\)</span>.</p>
 </li>
 <li>
-<p><strong>Détermination de <span class="arithmatex">\(k\)</span> avec la condition <span class="arithmatex">\(F_0(0) = 10\)</span> :</strong></p>
-<ul>
-<li><span class="arithmatex">\(F_0(0) = -3e^{-4 \times 0} + k = 10\)</span></li>
-<li><span class="arithmatex">\(-3e^{0} + k = 10\)</span>  <em>(Rappel : <span class="arithmatex">\(e^0 = 1\)</span>)</em></li>
-<li><span class="arithmatex">\(-3 + k = 10\)</span></li>
-<li><span class="arithmatex">\(k = 10 + 3 = 13\)</span></li>
-</ul>
+<p><strong>Calcul de l'intégrale <span class="arithmatex">\(I = \int_{0}^{2} 4t e^{t^2} dt\)</span> :</strong></p>
+</li>
+<li><span class="arithmatex">\(I = [2e^{t^2}]_{0}^{2}\)</span></li>
+<li><span class="arithmatex">\(I = 2e^{2^2} - 2e^{0^2} = 2e^4 - 2e^0\)</span></li>
+<li>
+<p><strong><span class="arithmatex">\(I = 2e^4 - 2 \approx 107,20\)</span></strong></p>
 </li>
 <li>
-<p><strong>Expression complète :</strong></p>
-<ul>
-<li><strong><span class="arithmatex">\(F_0(t) = -3e^{-4t} + 13\)</span></strong></li>
-</ul>
+<p><strong>Valeur moyenne <span class="arithmatex">\(\mu\)</span> sur <span class="arithmatex">\([0 ; 2]\)</span> :</strong></p>
 </li>
+<li><span class="arithmatex">\(\mu = \frac{1}{2-0} \times I = \frac{1}{2} \times (2e^4 - 2)\)</span></li>
+<li><strong><span class="arithmatex">\(\mu = e^4 - 1 \approx 53,60\)</span></strong></li>
 </ol>
 <hr />
-<h2 id="exercice-3-condition-initiale-logarithme">Exercice 3 : Condition Initiale (Logarithme)</h2>
-<p><em>Rappel : La primitive de <span class="arithmatex">\(\frac{1}{x}\)</span> est <span class="arithmatex">\(\ln(x)\)</span> sur <span class="arithmatex">\(]0 ; +\infty[\)</span>.</em></p>
+<h2 id="exercice-3-application-au-signal-valeur-efficace">Exercice 3 : Application au signal (Valeur efficace)</h2>
+<p><em>On utilise <span class="arithmatex">\(\sin^2(t) = \frac{1-\cos(2t)}{2}\)</span> sur <span class="arithmatex">\([0 ; \pi]\)</span></em></p>
 <ol>
+<li><strong>Calcul de l'intégrale :</strong></li>
+<li><span class="arithmatex">\(\int_{0}^{\pi} \sin^2(t) dt = \int_{0}^{\pi} (\frac{1}{2} - \frac{1}{2}\cos(2t)) dt\)</span></li>
+<li>Primitive : <span class="arithmatex">\([\frac{1}{2}t - \frac{1}{4}\sin(2t)]_{0}^{\pi}\)</span></li>
+<li>Calcul : <span class="arithmatex">\((\frac{1}{2}\pi - \frac{1}{4}\sin(2\pi)) - (\frac{1}{2}(0) - \frac{1}{4}\sin(0))\)</span></li>
+<li>Comme <span class="arithmatex">\(\sin(2\pi) = 0\)</span> et <span class="arithmatex">\(\sin(0) = 0\)</span>, il reste :</li>
 <li>
-<p><strong>Forme générale de <span class="arithmatex">\(g(x) = \frac{1}{x} + 1\)</span> :</strong></p>
-<ul>
-<li><strong><span class="arithmatex">\(G(x) = \ln(x) + x + k\)</span></strong></li>
-</ul>
+<p><strong><span class="arithmatex">\(I = \frac{\pi}{2}\)</span></strong></p>
 </li>
 <li>
-<p><strong>Détermination de <span class="arithmatex">\(G_0\)</span> telle que <span class="arithmatex">\(G_0(1) = 5\)</span> :</strong></p>
-<ul>
-<li><span class="arithmatex">\(G_0(1) = \ln(1) + 1 + k = 5\)</span></li>
-<li><span class="arithmatex">\(0 + 1 + k = 5\)</span>  <em>(Rappel : <span class="arithmatex">\(\ln(1) = 0\)</span>)</em></li>
-<li><span class="arithmatex">\(k = 4\)</span></li>
-<li><strong><span class="arithmatex">\(G_0(x) = \ln(x) + x + 4\)</span></strong></li>
-</ul>
+<p><strong>Valeur moyenne du carré du signal :</strong></p>
 </li>
-<li>
-<p><strong>Valeur exacte de <span class="arithmatex">\(G_0(e)\)</span> :</strong></p>
-<ul>
-<li><span class="arithmatex">\(G_0(e) = \ln(e) + e + 4\)</span></li>
-<li><span class="arithmatex">\(G_0(e) = 1 + e + 4\)</span>  <em>(Rappel : <span class="arithmatex">\(\ln(e) = 1\)</span>)</em></li>
-<li><strong><span class="arithmatex">\(G_0(e) = e + 5\)</span></strong></li>
-</ul>
-</li>
+<li><span class="arithmatex">\(\mu = \frac{1}{\pi - 0} \times \frac{\pi}{2}\)</span></li>
+<li><strong><span class="arithmatex">\(\mu = \frac{1}{2}\)</span></strong> <em>(Ce résultat est logique : la valeur moyenne de <span class="arithmatex">\(\sin^2\)</span> est <span class="arithmatex">\(0,5\)</span>)</em></li>
 </ol>
 <hr />
-<h2 id="exercice-4-application-aux-sciences-physiques">Exercice 4 : Application aux Sciences Physiques</h2>
-<p><em>Contexte : <span class="arithmatex">\(u(t)\)</span> est la primitive de <span class="arithmatex">\(\frac{i(t)}{C}\)</span>.</em></p>
+<h2 id="exercice-4-interpretation-graphique">Exercice 4 : Interprétation graphique</h2>
+<p><em>Fonction <span class="arithmatex">\(f(x) = 4-x^2\)</span> sur <span class="arithmatex">\([-2 ; 2]\)</span></em></p>
 <ol>
+<li><strong>Calcul de l'intégrale <span class="arithmatex">\(J\)</span> :</strong></li>
+<li>Primitive : <span class="arithmatex">\(F(x) = 4x - \frac{x^3}{3}\)</span></li>
+<li><span class="arithmatex">\(J = [4(2) - \frac{2^3}{3}] - [4(-2) - \frac{(-2)^3}{3}]\)</span></li>
+<li><span class="arithmatex">\(J = (8 - \frac{8}{3}) - (-8 + \frac{8}{3}) = \frac{16}{3} - (-\frac{16}{3})\)</span></li>
 <li>
-<p><strong>Expression de la tension <span class="arithmatex">\(u(t)\)</span> :</strong></p>
-<ul>
-<li>On calcule d'abord le coefficient : <span class="arithmatex">\(\frac{1}{C} = \frac{1}{500 \times 10^{-6}} = 2000\)</span>.</li>
-<li>On doit intégrer : <span class="arithmatex">\(\frac{i(t)}{C} = 2000 \times 0,05 \sin(100\pi t) = 100 \sin(100\pi t)\)</span>.</li>
-<li>La primitive de <span class="arithmatex">\(\sin(at)\)</span> est <span class="arithmatex">\(-\frac{1}{a}\cos(at)\)</span>.</li>
-<li><span class="arithmatex">\(u(t) = 100 \times \left( -\frac{1}{100\pi} \cos(100\pi t) \right) + k\)</span></li>
-<li><strong><span class="arithmatex">\(u(t) = -\frac{1}{\pi} \cos(100\pi t) + k\)</span></strong></li>
-</ul>
+<p><strong><span class="arithmatex">\(J = \frac{32}{3} \approx 10,67\)</span> u.a.</strong></p>
 </li>
 <li>
-<p><strong>Calcul de la constante avec <span class="arithmatex">\(u(0) = 0\)</span> :</strong></p>
-<ul>
-<li><span class="arithmatex">\(u(0) = -\frac{1}{\pi} \cos(0) + k = 0\)</span></li>
-<li><span class="arithmatex">\(-\frac{1}{\pi} \times 1 + k = 0\)</span></li>
-<li><span class="arithmatex">\(k = \frac{1}{\pi}\)</span></li>
-<li><strong>Expression finale : <span class="arithmatex">\(u(t) = -\frac{1}{\pi} \cos(100\pi t) + \frac{1}{\pi}\)</span> ou <span class="arithmatex">\(u(t) = \frac{1}{\pi} \left( 1 - \cos(100\pi t) \right)\)</span></strong></li>
-</ul>
+<p><strong>Aire en <span class="arithmatex">\(cm^2\)</span> (<span class="arithmatex">\(1\)</span> u.a. <span class="arithmatex">\(= 2\)</span> <span class="arithmatex">\(cm^2\)</span>) :</strong></p>
 </li>
+<li><span class="arithmatex">\(Aire = \frac{32}{3} \times 2 = \frac{64}{3}\)</span></li>
+<li><strong><span class="arithmatex">\(Aire \approx 21,33\)</span> <span class="arithmatex">\(cm^2\)</span></strong></li>
 </ol>
 
 
