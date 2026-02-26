@@ -2,7 +2,7 @@
     { "recto": "Soit $u_n = \\dfrac{3n-1}{n+2}$. Calcule le premier terme $u_0$.", "verso": "$u_0 = \\dfrac{3 \\times 0 - 1}{0 + 2} = -0,5$" },
     { "recto": "Soit $u_n = \\dfrac{3n-1}{n+2}$. Calcule le terme $u_1$.", "verso": "$u_1 = \\dfrac{3 \\times 1 - 1}{1 + 2} = \\dfrac{2}{3} \\approx 0,67$" },
     { "recto": "Comment étudie-t-on les variations d'une suite de type $u_n = f(n)$ ?", "verso": "On étudie le signe de la dérivée $f'(x)$ de la fonction associée sur $[0 ; +\\infty[$." },
-    { "recto": "La dérivée de $f(x) = \\dfrac{3x-1}{x+2}$ est $f'(x) = \\dfrac{7}{(x+2)^2}$. Quel est le sens de variation de la suite $(u_n)$ ?", "verso": "$f'(x) > 0$ car un carré est positif et $7 > 0$, donc la suite est **croissante**." },
+    { "recto": "La dérivée de $f(x) = \\dfrac{3x-1}{x+2}$ est $f'(x) = \\dfrac{7}{(x+2)^2}$. Quel est le sens de variation de la suite $(u_n): u_n = f(n)$ ?", "verso": "$f'(x) > 0$ car un carré est positif et $7 > 0$, donc la suite est **croissante**." },
     { "recto": "Résous l'inéquation $\\dfrac{3n-1}{n+2} > 2,5$ pour trouver le seuil $n$.", "verso": "$3n - 1 > 2,5(n + 2) \\Rightarrow 0,5n > 6 \\Rightarrow n > 12$. Le seuil est **$n = 13$**." },
     { "recto": "Dans un algorithme de seuil, que signifie la condition <code>while u < cible:</code> ?", "verso": "Tant que la valeur n'a pas atteint l'objectif, on continue de calculer le terme suivant." },
     { "recto": "En Python, quelle instruction permet de passer à l'indice suivant dans une boucle ?", "verso": "<code>n = n + 1</code> (ou <code>n += 1</code>)." },
