@@ -31,7 +31,7 @@
   },
   {
     "question": "Quelle instruction vérifie si la clé <code>'ville'</code> est présente dans le dictionnaire <code>d</code> ?",
-    "options": ["<code>if 'ville' in d:</code>", "<code>if d.has('ville'):</code>", "<code>if 'ville' == d:</code>", "<code>if d['ville'] != None:</code>"],
+    "options": ["<code>if 'ville' in d.keys():</code>", "<code>if d.has('ville'):</code>", "<code>if 'ville' == d:</code>", "<code>if d['ville'] != None:</code>"],
     "answer": 0,
     "feedback": "L'opérateur <code>in</code> teste la présence d'une clé dans un dictionnaire."
   },
@@ -48,7 +48,7 @@
     "feedback": "La fonction <code>len()</code> renvoie la taille du dictionnaire."
   },
   {
-    "question": "Dans l'algorithme de fréquences, à quoi sert <code>if lettre in frequences:</code> ?",
+    "question": "Dans l'algorithme de fréquences, à quoi sert <code>if lettre in frequences.keys():</code> ?",
     "options": ["Trier les lettres", "Vérifier s'il faut incrémenter ou créer le compteur", "Effacer les doublons", "Changer le type"],
     "answer": 1,
     "feedback": "Cela permet d'initialiser la clé à 1 ou de faire +1 si elle existe déjà."
