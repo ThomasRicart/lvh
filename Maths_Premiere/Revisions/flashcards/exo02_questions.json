@@ -1,7 +1,7 @@
 [
-    { "recto": "EXO 2 : Définition de u_n = (3n-1)/(n+2). Calcule u_0.", "verso": "u_0 = (3*0 - 1) / (0 + 2) = -0,5" },
-    { "recto": "EXO 2 : Calcule u_1 pour la suite u_n = (3n-1)/(n+2).", "verso": "u_1 = (3*1 - 1) / (1 + 2) = 2/3 ≈ 0,67" },
-    { "recto": "EXO 2 : Calcule u_2 pour la suite u_n = (3n-1)/(n+2).", "verso": "u_2 = (3*2 - 1) / (2 + 2) = 5/4 = 1,25" },
+    { "recto": "EXO 2 : Définition de $u_n = (3n-1)/(n+2)$. $Calcule u_0$.", "verso": "$u_0 = (3*0 - 1) / (0 + 2) = -0,5$" },
+    { "recto": "EXO 2 : Calcule $u_1$ pour la suite $u_n = (3n-1)/(n+2)$.", "verso": "$u_1 = (3*1 - 1) / (1 + 2) = 2/3 ≈ 0,67$" },
+    { "recto": "EXO 2 : Calcule $u_2$ pour la suite $u_n = (3n-1)/(n+2)$.", "verso": "$u_2 = (3*2 - 1) / (2 + 2) = 5/4 = 1,25$" },
     { "recto": "EXO 2 : Quelle est la méthode pour étudier les variations de u_n = (3n-1)/(n+2) ?", "verso": "On étudie les variations de la fonction associée f(x) = (3x-1)/(x+2) sur [0 ; +∞[." },
     { "recto": "EXO 2 : Quel est le signe de la dérivée f'(x) = 7/(x+2)² ?", "verso": "Elle est toujours strictement positive (7 > 0 et dénominateur au carré)." },
     { "recto": "EXO 2 : Si f'(x) > 0, quel est le sens de variation de la suite (u_n) ?", "verso": "La suite (u_n) est strictement croissante." },
