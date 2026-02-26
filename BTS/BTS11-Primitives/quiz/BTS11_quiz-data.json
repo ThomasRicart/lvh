@@ -25,7 +25,7 @@
   },
   {
     "question": "Quelle est la primitive de $f(x) = e^x$ ?",
-    "options": ["$F(x) = xe^x$", "$F(x) = e^x + k$", "$F(x) = e^{x+1}$", "$F(x) = \ln(x)$"],
+    "options": ["$F(x) = xe^x$", "$F(x) = e^x + k$", "$F(x) = e^{x+1}$", "$F(x) = \\ln(x)$"],
     "answer": 1,
     "feedback": "La fonction exponentielle est sa propre dérivée (et donc sa propre primitive)."
   },
