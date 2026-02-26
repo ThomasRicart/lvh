@@ -5,19 +5,15 @@
 
 \medskip
 
-\section{Primitive d'une fonction}
-
 \begin{definition}{Primitive d'une fonction}{}
 
     Soit $f$ une fonction définie et continue sur un intervalle $I$. On appelle \textbf{primitive} de $f$ sur $I$, toute fonction $F$ définie et dérivable sur $I$ telle que $\boxed{F'=f}$
     
 \end{definition}
 
-\medskip
 
-\begin{example}{Recherche de primitive}{}
+\begin{example}{Recherche de primitive de $f(x)=2x+1$}{}
 
-    On considère la fonction $f$ définie sur $\R$ par $f(x)=2x+1$.
 
     \begin{itemize}
         \item La fonction $F$ définie sur $\R$ par $F(x)= \ldots\ldots\ldots\ldots$ est une primitive de $f$ car $F'(x)=f(x)$.
@@ -25,7 +21,6 @@
    \end{itemize}
 \end{example}
 
-\medskip
 
 \begin{methode}{Montrer qu'une fonction $F$ est une primitive de $f$}{}
 
@@ -37,7 +32,6 @@
 
 \end{methode}
 
-\medskip
 
 \begin{exercice}{Exercice d'application}{}
 
@@ -49,9 +43,10 @@
 
 \end{exercice}
 
-\medskip
 
-\renewcommand{\arraystretch}{2.2} % Espacement vertical important pour le confort visuel
+\begin{propriete}{Primitives usuelles}{}
+
+\renewcommand{\arraystretch}{2.3} % Espacement vertical important pour le confort visuel
 
 % --- Premier tableau (Usuelles) ---
 \begin{minipage}[t]{0.52\textwidth}
@@ -78,8 +73,6 @@ $e^x$ & $e^x + k$ & $\mathbb{R}$ \\
 $\cos(x)$ & $\sin(x) + k$ & $\mathbb{R}$ \\
 \hline
 $\sin(x)$ & $-\cos(x) + k$ & $\mathbb{R}$ \\
-\hline
-$\ln(x)$ & $\dfrac{1}{x} + k$ & $]0 ; +\infty[$ \\
 \hline
 \end{tabular}
 \end{minipage}
@@ -114,14 +107,10 @@ $u' \sin(u)$ & $-\cos(u) + k$ \\
 \hline
 \end{tabular}
 \end{minipage}
-
-\begin{propriete}{Primitives usuelles}{}
-
-    \includegraphics[width = 0.49\linewidth]{img_3370.jpg}\hfill{}
-    \includegraphics[width = 0.49\linewidth]{PB_Bac_06468_MathT_gene_p211-230_C09_Tab_4.png}
 \end{propriete}
 
-\medskip
+
+   
 
 \begin{propriete}{Non unicité des primitives}{}
 
@@ -134,15 +123,12 @@ Soit $f$ une foncton définie et continue sur un intervalle $I$
 
 \end{propriete}
 
-\medskip
 
-\begin{methode}{Recherche de toutes les primitives}{}
-
-    Pour trouver toutes les primitives de $f$, il suffit:
+\begin{methode}{Recherche de toutes les primitives de $f$}{}
 
     \begin{enumerate}
-        \item de trouver UNE primitive de $f$ et la noter $F$
-        \item d'ajouter une constante $k\in\R$ pour trouver TOUTES les primitives de $f$ et la noter $G$.
+        \item trouver UNE primitive de $f$ et la noter $F$
+        \item ajouter une constante $k\in\R$ pour trouver TOUTES les primitives de $f$ et la noter $G$.
     \end{enumerate}
 \end{methode}
 
@@ -180,7 +166,7 @@ Soit $f$ une foncton définie et continue sur un intervalle $I$
     \begin{enumerate}
     \item Déterminer UNE primitive de la fonction $f$ et la noter $F$. $F'(x)=f(x)$
     \item Ajouter une constante $k$ pour trouver TOUTES les primitive. $G(x)=F(x)+k$
-    \item Déterminer la valeur de la constante de manière à ce que $G(a)=F(a)+k=b$
+    \item Déterminer la valeur de la constante de manière à ce que $H(a)=F(a)+k=b$
     \item Conclure en donnant l'expression de $H(x)$.
 \end{enumerate}
 \end{methode}
@@ -190,7 +176,7 @@ Soit $f$ une foncton définie et continue sur un intervalle $I$
 \begin{exercice}{Exercice d'application}{}
     Soit $f$ la fonction définie sur $\R$ par $f(x)=x^2+3x+1+\e^{-x}$
 
-    Déterminer la primitive $H$ de $f$ qui est telle que $G(0)=4$.
+    Déterminer la primitive $H$ de $f$ qui est telle que $H(0)=4$.
 
 \end{exercice}
 

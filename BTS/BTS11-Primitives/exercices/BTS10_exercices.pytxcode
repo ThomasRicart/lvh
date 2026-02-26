@@ -1,6 +1,6 @@
 =>PYTHONTEX:SETTINGS#
 version=0.18
-outputdir=pythontex-files-C15-CI01-cours
+outputdir=pythontex-files-BTS10_exercices
 workingdir=.
 workingdirset=false
 gobble=auto

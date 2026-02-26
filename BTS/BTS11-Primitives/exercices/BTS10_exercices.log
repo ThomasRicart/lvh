@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.12)  26 FEB 2026 15:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.12)  26 FEB 2026 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"d:/--- LYCEE ---/ENSEIGNEMENT_G/lvh/docs/BTS/BTS11-Primitives/C15-CI01-cours.tex"
-(d:/--- LYCEE ---/ENSEIGNEMENT_G/lvh/docs/BTS/BTS11-Primitives/C15-CI01-cours.tex
+**"d:/--- LYCEE ---/ENSEIGNEMENT_G/lvh/docs/BTS/BTS10-Nombres_Complexes/exercices/BTS10_exercices.tex"
+(d:/--- LYCEE ---/ENSEIGNEMENT_G/lvh/docs/BTS/BTS10-Nombres_Complexes/exercices/BTS10_exercices.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
@@ -23,7 +23,7 @@ File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen141
-) (../../../../preambule/preambule.sty (../../../../preambule/pr_packages.sty (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/proflycee\ProfLycee.sty
+) (../../../../../preambule/preambule.sty (../../../../../preambule/pr_packages.sty (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/proflycee\ProfLycee.sty
 Package: ProfLycee 2024/10/30 3.10f Aide pour l'utilisation de LaTeX en lycee
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
@@ -1203,7 +1203,7 @@ Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
 \c@currfiledepth=\count524
 )
 \pytx@codefile=\write5
-\openout5 = `C15-CI01-cours.pytxcode'.
+\openout5 = `BTS10_exercices.pytxcode'.
 
 \c@pytx@FancyVerbLineTemp=\count525
 \c@pytx@py@default@default=\count526
@@ -1427,7 +1427,7 @@ Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
 \mult@nat@firstbox=\box180
 \colbreak@box=\box181
 \mc@col@check@num=\count577
-) (../../../../preambule/pr_layouts.sty (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+) (../../../../../preambule/pr_layouts.sty (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/01/07 v5.1.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip98
 \f@nch@offset@elh=\skip99
@@ -1444,7 +1444,7 @@ Package: fancyhdr 2025/01/07 v5.1.1 Extensive control of page headers and footer
 \f@nch@widthC=\skip110
 \f@nch@widthR=\skip111
 \@temptokenb=\toks79
-) (../../../../preambule/pr_layouts_devoirs.sty
+) (../../../../../preambule/pr_layouts_devoirs.sty
 \c@nexods=\count578
 \c@nexodsd=\count579
 \c@nexods2=\count580
@@ -1453,7 +1453,7 @@ Package: fancyhdr 2025/01/07 v5.1.1 Extensive control of page headers and footer
 \c@bfield=\count583
 \c@abox=\count584
 \c@achoice=\count585
-)) (../../../../preambule/pr_layouts_cours.sty) (../../../../preambule/pr_environments.sty) (../../../../preambule/pr_environments_box.sty
+)) (../../../../../preambule/pr_layouts_cours.sty) (../../../../../preambule/pr_environments.sty) (../../../../../preambule/pr_environments_box.sty
 \c@tcb@cnt@emptybox=\count586
 \c@tcb@cnt@easybox=\count587
 \c@tcb@cnt@definition=\count588
@@ -1511,7 +1511,7 @@ Package: fancyhdr 2025/01/07 v5.1.1 Extensive control of page headers and footer
 \c@currflashctr=\count640
 \c@endflashctr=\count641
 \c@flash=\count642
-) (../../../../preambule/pr_environments_titres.sty) (../../../../preambule/pr_prog.sty (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/dirtree\dirtree.sty
+) (../../../../../preambule/pr_environments_titres.sty) (../../../../../preambule/pr_prog.sty (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/dirtree\dirtree.sty
 Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/generic/dirtree\dirtree.tex `dirtree' v0.32, 2012/12/11 (jcc)
 \DT@offset=\dimen473
@@ -1621,53 +1621,56 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@copy@out=\write6
 \forest@externalize@max@outer@n=\count672
 \forest@externalize@inner@n=\count673
-)) (../../../../preambule/pr_maths.sty) (../../../../preambule/pr_raz.sty)) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
-Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen489
-\TX@old@table=\dimen490
-\TX@old@col=\dimen491
-\TX@target=\dimen492
-\TX@delta=\dimen493
-\TX@cols=\count674
-\TX@ftn=\toks92
+)) (../../../../../preambule/pr_maths.sty) (../../../../../preambule/pr_raz.sty)) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count674
+\float@exts=\toks92
+\float@box=\box259
+\@float@everytoks=\toks93
+\@floatcapt=\box260
+) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 19.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 26.
+ (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (C15-CI01-cours.aux (Sources_Latex/C15.aux))
-\openout1 = `C15-CI01-cours.aux'.
+ (BTS10_exercices.aux)
+\openout1 = `BTS10_exercices.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count675
-\scratchdimen=\dimen494
-\scratchbox=\box259
+\scratchdimen=\dimen489
+\scratchbox=\box261
 \nofMPsegments=\count676
 \nofMParguments=\count677
-\everyMPshowfont=\toks93
+\everyMPshowfont=\toks94
 \MPscratchCnt=\count678
-\MPscratchDim=\dimen495
+\MPscratchDim=\dimen490
 \MPnumerator=\count679
 \makeMPintoPDFobject=\count680
-\everyMPtoPDFconversion=\toks94
+\everyMPtoPDFconversion=\toks95
 ) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1678,19 +1681,16 @@ Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 ) (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 19.
- (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
-Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 26.
 \c@lstlisting=\count681
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks95
-\inpenc@posthook=\toks96
+\inpenc@prehook=\toks96
+\inpenc@posthook=\toks97
 )
-\c__nicematrix_shift_Ldots_last_row_dim=\dimen496
-\c__nicematrix_shift_exterior_Vdots_dim=\dimen497
-\c__nicematrix_innersep_middle_dim=\dimen498
+\c__nicematrix_shift_Ldots_last_row_dim=\dimen491
+\c__nicematrix_shift_exterior_Vdots_dim=\dimen492
+\c__nicematrix_innersep_middle_dim=\dimen493
 \c@tabularnotesi=\count682
 \enitdp@tabularnotes=\count683
 \c@tabularnotes*i=\count684
@@ -1730,14 +1730,15 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 19.
-(C15-CI01-cours.out) (C15-CI01-cours.out)
+Package hyperref Info: Link coloring OFF on input line 26.
+(BTS10_exercices.out) (BTS10_exercices.out)
 \@outlinefile=\write7
-\openout7 = `C15-CI01-cours.out'.
+\openout7 = `BTS10_exercices.out'.
 
 Package newfloat Info: Trying Plan B...
+Package newfloat Info: `float' package detected.
 
-No file pythontex-files-C15-CI01-cours/C15-CI01-cours.pytxmcr.
+No file pythontex-files-BTS10_exercices/BTS10_exercices.pytxmcr.
 Run PythonTeX to create it.
 (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1750,70 +1751,45 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-\openout2 = `./Sources_Latex/C15.aux'.
-
-(Sources_Latex/C15.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
- (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+(C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 42.
- (C:\Users\thoma\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawesomefree1.fd)
-Package hyperref Info: bookmark level for unknown exercice defaults to 0 on input line 42.
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 34.
+\tf@thm=\write8
+\openout8 = `BTS10_exercices.thm'.
 
-Overfull \hbox (12.55922pt too wide) in paragraph at lines 62--85
- [][] 
- []
-
-<./Images/img_3370.jpg, id=10, 1326.9575pt x 1038.88126pt>
-File: ./Images/img_3370.jpg Graphic file (type jpg)
-<use ./Images/img_3370.jpg>
-Package pdftex.def Info: ./Images/img_3370.jpg  used on input line 120.
-(pdftex.def)             Requested size: 249.56197pt x 195.37628pt.
-<./Images/PB_Bac_06468_MathT_gene_p211-230_C09_Tab_4.png, id=11, 324.2514pt x 205.7286pt>
-File: ./Images/PB_Bac_06468_MathT_gene_p211-230_C09_Tab_4.png Graphic file (type png)
-<use ./Images/PB_Bac_06468_MathT_gene_p211-230_C09_Tab_4.png>
-Package pdftex.def Info: ./Images/PB_Bac_06468_MathT_gene_p211-230_C09_Tab_4.png  used on input line 121.
-(pdftex.def)             Requested size: 249.56197pt x 158.3393pt.
 
 
 [1{C:/Users/thoma/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-
-{C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1.enc}]
-
-[2 <./Images/img_3370.jpg> <./Images/PB_Bac_06468_MathT_gene_p211-230_C09_Tab_4.png>])
-
-[3]
-\tf@thm=\write8
-\openout8 = `C15-CI01-cours.thm'.
-
- 
+] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(C15-CI01-cours.aux (Sources_Latex/C15.aux))
+(BTS10_exercices.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `C15-CI01-cours.out' has not changed.
-(rerunfilecheck)             Checksum: 7A1257E41C078DB5EB716B6F6B3638D5;171.
+Package rerunfilecheck Info: File `BTS10_exercices.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 82460 strings out of 473530
- 1976831 string characters out of 5714794
- 2737348 words of memory out of 5000000
- 104520 multiletter control sequences out of 15000+600000
- 565445 words of font info for 60 fonts, out of 8000000 for 9000
+ 82418 strings out of 473530
+ 1972595 string characters out of 5714794
+ 2705012 words of memory out of 5000000
+ 104510 multiletter control sequences out of 15000+600000
+ 562388 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 147i,14n,149p,2841b,1529s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on C15-CI01-cours.pdf (3 pages, 337884 bytes).
+ 147i,11n,149p,2859b,1099s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\thoma\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on BTS10_exercices.pdf (1 page, 105797 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
