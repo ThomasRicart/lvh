@@ -1,0 +1,22 @@
+[
+    { "recto": "EXO 4 : Coordonnées du vecteur AB avec A(xA, yA) et B(xB, yB) ?", "verso": "(xB - xA ; yB - yA)" },
+    { "recto": "EXO 4 : Calcule AB avec A(-2;1) et B(4;3).", "verso": "vec(AB) = (4 - (-2) ; 3 - 1) = (6 ; 2)" },
+    { "recto": "EXO 4 : Calcule AC avec A(-2;1) et C(1;5).", "verso": "vec(AC) = (1 - (-2) ; 5 - 1) = (3 ; 4)" },
+    { "recto": "EXO 4 : Formule du produit scalaire avec les coordonnées ?", "verso": "u . v = xx' + yy'" },
+    { "recto": "EXO 4 : Calcule vec(AB).vec(AC) avec AB(6;2) et AC(3;4).", "verso": "6*3 + 2*4 = 18 + 8 = 26" },
+    { "recto": "EXO 4 : Comment calculer la norme (longueur) AB ?", "verso": "AB = √(6² + 2²) = √40" },
+    { "recto": "EXO 4 : Comment calculer la norme (longueur) AC ?", "verso": "AC = √(3² + 4²) = √25 = 5" },
+    { "recto": "EXO 4 : Formule du produit scalaire avec le cosinus ?", "verso": "vec(u).vec(v) = ||u|| * ||v|| * cos(θ)" },
+    { "recto": "EXO 4 : Calcule cos(BAC) à partir de AB.AC = 26, AB=√40 et AC=5.", "verso": "cos(BAC) = 26 / (5 * √40) ≈ 0,822" },
+    { "recto": "EXO 4 : Comment trouver l'angle BAC en degrés ?", "verso": "On utilise la calculatrice : arccos(0,822) ≈ 35°." },
+    { "recto": "EXO 4 : Le triangle ABC est-il rectangle en A ? Pourquoi ?", "verso": "Non, car vec(AB).vec(AC) = 26 (différent de 0)." },
+    { "recto": "EXO 4 : Relation de Chasles : exprime vec(DI) en passant par A.", "verso": "vec(DI) = vec(DA) + vec(AI)" },
+    { "recto": "EXO 4 : Si I est le milieu de [AB], exprime vec(AI) en fonction de vec(AB).", "verso": "vec(AI) = 1/2 * vec(AB)" },
+    { "recto": "EXO 4 : Projection : si H est le projeté de C sur (AB), vec(AB).vec(AC) = ?", "verso": "vec(AB) . vec(AH)" },
+    { "recto": "EXO 4 : Dans un rectangle ABCD, quel est le projeté de C sur (AB) ?", "verso": "C'est le point B." },
+    { "recto": "EXO 4 : Calcule vec(AC).vec(AB) dans le rectangle avec AB=8.", "verso": "vec(AB).vec(AB) = AB² = 8² = 64" },
+    { "recto": "EXO 4 : Que vaut vec(DA).vec(AB) dans un rectangle ?", "verso": "0 (car les côtés sont perpendiculaires)." },
+    { "recto": "EXO 4 : Formule d'Al-Kashi pour le côté 'a' ?", "verso": "a² = b² + c² - 2bc cos(A)" },
+    { "recto": "EXO 4 : Quelle est la condition pour que (DI) ⊥ (AC) ?", "verso": "Il faut que le produit scalaire vec(DI).vec(AC) soit égal à 0." },
+    { "recto": "EXO 4 : vec(u) et vec(v) sont orthogonaux si et seulement si...", "verso": "Leur produit scalaire est nul (u . v = 0)." }
+]
