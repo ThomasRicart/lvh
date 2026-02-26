@@ -36,7 +36,7 @@
         async function initQuiz() {
             try {
                 // Chargement du fichier JSON externe
-                const response = await fetch('BTS11_quiz-data.json');
+                const response = await fetch('BTS12_quiz-data.json');
                 if (!response.ok) throw new Error('Erreur réseau');
                 
                 const questions = await response.json();
