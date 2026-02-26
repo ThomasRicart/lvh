@@ -12,14 +12,6 @@
 | Synthèse | | [![HTML](../../icones/icons8-html-30.png)](./IE_synthese_informatique_embarquee.html)[![PDF](../../icones/icons8-pdf-30.png)](./IE_synthese_informatique_embarquee.pdf) | |
 | S04 | Evaluation |[![PDF](../../icones/icons8-pdf-30.png)]() | ||
 
-| Fichier | Type | Remarque |
-|---------|------|-------------|
-| [`Séance 01 -- Présentation`](./) | [`Correction`](./) | Lien vers Capytale |
-| [`Séance 02 -- Activité IHM Micro:Bit Tinkercad`](./) | [`Correction`](./) | Lien vers Capytale |
-| [`Séance 03 -- Projet IHM`](./) | [`Correction`](./) | Lien vers Capytale |
-| [`Fiche de Synthèse HTML`](./fiche_synthese_informatique_embarquee.html) | [`Fiche de Synthèse PDF`](./fiche_synthese_informatique_embarquee.pdf) | Synthèse du chapitre |
-| [`Séance 04 -- Evaluation`](./) | [`Correction`](./) |  |
-
 ## Organisation de la séquence (4 séances)
 
 | Séance | Titre | Notions du programme couvertes | Durée | Outils |
