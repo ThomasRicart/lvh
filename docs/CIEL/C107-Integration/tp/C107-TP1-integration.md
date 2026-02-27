@@ -2,7 +2,7 @@
 
 ## 1. Mise en place de la fonction
 
-1. Dans la barre de saisie, tapez : `f(x) = -0.5x² + 2x + 1`
+1. Dans la barre de saisie, tapez : `f(x) := -0.5*x^2 + 2*x + 1`
 
 2. Définissez l'intervalle d'étude en créant deux curseurs $a$ et $b$ :
 
@@ -17,7 +17,7 @@ On souhaite diviser l'intervalle $[a, b]$ en $n$ rectangles pour estimer l'aire.
 
 2. Saisissez la commande : `S_inf = SommeInférieure(f, a, b, n)`
 
-3. Saisissez la commande : `S_sup = SommeSupérieure(f, a, b, n)`
+3. Saisissez la commande : `S_sup = SommeSupérieure(f, a, b, n)`. Changer la couleur de `S_sup` dans `Propriétés`.
 
 4. **Observation :** Faites varier le curseur `n`. 
 
@@ -29,4 +29,4 @@ On souhaite diviser l'intervalle $[a, b]$ en $n$ rectangles pour estimer l'aire.
 
 2. Comparez la valeur de `Aire` avec vos sommes précédentes.
 
-3. **Lien avec le cours :** Déterminez par le calcul (sur papier) une primitive $F$ de $f$. [cite_start]Vérifiez que $F(b) - F(a)$ donne le même résultat que GeoGebra.
+3. **Lien avec le cours :** Déterminez par le calcul (sur papier) une primitive $F$ de $f$. Vérifiez que $F(b) - F(a)$ donne le même résultat que GeoGebra.

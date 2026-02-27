@@ -14,7 +14,7 @@
         <link rel="prev" href="../C107-TP2-integration/">
       
       
-        <link rel="next" href="../../../C112-Nombres_complexes/exercices/C112-TD1-complexes_correction/">
+        <link rel="next" href="../C107-TP4-integration/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>TP 3 : Valeur moyenne et "Rectangle d'équivalence" - Cours de M. Ricart</title>
+        <title>TP 3: Synthèse d'Analyse - Modélisation et Moyenne d'un signal exponentiel - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tp-3-valeur-moyenne-et-rectangle-dequivalence" class="md-skip">
+        <a href="#tp-3-synthese-danalyse-modelisation-et-moyenne-dun-signal-exponentiel" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TP 3 : Valeur moyenne et "Rectangle d'équivalence"
+              TP 3: Synthèse d'Analyse - Modélisation et Moyenne d'un signal exponentiel
             
           </span>
         </div>
@@ -963,6 +963,8 @@
       
         
       
+        
+      
     
     
     
@@ -1151,6 +1153,79 @@
             
   
     EVALS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../CCF/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CCF
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CCF
   
 
           </label>
@@ -1492,10 +1567,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-modelisation-du-signal" class="md-nav__link">
+  <a href="#partie-1-determination-experimentale-du-parametre-c" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Modélisation du signal
+        Partie 1 : Détermination expérimentale du paramètre \(c\)
       
     </span>
   </a>
@@ -1503,10 +1578,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-calcul-de-la-valeur-moyenne" class="md-nav__link">
+  <a href="#partie-2-etude-du-signal-identifie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Calcul de la Valeur Moyenne
+        Partie 2 : Étude du signal identifié
       
     </span>
   </a>
@@ -1514,10 +1589,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-vers-la-derivation-revision" class="md-nav__link">
+  <a href="#partie-3-integration-et-valeur-moyenne" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Vers la dérivation (Révision)
+        Partie 3 : Intégration et Valeur Moyenne
       
     </span>
   </a>
@@ -1541,52 +1616,60 @@
 
 
 
-<h1 id="tp-3-valeur-moyenne-et-rectangle-dequivalence">TP 3 : Valeur moyenne et "Rectangle d'équivalence"</h1>
-<h2 id="1-modelisation-du-signal">1. Modélisation du signal</h2>
-<p>On étudie la fonction <span class="arithmatex">\(f(t) = 4t e^{-t}\)</span> (type charge de condensateur ou signal amorti).</p>
+<h1 id="tp-3-synthese-danalyse-modelisation-et-moyenne-dun-signal-exponentiel">TP 3: Synthèse d'Analyse - Modélisation et Moyenne d'un signal exponentiel</h1>
+<p><strong>Objectif :</strong> Déterminer le paramètre d'un signal amorti à partir de contraintes géométriques, puis valider son étude par la dérivation et l'intégration.</p>
+<hr />
+<h2 id="partie-1-determination-experimentale-du-parametre-c">Partie 1 : Détermination expérimentale du paramètre <span class="arithmatex">\(c\)</span></h2>
+<p>On cherche à modéliser un signal par la fonction suivante :<br />
+<span class="arithmatex">\(f(x) = x e^{-cx}\)</span> (où <span class="arithmatex">\(c &gt; 0\)</span>)</p>
+<p>Le signal doit respecter une contrainte physique précise :
+1. Présenter un <strong>maximum</strong> (tangente horizontale) à l'instant <strong><span class="arithmatex">\(x = 0,5\)</span></strong>.</p>
+<p><strong>Instructions GeoGebra :</strong></p>
 <ol>
 <li>
-<p>Saisissez : <code>f(x) = 4x * exp(-x)</code></p>
+<p>Créez un curseur <strong><code>c</code></strong> allant de 0.1 à 5 (incrément 0.1).</p>
 </li>
 <li>
-<p>Créez un curseur <code>b</code> allant de 1 à 10. (On fixe <span class="arithmatex">\(a=0\)</span>).</p>
+<p>Saisissez la fonction : <code>f(x) = x * exp(-c*x)</code>.</p>
 </li>
+<li>
+<p>Créez un point <strong><code>M</code></strong> sur la courbe, placez-le précisément à <span class="arithmatex">\(x=0,5\)</span> et tracez sa <strong>tangente</strong> (Outil Tangente).</p>
+</li>
+<li>
+<p><strong>Mission :</strong> Ajustez le curseur <strong><code>c</code></strong> pour que la tangente en <span class="arithmatex">\(x=0,5\)</span> soit horizontale.</p>
+</li>
+<li><em>Note : La valeur cible à trouver est <span class="arithmatex">\(c = 2\)</span>.</em></li>
 </ol>
-<h2 id="2-calcul-de-la-valeur-moyenne">2. Calcul de la Valeur Moyenne</h2>
+<hr />
+<h2 id="partie-2-etude-du-signal-identifie">Partie 2 : Étude du signal identifié</h2>
+<p>Utilisez maintenant la valeur trouvée (<strong><span class="arithmatex">\(c = 2\)</span></strong>) pour analyser le comportement du signal.</p>
 <ol>
+<li><strong>Étude des variations :</strong></li>
+<li>Saisissez <code>f'(x)</code> pour afficher la fonction dérivée.</li>
 <li>
-<p>Saisissez la commande pour l'intégrale : <code>I = Intégrale(f, 0, b)</code></p>
+<p><em>Question :</em> Justifiez par le calcul que la fonction est croissante sur <span class="arithmatex">\([0 ; 0,5]\)</span> puis décroissante sur <span class="arithmatex">\([0,5 ; +\infty[\)</span>.</p>
 </li>
 <li>
-<p>Calculez la valeur moyenne <span class="arithmatex">\(\mu\)</span> en saisissant : <code>moy = I / b</code>[cite: 54].</p>
+<p><strong>Analyse de la pente :</strong></p>
 </li>
-<li>
-<p>Créez le rectangle d'équivalence :</p>
-</li>
-<li>
-<p>Créez les points <code>A=(0,0)</code>, <code>B=(b,0)</code>, <code>C=(b, moy)</code>, <code>D=(0, moy)</code>.</p>
-</li>
-<li>
-<p>Utilisez l'outil <strong>Polygone</strong> pour dessiner <code>ABCD</code>.</p>
-</li>
-<li>
-<p><strong>Interprétation visuelle :</strong> - Modifiez <code>b</code> avec le curseur. </p>
-</li>
-<li>
-<p>Justifiez que l'aire du rectangle est toujours égale à l'aire sous la courbe[cite: 56].</p>
-</li>
+<li>Placez un point <code>N</code> appartenant à la courbe et tracez la tangente en ce point.</li>
+<li>Déplacez le point <code>N</code> vers la droite (grandes valeurs de <span class="arithmatex">\(x\)</span>).</li>
+<li><em>Observation :</em> Pourquoi la pente de la tangente tend-elle vers 0 ? Quel terme de la fonction (<span class="arithmatex">\(x\)</span> ou <span class="arithmatex">\(e^{-2x}\)</span>) "gagne" sur l'autre à long terme ?</li>
 </ol>
-<h2 id="3-vers-la-derivation-revision">3. Vers la dérivation (Révision)</h2>
+<hr />
+<h2 id="partie-3-integration-et-valeur-moyenne">Partie 3 : Intégration et Valeur Moyenne</h2>
+<p>On souhaite évaluer la valeur moyenne du signal sur une fenêtre temporelle choisie.</p>
 <ol>
 <li>
-<p>Utilisez GeoGebra pour trouver le maximum de la fonction <span class="arithmatex">\(f\)</span> (Commande <code>Extremum(f)</code>).</p>
+<p><strong>Configuration :</strong> Créez deux curseurs <strong><code>a</code></strong> (min 0) et <strong><code>b</code></strong> (min 0.1). Réglez <code>a = 0</code> et <code>b = 2</code>.</p>
 </li>
 <li>
-<p>Vérifiez par le calcul que ce maximum correspond à la valeur où <span class="arithmatex">\(f'(x) = 0\)</span>.</p>
+<p><strong>Calcul global :</strong> Saisissez <code>I = Intégrale(f, a, b)</code> pour obtenir l'aire sous la courbe.</p>
 </li>
 <li>
-<p><em>Question de synthèse :</em> Pour quelle valeur de <span class="arithmatex">\(b\)</span> la valeur moyenne <span class="arithmatex">\(\mu\)</span> est-elle maximale ? (Utilisez le curseur pour observer).</p>
+<p><strong>Valeur Moyenne <span class="arithmatex">\(\mu\)</span> :</strong></p>
 </li>
+<li>Calculez la hauteur moyenne : `moy = I / (b - a</li>
 </ol>
 
 

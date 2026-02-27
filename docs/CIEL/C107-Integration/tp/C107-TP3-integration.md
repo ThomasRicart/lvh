@@ -1,32 +1,51 @@
-# TP 3 : Valeur moyenne et "Rectangle d'équivalence"
+# TP 3: Synthèse d'Analyse - Modélisation et Moyenne d'un signal exponentiel
 
-## 1. Modélisation du signal
+**Objectif :** Déterminer le paramètre d'un signal amorti à partir de contraintes géométriques, puis valider son étude par la dérivation et l'intégration.
 
-On étudie la fonction $f(t) = 4t e^{-t}$ (type charge de condensateur ou signal amorti).
+---
 
-1. Saisissez : `f(x) = 4x * exp(-x)`
+## Partie 1 : Détermination expérimentale du paramètre $c$
+On cherche à modéliser un signal par la fonction suivante :  
+$f(x) = x e^{-cx}$ (où $c > 0$)
 
-2. Créez un curseur `b` allant de 1 à 10. (On fixe $a=0$).
+Le signal doit respecter une contrainte physique précise :
+1. Présenter un **maximum** (tangente horizontale) à l'instant **$x = 0,5$**.
 
-## 2. Calcul de la Valeur Moyenne
+**Instructions GeoGebra :**
 
-1. Saisissez la commande pour l'intégrale : `I = Intégrale(f, 0, b)`
+1. Créez un curseur **`c`** allant de 0.1 à 5 (incrément 0.1).
 
-2. Calculez la valeur moyenne $\mu$ en saisissant : `moy = I / b`[cite: 54].
+2. Saisissez la fonction : `f(x) = x * exp(-c*x)`.
 
-3. Créez le rectangle d'équivalence :
+3. Créez un point **`M`** sur la courbe, placez-le précisément à $x=0,5$ et tracez sa **tangente** (Outil Tangente).
 
-   - Créez les points `A=(0,0)`, `B=(b,0)`, `C=(b, moy)`, `D=(0, moy)`.
-   - Utilisez l'outil **Polygone** pour dessiner `ABCD`.
+4. **Mission :** Ajustez le curseur **`c`** pour que la tangente en $x=0,5$ soit horizontale.
+   * *Note : La valeur cible à trouver est $c = 2$.*
 
-4. **Interprétation visuelle :** - Modifiez `b` avec le curseur. 
 
-   - Justifiez que l'aire du rectangle est toujours égale à l'aire sous la courbe[cite: 56].
 
-## 3. Vers la dérivation (Révision)
+---
 
-1. Utilisez GeoGebra pour trouver le maximum de la fonction $f$ (Commande `Extremum(f)`).
+## Partie 2 : Étude du signal identifié
+Utilisez maintenant la valeur trouvée (**$c = 2$**) pour analyser le comportement du signal.
 
-2. Vérifiez par le calcul que ce maximum correspond à la valeur où $f'(x) = 0$.
+1. **Étude des variations :**
+   - Saisissez `f'(x)` pour afficher la fonction dérivée.
+   - *Question :* Justifiez par le calcul que la fonction est croissante sur $[0 ; 0,5]$ puis décroissante sur $[0,5 ; +\infty[$.
 
-3. *Question de synthèse :* Pour quelle valeur de $b$ la valeur moyenne $\mu$ est-elle maximale ? (Utilisez le curseur pour observer).
+2. **Analyse de la pente :**
+   - Placez un point `N` appartenant à la courbe et tracez la tangente en ce point.
+   - Déplacez le point `N` vers la droite (grandes valeurs de $x$).
+   - *Observation :* Pourquoi la pente de la tangente tend-elle vers 0 ? Quel terme de la fonction ($x$ ou $e^{-2x}$) "gagne" sur l'autre à long terme ?
+
+---
+
+## Partie 3 : Intégration et Valeur Moyenne
+On souhaite évaluer la valeur moyenne du signal sur une fenêtre temporelle choisie.
+
+1. **Configuration :** Créez deux curseurs **`a`** (min 0) et **`b`** (min 0.1). Réglez `a = 0` et `b = 2`.
+
+2. **Calcul global :** Saisissez `I = Intégrale(f, a, b)` pour obtenir l'aire sous la courbe.
+
+3. **Valeur Moyenne $\mu$ :**
+   - Calculez la hauteur moyenne : `moy = I / (b - a
