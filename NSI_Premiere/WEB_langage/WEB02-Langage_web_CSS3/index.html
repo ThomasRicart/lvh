@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/WEB03-Interaction_client_serveur/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB_langage/WEB02-Langage_web_CSS3/">
       
       
-        <link rel="prev" href="../WEB02-Langage_web_CSS3/">
+        <link rel="prev" href="../WEB01-Langage_web_HTML5/">
       
       
-        <link rel="next" href="../WEB04-Java_Script_1_Syntaxe/">
+        <link rel="next" href="../WEB03-Interaction_client_serveur/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>WEB03 — Interaction Client-Serveur : Requêtes HTTP (GET/POST) et Formulaires - Cours de M. Ricart</title>
+        <title>WEB02 — Langages du Web (2) : CSS3 (Mise en forme) - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#web03-interaction-client-serveur-requetes-http-getpost-et-formulaires" class="md-skip">
+        <a href="#web02-langages-du-web-2-css3-mise-en-forme" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WEB03 — Interaction Client-Serveur : Requêtes HTTP (GET/POST) et Formulaires
+              WEB02 — Langages du Web (2) : CSS3 (Mise en forme)
             
           </span>
         </div>
@@ -844,7 +844,7 @@
   <span class="md-ellipsis">
     
   
-    WEB
+    WEB langage
   
 
     
@@ -861,7 +861,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    WEB
+    WEB langage
   
 
           </label>
@@ -910,14 +910,14 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Types_Construits/" class="md-nav__link ">
+            <a href="../../TC_Types_Construits/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    Types Construits
+    TC Types Construits
   
 
     
@@ -934,7 +934,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Types Construits
+    TC Types Construits
   
 
           </label>
@@ -1577,10 +1577,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-le-modele-client-serveur" class="md-nav__link">
+  <a href="#1-introduction-quel-est-le-role-du-css" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Le modèle Client - Serveur
+        1. Introduction : Quel est le rôle du CSS ?
       
     </span>
   </a>
@@ -1588,10 +1588,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-les-formulaires-html-la-balise-form" class="md-nav__link">
+  <a href="#2-le-modele-de-boite-box-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Les Formulaires HTML : La balise &lt;form&gt;
+        2. Le Modèle de Boîte (Box Model) 📦
       
     </span>
   </a>
@@ -1599,49 +1599,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-get-vs-post-quelle-difference" class="md-nav__link">
+  <a href="#3-syntaxe-et-selecteurs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. GET vs POST : Quelle différence ?
+        3. Syntaxe et Sélecteurs
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3. GET vs POST : Quelle différence ?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#la-methode-get" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        La méthode GET
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#la-methode-post" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        La méthode POST
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-mini-projet-dashboard-domotique-phase-3" class="md-nav__link">
+  <a href="#4-mini-projet-dashboard-domotique-phase-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Mini-projet : Dashboard Domotique (Phase 3)
+        4. Mini-projet : Dashboard Domotique (Phase 2)
       
     </span>
   </a>
@@ -1676,9 +1648,9 @@
 
 
 
-<h1 id="web03-interaction-client-serveur-requetes-http-getpost-et-formulaires">WEB03 — Interaction Client-Serveur : Requêtes HTTP (GET/POST) et Formulaires</h1>
+<h1 id="web02-langages-du-web-2-css3-mise-en-forme">WEB02 — Langages du Web (2) : CSS3 (Mise en forme)</h1>
 <p>🎯Objectifs et Compétences</p>
-<p>L'objectif est de comprendre comment les données saisies par un utilisateur sont transmises à un serveur pour être traitées.</p>
+<p>L'objectif est d'apprendre à styliser une structure existante en utilisant des feuilles de style pour séparer le fond de la forme.</p>
 <h3 id="capacites-attendues">Capacités attendues</h3>
 <table>
 <thead>
@@ -1689,128 +1661,283 @@
 </thead>
 <tbody>
 <tr>
-<td>Identifier</td>
-<td>Comprendre le cycle requête/réponse entre le navigateur et le serveur.</td>
-</tr>
-<tr>
-<td>Construire</td>
-<td>Créer un formulaire HTML pour collecter des données  utilisateur.</td>
-</tr>
-<tr>
 <td>Distinguer</td>
-<td>Choisir entre la méthode GET et la méthode POST selon le contexte.</td>
+<td>Séparer la description (HTML) du comportement (JavaScript) et de la forme (CSS)</td>
+</tr>
+<tr>
+<td>Styliser</td>
+<td>Utiliser des sélecteurs, des propriétés et des valeurs pour modifier l'apparence.</td>
+</tr>
+<tr>
+<td>Mettre en page</td>
+<td>Manipuler le modèle de boîte pour organiser les éléments du Dashboard.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="1-le-modele-client-serveur">1. Le modèle Client - Serveur</h2>
-<p>Le Web fonctionne sur un dialogue :</p>
+<h2 id="1-introduction-quel-est-le-role-du-css">1. Introduction : Quel est le rôle du CSS ?</h2>
+<ul>
+<li><strong>Notion :</strong> Le CSS (<em>Cascading Style Sheets</em>) définit l'apparence visuelle.</li>
+<li><strong>Analogie :</strong> Si le HTML est le squelette et les briques, le CSS est la peinture, la décoration et la disposition des meubles.</li>
+<li><strong>Liaison :</strong> On lie le CSS au HTML via la balise <code>&lt;link&gt;</code> dans le <code>&lt;head&gt;</code>. 
+  ⚠️ <em>Attention : le nom du fichier dans le code doit être exactement le même que celui enregistré sur votre ordinateur.</em></li>
+</ul>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Mon Dashboard Domotique&lt;/title&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;h1&gt;Mon Dashboard&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Salon&lt;/h2&gt;
+            &lt;p&gt;La température actuelle est de 21°C.&lt;/p&gt;
+            &lt;button type=&quot;button&quot;&gt;Allumer&lt;/button&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<pre><code class="language-css">/* 1. Style global du document */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Gris très clair */
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* 2. Titres */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #e67e22;
+    margin-top: 30px;
+}
+
+/* 3. Le Modèle de Boîte (Box Model) appliqué aux sections */
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 4. Style des composants d'interaction (Boutons) */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease; /* Animation fluide */
+}
+
+/* Effet au survol (Hover) */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Bouton spécifique pour &quot;Éteindre&quot; */
+button:nth-of-type(even) {
+    background-color: #e74c3c;
+}
+
+button:nth-of-type(even):hover {
+    background-color: #c0392b;
+}
+
+/* 5. Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0;
+}
+</code></pre>
+<h2 id="2-le-modele-de-boite-box-model">2. Le Modèle de Boîte (Box Model) 📦</h2>
+<p>C'est le concept le plus important du CSS. Chaque élément HTML est considéré comme une boîte.</p>
 <ul>
 <li>
-<p>Le <strong>Client</strong> (Navigateur) : Envoie une requête <code>HTTP</code> (ex: "Donne-moi la page accueil.html" ou "Envoie ces données de température").</p>
+<p><strong>Content</strong> : Le texte ou l'image.</p>
 </li>
 <li>
-<p>Le <strong>Serveur</strong> : Traite la demande et renvoie une réponse (la page Web ou une confirmation).</p>
+<p><strong>Padding</strong> (Marge intérieure) : L'espace entre le contenu et la bordure (le "rembourrage").</p>
+</li>
+<li>
+<p><strong>Border</strong> (Bordure) : Le contour de l'élément.</p>
+</li>
+<li>
+<p><strong>Margin</strong> (Marge extérieure) : L'espace pour s'éloigner des autres éléments voisins.</p>
 </li>
 </ul>
-<p><img alt="Image alt" src="../images/ClientServeur.png" /></p>
-<h2 id="2-les-formulaires-html-la-balise-form">2. Les Formulaires HTML : La balise <code>&lt;form&gt;</code></h2>
-<p>On utilise un formulaire pour collecter des données.</p>
+<p><strong>Astuce</strong> : Utilisez l'inspecteur du navigateur (F12) pour visualiser ces zones en couleurs !</p>
+<h2 id="3-syntaxe-et-selecteurs">3. Syntaxe et Sélecteurs</h2>
+<p>Une <strong>règle CSS</strong>: <code>selecteur { propriete: valeur; }</code></p>
 <ul>
 <li>
-<p>L'attribut <code>action</code> : Définit l'adresse (URL) du programme sur le serveur qui va recevoir les données.</p>
+<p><strong>Sélecteurs de balises</strong> : Ciblent tous les éléments d'un type (ex: <code>h1</code>, <code>p</code>, <code>button</code>).</p>
 </li>
 <li>
-<p>L'attribut <code>method</code> : Définit la manière dont les données voyagent (<strong>GET</strong> ou <strong>POST</strong>).</p>
+<p><strong>Propriétés</strong> courantes :</p>
+<ul>
+<li>
+<p><code>color</code> : Couleur du texte.</p>
+</li>
+<li>
+<p><code>background-color</code> : Couleur de fond.</p>
+</li>
+<li>
+<p><code>font-size</code> : Taille de la police.</p>
+</li>
+<li>
+<p><code>border</code> : Bordure autour de l'élément.</p>
 </li>
 </ul>
-<h2 id="3-get-vs-post-quelle-difference">3. GET vs POST : Quelle différence ?</h2>
+</li>
+</ul>
 <table>
 <thead>
 <tr>
-<th>Méthode</th>
-<th>Fonctionnement</th>
-<th>Visibilité</th>
-<th>Utilisation</th>
+<th style="text-align: left;">Thématique</th>
+<th style="text-align: left;">Propriété</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>GET</strong></td>
-<td>Les données sont ajoutées à l'URL.</td>
-<td>Visible dans la barre d'adresse.</td>
-<td>Recherches, consultation (ex: Google).</td>
+<td style="text-align: left;"><strong>Texte</strong></td>
+<td style="text-align: left;"><code>color</code></td>
+<td style="text-align: left;">Couleur (ex: <code>red</code>, <code>#FF5733</code>, <code>rgb(0,0,0)</code>)</td>
 </tr>
 <tr>
-<td><strong>POST</strong></td>
-<td>Les données sont cachées dans le corps de la requête.</td>
-<td>Invisible dans l'URL.</td>
-<td>Mots de passe, formulaires lourds, envois sensibles.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>font-family</code></td>
+<td style="text-align: left;">Choix de la police (ex: <code>'Arial'</code>, <code>sans-serif</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>font-size</code></td>
+<td style="text-align: left;">Taille du texte (ex: <code>16px</code>, <code>1.2em</code>, <code>large</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>text-align</code></td>
+<td style="text-align: left;">Alignement horizontal (ex: <code>left</code>, <code>center</code>, <code>right</code>, <code>justify</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>font-weight</code></td>
+<td style="text-align: left;">Épaisseur (gras) (ex: <code>bold</code>, <code>normal</code>, <code>600</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Fond</strong></td>
+<td style="text-align: left;"><code>background-color</code></td>
+<td style="text-align: left;">Couleur de l'arrière-plan (ex: <code>white</code>, <code>transparent</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>background-image</code></td>
+<td style="text-align: left;">Image d'arrière-plan (ex: <code>url('fond.jpg')</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Modèle de Boîte</strong></td>
+<td style="text-align: left;"><code>width</code> / <code>height</code></td>
+<td style="text-align: left;">Largeur et Hauteur (ex: <code>200px</code>, <code>50%</code>, <code>auto</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>padding</code></td>
+<td style="text-align: left;">Marge <strong>intérieure</strong> (ex: <code>10px</code> (entre contenu et bordure) )</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>margin</code></td>
+<td style="text-align: left;">Marge <strong>extérieure</strong> (ex: <code>20px</code> (entre l'élément et ses voisins) )</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>border</code></td>
+<td style="text-align: left;">Bordure (taille, style, couleur) (ex: <code>2px solid black</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>border-radius</code></td>
+<td style="text-align: left;">Coins arrondis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Affichage</strong></td>
+<td style="text-align: left;"><code>display</code></td>
+<td style="text-align: left;">Type d'affichage (ex: <code>block</code>, <code>inline</code>, <code>flex</code>, <code>none</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>box-shadow</code></td>
+<td style="text-align: left;">Ombre portée (ex: <code>2px 2px 5px grey</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>opacity</code></td>
+<td style="text-align: left;">Transparence (ex: <code>0.5</code> (de 0 à 1) )</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Interactivité</strong></td>
+<td style="text-align: left;"><code>:hover</code></td>
+<td style="text-align: left;">Change l'aspect au survol de la souris</td>
 </tr>
 </tbody>
 </table>
-<h3 id="la-methode-get">La méthode <strong>GET</strong></h3>
-<p>Elle est utilisée pour demander des données.</p>
-<pre><code class="language-html">&lt;form action=&quot;traitement.php&quot; method=&quot;GET&quot;&gt;
-    &lt;label&gt;Recherche de capteur :&lt;/label&gt;
-    &lt;input type=&quot;text&quot; name=&quot;id_capteur&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;Rechercher&lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
-<p>Si tu tapes "Salon" dans le champ, après avoir cliqué sur le bouton, l'URL dans ton navigateur deviendra :
-<code>http://mon-serveur.fr/traitement.php?id_capteur=Salon</code></p>
-<h3 id="la-methode-post">La méthode <strong>POST</strong></h3>
-<p>Elle est utilisée pour envoyer ou modifier des données sensibles ou volumineuses. Les informations sont "cachées" dans le corps de la requête <strong>HTTP</strong> et n'apparaissent pas dans l'URL.</p>
-<pre><code class="language-html">&lt;form action=&quot;config.php&quot; method=&quot;POST&quot;&gt;
-    &lt;label&gt;Nouveau mot de passe du Hub :&lt;/label&gt;
-    &lt;input type=&quot;password&quot; name=&quot;code_admin&quot;&gt;
-    &lt;button type=&quot;submit&quot;&gt;Mettre à jour&lt;/button&gt;
-&lt;/form&gt;
-</code></pre>
-<p>L'URL reste simplement <code>http://mon-serveur.fr/config.php</code>. Le mot de passe est envoyé de manière invisible pour l'utilisateur, ce qui est beaucoup plus sécurisé.</p>
-<p>Les composants de saisie (<code>&lt;input&gt;</code>)</p>
-<p>Chaque champ doit posséder un attribut <code>name</code> (c'est l'étiquette qui permettra au serveur de reconnaître la donnée).</p>
-<h2 id="4-mini-projet-dashboard-domotique-phase-3">4. Mini-projet : Dashboard Domotique (Phase 3)</h2>
-<p><strong>Objectif</strong> : Ajouter une interface de paramétrage à votre dashboard du <strong>S38</strong>.</p>
-<p><strong>Etapes à réaliser:</strong></p>
-<ol>
+<h2 id="4-mini-projet-dashboard-domotique-phase-2">4. Mini-projet : Dashboard Domotique (Phase 2)</h2>
+<p><strong>Objectif</strong> : Transformer votre dashboard brut en interface moderne.</p>
+<ul>
 <li>
-<p>Reprenez vos fichiers <code>WEB02-dashboard.html</code> et <code>WEB02-style.css</code>.</p>
+<p>Créez style.css et liez-le dans votre HTML.</p>
 </li>
 <li>
-<p>Ajoutez une nouvelle <code>&lt;section class="card"&gt;</code> nommée "Configuration".</p>
+<p>Appliquez une police sans-serif au body.</p>
 </li>
 <li>
-<p>Créez un formulaire utilisant la méthode <strong>GET</strong>.</p>
+<p>Ajoutez des ombres (box-shadow) et des arrondis (border-radius) à vos sections.</p>
 </li>
 <li>
-<p>Ajoutez un champ texte (<code>name="piece"</code>) et un curseur (<code>type="range"</code>, <code>name="temp_consigne"</code>).</p>
+<p>Défi : Créez une transition fluide sur vos boutons avec transition: 0.3s;.</p>
 </li>
-</ol>
-<p><strong>Analyse de la transmission</strong></p>
-<p>Une fois le formulaire rempli (par exemple : Pièce = "Cuisine" et Température = "19") et clique sur le bouton :</p>
-<ol>
-<li>
-<p>L'URL change : Elle devient <code>confirmation.html?piece=Cuisine&amp;temp_consigne=19</code>.</p>
-</li>
-<li>
-<p>Le couple Clé/Valeur : Les noms utilisés dans l'URL (<code>piece</code>, <code>temp_consigne</code>) correspondent exactement aux attributs <code>name</code> définis dans le code HTML.</p>
-</li>
-</ol>
+</ul>
+<p><strong>Objectif</strong> : Transformer votre fichier brut de la séance S37 en une interface moderne.</p>
 <p>✅ <strong>Liste de contrôle du projet</strong></p>
-<p>☐ Chaque <code>&lt;input&gt;</code> possède un attribut <code>name</code> unique.</p>
-<p>☐ Le bouton de validation est de type <code>type="submit"</code>.</p>
-<p>☐ Je peux observer les données dans l'URL après avoir cliqué sur "Appliquer".</p>
+<p>☐ <strong>Le fichier <code>style.css</code> est correctement lié (les changements sont visibles).</strong></p>
+<p>☐ <strong>Distinction nette entre <code>margin</code> et <code>padding</code>.</strong></p>
+<p>☐ <strong>L'interface est plus lisible et aérée que la version HTML pure.</strong></p>
 <p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
 <h2 id="4-synthese">4. Synthèse</h2>
 <ul>
 <li>
-<p>Le client fait une <strong>requête</strong>, le serveur envoie une <strong>réponse</strong>.</p>
+<p>Le CSS permet de centraliser la mise en forme.</p>
 </li>
 <li>
-<p>Les formulaires collectent les données via des <code>input</code>.</p>
+<p>On utilise des propriétés et des valeurs (ex: <code>color</code>: <code>blue</code>;).</p>
 </li>
 <li>
-<p><strong>GET</strong> est public (URL), <strong>POST</strong> est privé (Corps de la requête).</p>
+<p>Le modèle de boîte gère l'espacement et les bordures des éléments.</p>
 </li>
 </ul>
 <hr />

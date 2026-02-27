@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB/WEB05-Java_Script_2_conditions_interactivite/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/NSI_Premiere/WEB_langage/WEB01-Langage_web_HTML5/">
       
       
-        <link rel="prev" href="../WEB04-Java_Script_1_Syntaxe/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../WEB06-IHM_Capteurs_actionneurs/">
+        <link rel="next" href="../WEB02-Langage_web_CSS3/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>WEB05 — JavaScript (2) – Logique Conditionnelle et États du Système - Cours de M. Ricart</title>
+        <title>WEB01 — Langages du Web (1) : HTML5 - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#web05-javascript-2-logique-conditionnelle-et-etats-du-systeme" class="md-skip">
+        <a href="#web01-langages-du-web-1-html5" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WEB05 — JavaScript (2) – Logique Conditionnelle et États du Système
+              WEB01 — Langages du Web (1) : HTML5
             
           </span>
         </div>
@@ -844,7 +844,7 @@
   <span class="md-ellipsis">
     
   
-    WEB
+    WEB langage
   
 
     
@@ -861,7 +861,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    WEB
+    WEB langage
   
 
           </label>
@@ -910,14 +910,14 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../Types_Construits/" class="md-nav__link ">
+            <a href="../../TC_Types_Construits/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    Types Construits
+    TC Types Construits
   
 
     
@@ -934,7 +934,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Types Construits
+    TC Types Construits
   
 
           </label>
@@ -1566,10 +1566,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-point-de-cours-prendre-des-decisions-en-js" class="md-nav__link">
+  <a href="#capacites-attendues" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Point de cours : Prendre des décisions en JS
+        Capacités attendues
       
     </span>
   </a>
@@ -1577,10 +1577,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-application-au-mini-projet-dashboard-intelligent" class="md-nav__link">
+  <a href="#1-phase-dexploration-lenvers-du-decor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Application au Mini-Projet : Dashboard Intelligent
+        1. Phase d'Exploration : "L'envers du décor"
       
     </span>
   </a>
@@ -1588,10 +1588,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-etapes-a-realiser" class="md-nav__link">
+  <a href="#2-structure-en-arbre-dom" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Étapes à réaliser
+        2. Structure en arbre (DOM)
       
     </span>
   </a>
@@ -1599,10 +1599,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-liste-de-controle-de-fin-de-seance" class="md-nav__link">
+  <a href="#3-les-differentes-balises" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Liste de contrôle de fin de séance
+        3. Les différentes balises
       
     </span>
   </a>
@@ -1610,10 +1610,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-synthese-de-la-seance" class="md-nav__link">
+  <a href="#4-mini-projet" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Synthèse de la séance
+        4. Mini projet:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-synthese" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Synthèse
       
     </span>
   </a>
@@ -1637,201 +1648,227 @@
 
 
 
-<h1 id="web05-javascript-2-logique-conditionnelle-et-etats-du-systeme">WEB05 — JavaScript (2) – Logique Conditionnelle et États du Système</h1>
+<h1 id="web01-langages-du-web-1-html5">WEB01 — Langages du Web (1) : HTML5</h1>
 <p>🎯Objectifs et Compétences</p>
-<p>L'objectif est de rendre le Dashboard "intelligent". Le programme doit analyser la donnée et réagir visuellement (alertes, couleurs, icônes) en fonction de seuils critiques.</p>
+<h3 id="capacites-attendues">Capacités attendues</h3>
+<table>
+<thead>
+<tr>
+<th>Capacités visées</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Analyser</td>
+<td>Examiner le code HTML d'une page comprenant des composants graphiques</td>
+</tr>
+<tr>
+<td>Distinguer</td>
+<td>Séparer la description (HTML) du comportement (JavaScript) et de la forme (CSS)</td>
+</tr>
+<tr>
+<td>Structurer</td>
+<td>Créer l'ossature d'une interface répondant à un besoin (Mini-projet Domotique)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-phase-dexploration-lenvers-du-decor">1. Phase d'Exploration : "L'envers du décor"</h2>
 <ul>
 <li>
-<p>Utiliser des structures conditionnelles (<code>if</code>, <code>else if</code>, <code>else</code>).</p>
+<p><strong>Activité</strong> : Ouvrir une page Web simple (par exemple <a href="http://www.wikipedia.fr"><code>http://www.wikipedia.fr</code></a>) et utiliser l'outil <code>Inspecteur d'élément</code> (<code>F12</code> ou  <code>Clic droit &gt; Inspecter</code>).</p>
 </li>
 <li>
-<p>Modifier les classes CSS dynamiquement via JavaScript.</p>
+<p><strong>Notion</strong> : Comprendre que le navigateur interprète un fichier texte balisé pour générer un rendu visuel. Le langage utilisé (<code>HTML</code>) n'est pas <strong>WYSIWYG</strong>. (<em>What you see is what you get</em>)</p>
+</li>
+<li><strong>Repère historique</strong> </li>
+</ul>
+<p><img alt="image alt" src="../images/web_historique.png" /></p>
+<ul>
+<li>
+<p><strong>Anatomie d'une balise</strong>: La mise en page est effectuée grâce à des balises. Il existe des balises doubles (<code>&lt;p&gt;...&lt;/p&gt;</code>) ou orphelines (<code>&lt;img&gt;</code>)</p>
 </li>
 <li>
-<p>Créer des alertes visuelles basées sur des seuils de données.</p>
+<p><strong>Attributs</strong>: Les balises peuvent être personnalisées (ex: <code>&lt;a href = "..."&gt; ou &lt;img src = "..."&gt;</code>)</p>
 </li>
 </ul>
-<h2 id="1-point-de-cours-prendre-des-decisions-en-js">1. Point de cours : Prendre des décisions en JS</h2>
-<p><strong>La Structure if / else</strong></p>
-<p>Pour qu'un script soit interactif, il doit tester des conditions. On utilise le bloc if (si) et else (sinon).</p>
-<pre><code class="language-javascript">let temperature = 26;
+<h2 id="2-structure-en-arbre-dom">2. Structure en arbre (DOM)</h2>
+<p>Le <strong>HTML</strong> structure les données de manière hiérarchique. On parle de <strong>DOM</strong> (Document Object Model). Chaque balise ouverte à l'intérieur d'une autre devient sont "enfant".</p>
+<ul>
+<li><strong>Structure minimale</strong>: <ul>
+<li><code>html</code>: la racine qui englobe tout,</li>
+<li><code>head</code>:  les métadonnées (titre de l'onglet, encodage UTF-8),</li>
+<li><code>body</code>: le contenu visible par l'utilisateur</li>
+</ul>
+</li>
+<li><strong>Regles d'indentation:</strong> Pour rendre le code lisible, on décale (touche Tab) chaque balise enfant par rapport à sa balise parente.</li>
+</ul>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Ma Première Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-if (temperature &gt;= 26) {
-    // Exécuté si la condition est VRAIE
-    console.log(&quot;Alerte Chaleur !&quot;);
-} else {
-    // Exécuté dans tous les autres cas
-    console.log(&quot;Température normale.&quot;);
-}
-</code></pre>
-<p><strong>Les Opérateurs de Comparaison</strong></p>
-<ul>
-<li>
-<p><code>&gt; / &lt;</code> : Supérieur / Inférieur</p>
-</li>
-<li>
-<p><code>&gt;= / &lt;=</code> : Supérieur ou égal / Inférieur ou égal</p>
-</li>
-<li>
-<p><code>==</code> : Égal à</p>
-</li>
-<li>
-<p><code>!=</code> : Différent de</p>
-</li>
-</ul>
-<p><strong>Manipuler les classes CSS (<code>classList</code>)</strong></p>
-<p>Au lieu de modifier les styles un par un, il est plus performant d'ajouter ou de retirer une "classe" CSS complète définie dans votre fichier `.css.</p>
-<ul>
-<li>
-<p><code>element.classList.add("nom-classe")</code> : Ajoute un style.</p>
-</li>
-<li>
-<p><code>element.classList.remove("nom-classe")</code> : Retire un style.</p>
-</li>
-</ul>
-<h2 id="2-application-au-mini-projet-dashboard-intelligent">2. Application au Mini-Projet : Dashboard Intelligent</h2>
-<p>Nous allons faire évoluer le Dashboard de la S40 pour qu'il gère des états visuels :</p>
-<ul>
-<li>
-<p>État Chaud : Si la température est ≥26°C.</p>
-</li>
-<li>
-<p>État Froid : Si la température est ≤17°C.</p>
-</li>
-<li>
-<p>État Normal : Entre 18 et 25°C.</p>
-</li>
-</ul>
-<h2 id="3-etapes-a-realiser">3. Étapes à réaliser</h2>
-<p><strong>Étape 1 : Préparer le CSS (S41-style.css)</strong></p>
-<p>Ouvrez votre fichier S41-style.css et ajoutez ce code exactement à la fin du fichier :</p>
-<pre><code class="language-css">/* --- COPIER-COLLER CI-DESSOUS --- */
+    &lt;h1&gt;Bienvenue sur mon site&lt;/h1&gt;
 
-/* Style activé en cas de forte chaleur (T &gt;= 26) */
-.chaud {
-    background-color: #fdf2f2 !important; 
-    border-left: 10px solid #e74c3c !important;
-    transition: all 0.5s ease;
-}
+    &lt;p&gt;Ceci est un paragraphe d'introduction pour présenter le contenu de la page.&lt;/p&gt;
 
-/* Style activé en cas de froid (T &lt;= 17) */
-.froid {
-    background-color: #f0f7ff !important;
-    border-left: 10px solid #3498db !important;
-    transition: all 0.5s ease;
-}
-
-</code></pre>
-<p><strong>Étape 2 : Préparer le HTML (WEB05-dashboard.html)</strong></p>
-<p>Pour que le script puisse cibler les éléments, assurez-vous d'avoir ces id :</p>
-<ul>
-<li>
-<p>La section des capteurs doit avoir l'identifiant : <code>&lt;section id="card-temp"&gt;</code>.</p>
-</li>
-<li>
-<p>Dans la liste, ajoutez l'icône : <code>&lt;li&gt;Statut : &lt;span id="icon-status"&gt;✅&lt;/span&gt;&lt;/li&gt;</code>.</p>
-</li>
-</ul>
-<p>Mets à jour ton fichier en ajoutant les id pour que le JavaScript puisse "trouver" les éléments :</p>
-<pre><code class="language-html">&lt;section id=&quot;card-temp&quot;&gt;
-    &lt;h2&gt;Statut des Capteurs&lt;/h2&gt;
+    &lt;p&gt;Voici une liste de mes liens préférés :&lt;/p&gt;
     &lt;ul&gt;
-        &lt;li&gt;Statut : &lt;span id=&quot;icon-status&quot;&gt;✅&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;Température : &lt;span id=&quot;valeur-temp&quot;&gt;22&lt;/span&gt;°C&lt;/li&gt;
-        &lt;li&gt;Humidité : 40%&lt;/li&gt;
-        &lt;li&gt;Luminosité : 500 lux&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Moteur de recherche Google&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://wikipedia.org&quot;&gt;Encyclopédie Wikipédia&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;Un élément de liste sans lien pour l'exemple&lt;/li&gt;
     &lt;/ul&gt;
-&lt;/section&gt;
-</code></pre>
-<p><strong>Étape 3 : Coder la logique dans WEB05-script.js</strong></p>
-<p>Remplace ton ancienne fonction par celle-ci :</p>
-<pre><code class="language-javascript">function mettreAJourDashboard() {
-    const curseur = document.getElementById(&quot;consigne&quot;);
-    const affichageTemp = document.getElementById(&quot;valeur-temp&quot;);
-    const zoneCard = document.getElementById(&quot;card-temp&quot;);
-    const icone = document.getElementById(&quot;icon-status&quot;);
 
-    const t = parseFloat(curseur.value);
-    affichageTemp.textContent = t;
-
-    // Logique de seuils
-    zoneCard.classList.remove(&quot;chaud&quot;, &quot;froid&quot;);
-
-    if (t &gt;= 26) {
-        zoneCard.classList.add(&quot;chaud&quot;);
-        icone.textContent = &quot;🔥&quot;;
-    } else if (t &lt;= 17) {
-        zoneCard.classList.add(&quot;froid&quot;);
-        icone.textContent = &quot;❄️&quot;;
-    } else {
-        icone.textContent = &quot;✅&quot;;
-    }
-}
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
-<p><strong>Etape 4: Gestion de la lumière:</strong></p>
-<ul>
-<li>Il faut ajouter l'attribut onclick sur les boutons pour qu'ils appellent une fonction (que nous allons créer juste après).</li>
-</ul>
-<p><em>Dans le fichier <code>html</code></em></p>
-<pre><code class="language-html">&lt;section&gt;
-    &lt;h2&gt;Commandes&lt;/h2&gt;
-    &lt;button type=&quot;button&quot; onclick=&quot;gererLumiere('allumer')&quot;&gt;Allumer&lt;/button&gt;
-    &lt;button type=&quot;button&quot; onclick=&quot;gererLumiere('eteindre')&quot;&gt;Éteindre&lt;/button&gt;
-&lt;/section&gt;
-</code></pre>
-<ul>
-<li>Pour que l'effet "éteint" soit visible, on ajoute une classe qui change la couleur du fond de page (<code>body</code>).</li>
-</ul>
-<p><em>Dans le fichier <code>css</code></em></p>
-<pre><code class="language-css">/* Style pour simuler l'extinction des feux */
-.mode-nuit {
-    background-color: #1a1a1a !important; /* Gris très sombre */
-    transition: background-color 0.5s ease;
-}
-</code></pre>
-<ul>
-<li>Ajout de la fonction lumière</li>
-</ul>
-<p><em>Dans le fichier <code>js</code></em></p>
-<pre><code class="language-javascript">/**
- * Gère l'allumage et l'extinction visuelle du dashboard
- * @param {string} action - Reçoit 'allumer' ou 'eteindre'
- */
-function gererLumiere(action) {
-    const corpsPage = document.body;
-
-    if (action === 'eteindre') {
-        corpsPage.classList.add(&quot;mode-nuit&quot;);
-        console.log(&quot;Lumières éteintes&quot;);
-    } else {
-        corpsPage.classList.remove(&quot;mode-nuit&quot;);
-        console.log(&quot;Lumières allumées&quot;);
-    }
-}
-</code></pre>
-<h2 id="4-liste-de-controle-de-fin-de-seance">4. Liste de contrôle de fin de séance</h2>
-<p>☐ Interaction : Le changement de température déclenche-t-il une modification visuelle immédiate ?</p>
-<p>☐ Nettoyage : Utilisez-vous <code>classList.remove()</code> pour éviter que les couleurs "chaud" et "froid" ne se superposent ?</p>
-<p>☐ Logique : Avez-vous bien utilisé <code>parseFloat()</code> ou <code>Number()</code> pour comparer des nombres et non des textes ?</p>
-<p>☐ Validation : Votre code HTML passe-t-il toujours le validateur W3C ?</p>
-<h2 id="5-synthese-de-la-seance">5. Synthèse de la séance</h2>
+<p><img alt="image alt" src="../images/dom_tree2.webp" /></p>
+<h2 id="3-les-differentes-balises">3. Les différentes balises</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Balise</th>
+<th style="text-align: left;">Nom complet</th>
+<th style="text-align: left;">Rôle principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>&lt;html&gt;</code></td>
+<td style="text-align: left;">Document HTML</td>
+<td style="text-align: left;">Racine du document (englobe tout le code).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;head&gt;</code></td>
+<td style="text-align: left;">En-tête</td>
+<td style="text-align: left;">Contient les infos techniques (métadonnées, titre).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;meta&gt;</code></td>
+<td style="text-align: left;">Métadonnées</td>
+<td style="text-align: left;">Définit l'encodage (UTF-8).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;title&gt;</code></td>
+<td style="text-align: left;">Titre</td>
+<td style="text-align: left;">Texte affiché dans l'onglet du navigateur.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;body&gt;</code></td>
+<td style="text-align: left;">Corps</td>
+<td style="text-align: left;">Contient tout le contenu visible (texte, images).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;h1&gt;</code></td>
+<td style="text-align: left;">Titre H1</td>
+<td style="text-align: left;">Le titre principal de la page.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;p&gt;</code></td>
+<td style="text-align: left;">Paragraphe</td>
+<td style="text-align: left;">Bloc de texte standard.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;a&gt;</code></td>
+<td style="text-align: left;">Lien</td>
+<td style="text-align: left;">Crée un lien hypertexte (attribut href).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;ul&gt;</code></td>
+<td style="text-align: left;">Liste</td>
+<td style="text-align: left;">Définit une liste à puces (non ordonnée).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;li&gt;</code></td>
+<td style="text-align: left;">Élément</td>
+<td style="text-align: left;">Un item spécifique dans une liste.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;ol&gt;</code></td>
+<td style="text-align: left;">Liste</td>
+<td style="text-align: left;">Définit une liste numérotée</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-mini-projet">4. Mini projet:</h2>
+<p>Vous allez construire la structure de contrôle d'une pièce (Salon, Garage ou Cuisine).</p>
+<p>Vous devez réaliser l'ossature (le squelette) de l'interface de contrôle d'une pièce (Salon, Cuisine ou Garage).</p>
+<p><strong>Cahier des charges :</strong></p>
 <ul>
 <li>
-<p>La structure <code>if / else if / else</code> permet de gérer plusieurs scénarios possibles.</p>
+<p>Structure : Respecter les balises obligatoires  <code>html</code>, <code>head</code> et <code>body</code>.</p>
 </li>
 <li>
-<p>Le JavaScript peut modifier la structure du document (DOM) mais aussi son apparence en pilotant les classes CSS.</p>
-</li>
-<li>
-<p>Une application interactive réussie doit fournir un feedback visuel clair à l'utilisateur (changement de couleur, icône, message d'alerte).</p>
-</li>
-<li>
-<p>Plutôt que de modifier le style ligne par ligne (ex: <code>style.color</code>), il est plus propre d'ajouter ou retirer une classe CSS définie au préalable.</p>
+<p>Contenu :</p>
 <ul>
-<li><code>element.classList.add("ma-classe")</code> : Ajoute une classe.</li>
-<li><code>element.classList.remove("ma-classe")</code> : Supprime une classe.</li>
+<li>
+<p>Un titre principal <code>&lt;h1&gt;</code> (ex: "Contrôle du Salon").</p>
+</li>
+<li>
+<p>Deux sous-sections <code>&lt;h2&gt;</code> (ex: "Éclairage" et "Chauffage").</p>
+</li>
+<li>
+<p>Une liste à puces <code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code> affichant 3 capteurs (Ex: <code>Température : 21°C</code>).</p>
+</li>
 </ul>
-<hr />
+</li>
+<li>
+<p>Interactions : Insérer deux balises <code>&lt;button&gt;</code> : <code>Allumer</code> et <code>Éteindre</code>.</p>
+</li>
+<li>
+<p>Médias : Une image <code>&lt;img&gt;</code> avec l'attribut <code>alt</code> (obligatoire pour l'accessibilité des malvoyants).</p>
+</li>
+<li>
+<p>Lien : Un lien <code>&lt;a&gt;</code> vers un site météo.</p>
+</li>
+</ul>
+<p><a href = "../WEB01-dashboard.html"> Le rendu devrait ressembler à quelque chose comme cela.</a></p>
+<p><strong>Zoom sur la balise <code>&lt;button&gt;</code></strong></p>
+<p>Dans cette séance, la balise <code>&lt;button&gt;</code> sert de composant graphique d'interaction.</p>
+<ul>
+<li>
+<p>Ce qu'elle fait aujourd'hui : Elle affiche un élément cliquable sur l'interface.</p>
+</li>
+<li>
+<p>Ce qu'elle fera plus tard : Dans les séances suivantes, nous lui associerons un événement JavaScript pour qu'elle puisse réellement piloter un objet.</p>
+</li>
+</ul>
+<p>✅ <strong>Liste de contrôle du projet</strong></p>
+<p>☐ <strong>Le document commence par <code>&lt;!DOCTYPE html&gt;</code>.</strong></p>
+<p>☐ <strong>Mon code est bien indenté (décalé pour être lisible).</strong></p>
+<p>☐ <strong>Toutes mes balises ouvertes sont refermées.</strong></p>
+<p>☐ <strong>L'attribut <code>alt</code> est présent sur mon image.</strong></p>
+<p>☐ <strong>Les boutons s'affichent correctement dans le navigateur.</strong></p>
+<p>☐ <strong>Validation W3C. le <a href = "https://validator.w3.org/">W3C Validator</a> permet de valider la synthaxe du code</strong></p>
+<p>☐ <strong>Défi (Optionnel): ajouter une balise <code>&lt;input type="range"&gt;</code> pour simuler un variateur de lumière.</strong></p>
+<h2 id="5-synthese">5. Synthèse</h2>
+<ul>
+<li>
+<p>Le <strong>HTML5</strong> permet de structurer les données de manière hiérarchique (structure en arbre).</p>
+</li>
+<li>
+<p>on sépare le <strong>fond</strong> (HTML) de la <strong>forme</strong> (CSS) et du <strong>comportement</strong> (JS).</p>
+</li>
+<li>
+<p>Les <strong>balises</strong> :</p>
+<ul>
+<li>
+<p>Doubles : <code>&lt;p&gt;Texte&lt;/p&gt;</code> (ouvrent et ferment).</p>
+</li>
+<li>
+<p>Orphelines : <code>&lt;img&gt;</code> ou <code>&lt;br&gt;</code> (autoférmentes).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Les <strong>attributs</strong> : Ils complètent les balises (ex: <code>href</code> pour un lien, <code>src</code> pour une image).</p>
+</li>
+<li>
+<p>La balise <code>&lt;button&gt;</code> : C'est un composant graphique d'interaction. En HTML, on définit son apparence ; son action réelle sera codée plus tard en JavaScript.</p>
 </li>
 </ul>
 
