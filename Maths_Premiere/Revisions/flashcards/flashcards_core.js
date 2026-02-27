@@ -27,9 +27,20 @@ function flipCard() {
 function updateCard() {
     if (questions.length === 0) return;
     const card = document.getElementById('card');
-	const recto = document.getElementById('recto');
-    const verso = document.getElementById('verso');
-
+    card.classList.remove('flipped');
+    
+    setTimeout(() => {
+        document.getElementById('recto').innerHTML = `<span>${questions[currentIndex].recto}</span>`;
+        document.getElementById('verso').innerHTML = `<span>${questions[currentIndex].verso}</span>`;
+        document.getElementById('progress').innerText = `Carte ${currentIndex + 1} / ${questions.length}`;
+        
+        // --- CETTE PARTIE EST ESSENTIELLE POUR LE $ ---
+        if (window.MathJax && MathJax.typesetPromise) {
+            MathJax.typesetPromise();
+        }
+        // ----------------------------------------------
+    }, 150);
+}
 // Vérification que les éléments existent bien dans la page
     if (!card || !recto || !verso) return; 
 
