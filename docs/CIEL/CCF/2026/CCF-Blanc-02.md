@@ -7,7 +7,7 @@
 
 ## Contexte général
 En télécommunications, le gain d'un amplificateur peut varier selon la tension de commande. On modélise le gain $G$ (en décibels) en fonction de la tension $x$ (en volts) sur l'intervalle $[1 ; 10]$ par :
-$$f(x) = A \ln(x) + Bx$$
+$f(x) = A \ln(x) + Bx$
 
 ---
 
@@ -41,7 +41,7 @@ Avant d'étudier le signal, le technicien doit configurer l'amplificateur pour q
 
 ## Partie 2 – Étude de la fonction de Gain
 Pour la suite, on admet que les paramètres sont fixés à **$A = -20$** et **$B = 5$**. La fonction est donc :
-$$f(x) = -20 \ln(x) + 5x$$
+$f(x) = -20 \ln(x) + 5x$
 
 ### 2.1 – Valeurs limites
 
@@ -74,7 +74,7 @@ b) Calculer la valeur exacte de l'intégrale $I = \displaystyle\int_{1}^{5} f(x)
 ### 3.2 – Valeur moyenne
 
 Calculer la valeur moyenne $G_m$ du gain sur l'intervalle $[1 ; 5]$ (arrondir au dixième) :
-$$G_m = \frac{1}{5-1} \int_{1}^{5} f(x) \, dx$$
+$G_m = \frac{1}{5-1} \int_{1}^{5} f(x) \, dx$
 
 ---
 
