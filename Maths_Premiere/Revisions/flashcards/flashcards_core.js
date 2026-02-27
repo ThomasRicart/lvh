@@ -29,15 +29,16 @@ function updateCard() {
     if (questions.length === 0) return;
     
     const card = document.getElementById('card');
-    card.classList.remove('flipped'); // Réinitialise la carte face recto
+    card.classList.remove('flipped');
     
     setTimeout(() => {
+        // Mise à jour du texte
         document.getElementById('recto').innerHTML = `<span>${questions[currentIndex].recto}</span>`;
         document.getElementById('verso').innerHTML = `<span>${questions[currentIndex].verso}</span>`;
         document.getElementById('progress').innerText = `Carte ${currentIndex + 1} / ${questions.length}`;
         
-        // Force MathJax à traiter les nouveaux symboles $ chargés
-        if (window.MathJax && MathJax.typesetPromise) {
+        // Relance le rendu MathJax sur toute la page
+        if (window.MathJax) {
             MathJax.typesetPromise();
         }
     }, 150);
