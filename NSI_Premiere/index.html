@@ -1564,10 +1564,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#code-source-de-lalgorithme" class="md-nav__link">
+  <a href="#le-programme-officiel" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🐍 Code source de l'algorithme
+        Le programme officiel
       
     </span>
   </a>
@@ -1593,29 +1593,40 @@
 
 <h1 id="nsi-premiere">NSI Premiere</h1>
 <p><a href="../_python/est_present_elements.py">lien</a></p>
-<pre><code class="language-markdown">### 📂 Code source du script
-{% highlight python %}
-{% include ../_python/est_present_elements.py %}
-{% endhighlight %}
-</code></pre>
-<p><a href="../_python/est_present_elements.py">📂 Afficher le code source (recherche.py)</a></p>
-<h3 id="code-source-de-lalgorithme">🐍 Code source de l'algorithme</h3>
-<h1 id="algorithmique-recherche-delements">Algorithmique - Recherche d'éléments</h1>
-<p>Dans cette section, nous étudions comment vérifier la présence d'un élément dans une liste. Le code ci-dessous est synchronisé automatiquement avec notre dépôt de scripts Python.</p>
-<h3 id="explications-techniques">Explications techniques</h3>
-<ul>
-<li><strong>Complexité</strong> : Dans le pire des cas (si l'élément est à la fin ou absent), l'algorithme doit parcourir toute la liste (<span class="arithmatex">\(O(n)\)</span>).</li>
-<li><strong>Entrées</strong> : Une liste d'éléments et la valeur à rechercher.</li>
-<li><strong>Sortie</strong> : Un booléen (<code>True</code> ou <code>False</code>).</li>
-</ul>
-<div style="width: 100%; height: 500px;">
-    <h3>Aperçu du script Python :</h3>
-    <embed src="../_python/est_present_elements.py" type="text/plain" width="100%" height="100%">
-</div>
+<pre><code class="language-python">def est_present_elements(liste, valeur_cherchee):
+    &quot;&quot;&quot;
+    Vérifie si une valeur est présente dans une liste donnée.
+    Itération sur les éléments
 
-<ol>
-<li></li>
-</ol>
+    Args:
+        liste (list): La liste d'éléments dans laquelle effectuer la recherche.
+        valeur_cherchee: La valeur (nombre, chaîne, etc.) à trouver.
+
+    Returns:
+        bool: True si la valeur est trouvée, False sinon.
+    &quot;&quot;&quot;
+    for element in liste:
+        if element == valeur_cherchee:
+            return True
+    return False
+
+# --- TESTS UNITAIRES (Asserts) ---
+def test_est_present_elements():
+    &quot;&quot;&quot; Fonction de test de la fonction est_prensent &quot;&quot;&quot;
+    # Test 1 : Valeur présente au milieu
+    assert est_present_elements([10, 20, 30, 40], 30) == True
+    # Test 2 : Valeur absente
+    assert est_present_elements([10, 20, 30, 40], 50) == False
+    # Test 3 : Valeur présente au tout début (cas limite)
+    assert est_present_elements([&quot;BTS&quot;, &quot;CIEL&quot;, &quot;Maths&quot;], &quot;BTS&quot;) == True
+    # Test 4 : Liste vide (cas limite)
+    assert est_present_elements([], 1) == False
+    # Test 5 : Recherche d'un caractère dans une chaîne (Python traite les chaînes comme des listes)
+    assert est_present_elements(&quot;Automatisme&quot;, &quot;a&quot;) == True
+
+# à décommenter pour tester la fonction
+# test_est_present_elements()
+</code></pre>
 <iframe src="./presentation.html" width="100%" height="600px" frameborder="0"></iframe>
 
 <h2 id="le-programme-officiel">Le programme officiel</h2>
