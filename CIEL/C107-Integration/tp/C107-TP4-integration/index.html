@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://thomasricart.github.io/lvh/CIEL/C107-Integration/tp/C107-TP3-integration/">
+        <link rel="canonical" href="https://thomasricart.github.io/lvh/CIEL/C107-Integration/tp/C107-TP4-integration/">
       
       
-        <link rel="prev" href="../C107-TP2-integration/">
+        <link rel="prev" href="../C107-TP3-integration/">
       
       
-        <link rel="next" href="../C107-TP4-integration/">
+        <link rel="next" href="../../../C112-Nombres_complexes/exercices/C112-TD1-complexes_correction/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>TP : Synthèse d'Analyse - Modélisation et Moyenne d'un signal exponentiel - Cours de M. Ricart</title>
+        <title>TP : Synthèse d'Analyse - Détermination et Étude du signal \(p(x)\) - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tp-synthese-danalyse-modelisation-et-moyenne-dun-signal-exponentiel" class="md-skip">
+        <a href="#tp-synthese-danalyse-determination-et-etude-du-signal-px" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TP : Synthèse d'Analyse - Modélisation et Moyenne d'un signal exponentiel
+              TP : Synthèse d'Analyse - Détermination et Étude du signal \(p(x)\)
             
           </span>
         </div>
@@ -1492,10 +1492,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#partie-1-determination-experimentale-du-parametre-c" class="md-nav__link">
+  <a href="#partie-1-determination-experimentale-des-parametres" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Partie 1 : Détermination expérimentale du paramètre \(c\)
+        Partie 1 : Détermination expérimentale des paramètres
       
     </span>
   </a>
@@ -1541,60 +1541,84 @@
 
 
 
-<h1 id="tp-synthese-danalyse-modelisation-et-moyenne-dun-signal-exponentiel">TP : Synthèse d'Analyse - Modélisation et Moyenne d'un signal exponentiel</h1>
-<p><strong>Objectif :</strong> Déterminer le paramètre d'un signal amorti à partir de contraintes géométriques, puis valider son étude par la dérivation et l'intégration.</p>
+<h1 id="tp-synthese-danalyse-determination-et-etude-du-signal-px">TP : Synthèse d'Analyse - Détermination et Étude du signal <span class="arithmatex">\(p(x)\)</span></h1>
+<p><strong>Objectif :</strong> Déterminer les paramètres d'un signal à partir de contraintes géométriques, puis valider son étude par la dérivation et l'intégration.</p>
 <hr />
-<h2 id="partie-1-determination-experimentale-du-parametre-c">Partie 1 : Détermination expérimentale du paramètre <span class="arithmatex">\(c\)</span></h2>
+<h2 id="partie-1-determination-experimentale-des-parametres">Partie 1 : Détermination expérimentale des paramètres</h2>
 <p>On cherche à modéliser un signal par la fonction suivante :<br />
-<span class="arithmatex">\(f(x) = x e^{-cx}\)</span> (où <span class="arithmatex">\(c &gt; 0\)</span>)</p>
-<p>Le signal doit respecter une contrainte physique précise :
-1. Présenter un <strong>maximum</strong> (tangente horizontale) à l'instant <strong><span class="arithmatex">\(x = 0,5\)</span></strong>.</p>
+<span class="arithmatex">\(p(x) = kx^2 + mx + \ln(x)\)</span></p>
+<p>Le signal doit respecter deux contraintes physiques :</p>
+<ol>
+<li>
+<p>Passer par le point de mesure <strong><span class="arithmatex">\(A(1 ; 2)\)</span></strong>.</p>
+</li>
+<li>
+<p>Présenter un <strong>maximum</strong> (tangente horizontale) à l'instant <strong><span class="arithmatex">\(x = 1\)</span></strong>.</p>
+</li>
+</ol>
 <p><strong>Instructions GeoGebra :</strong></p>
 <ol>
 <li>
-<p>Créez un curseur <strong><code>c</code></strong> allant de 0.1 à 5 (incrément 0.1).</p>
+<p>Créez deux curseurs <code>k</code> et <code>m</code> allant de -5 à 5 (incrément 0.1).</p>
 </li>
 <li>
-<p>Saisissez la fonction : <code>f(x) = x * exp(-c*x)</code>.</p>
+<p>Saisissez la fonction : <code>p(x) = k*x^2 + m*x + ln(x)</code>.</p>
 </li>
 <li>
-<p>Créez un point <strong><code>M</code></strong> sur la courbe, placez-le précisément à <span class="arithmatex">\(x=0,5\)</span> et tracez sa <strong>tangente</strong> (Outil Tangente).</p>
+<p>Placez le point cible <code>A = (1, 2)</code>.</p>
 </li>
 <li>
-<p><strong>Mission :</strong> Ajustez le curseur <strong><code>c</code></strong> pour que la tangente en <span class="arithmatex">\(x=0,5\)</span> soit horizontale.</p>
+<p>Créez un point <code>M</code> sur la courbe, placez-le précisément à <span class="arithmatex">\(x=1\)</span> et tracez sa <strong>tangente</strong> (Outil Tangente).</p>
 </li>
-<li><em>Note : La valeur cible à trouver est <span class="arithmatex">\(c = 2\)</span>.</em></li>
+<li>
+<p><strong>Mission :</strong> Ajustez les curseurs <code>k</code> et <code>m</code> pour que la courbe passe par <code>A</code> et que la tangente en <span class="arithmatex">\(x=1\)</span> soit horizontale.</p>
+</li>
+<li>
+<p><em>Note : Les valeurs cibles sont <span class="arithmatex">\(k = -1.5\)</span> et <span class="arithmatex">\(m = 2\)</span>.</em></p>
+</li>
 </ol>
 <hr />
 <h2 id="partie-2-etude-du-signal-identifie">Partie 2 : Étude du signal identifié</h2>
-<p>Utilisez maintenant la valeur trouvée (<strong><span class="arithmatex">\(c = 2\)</span></strong>) pour analyser le comportement du signal.</p>
+<p>Utilisez maintenant les valeurs trouvées (<span class="arithmatex">\(k = -1.5\)</span> et <span class="arithmatex">\(m = 2\)</span>) pour analyser le comportement du signal.</p>
 <ol>
 <li><strong>Étude des variations :</strong></li>
-<li>Saisissez <code>f'(x)</code> pour afficher la fonction dérivée.</li>
+<li>Saisissez <code>p'(x)</code> pour afficher la fonction dérivée.</li>
 <li>
-<p><em>Question :</em> Justifiez par le calcul que la fonction est croissante sur <span class="arithmatex">\([0 ; 0,5]\)</span> puis décroissante sur <span class="arithmatex">\([0,5 ; +\infty[\)</span>.</p>
+<p><em>Question :</em> Justifiez par le calcul que la fonction est croissante sur <span class="arithmatex">\(]0 ; 1]\)</span> puis décroissante sur <span class="arithmatex">\([1 ; +\infty[\)</span>.</p>
 </li>
 <li>
 <p><strong>Analyse de la pente :</strong></p>
 </li>
-<li>Placez un point <code>N</code> appartenant à la courbe et tracez la tangente en ce point.</li>
+<li>Placer un point <code>N</code> appartenant à la courbe et tracer la tangente en ce point</li>
 <li>Déplacez le point <code>N</code> vers la droite (grandes valeurs de <span class="arithmatex">\(x\)</span>).</li>
-<li><em>Observation :</em> Pourquoi la pente de la tangente tend-elle vers 0 ? Quel terme de la fonction (<span class="arithmatex">\(x\)</span> ou <span class="arithmatex">\(e^{-2x}\)</span>) "gagne" sur l'autre à long terme ?</li>
+<li><em>Observation :</em> Pourquoi la pente de la tangente devient-elle de plus en plus négative ? Quel terme de la fonction (<span class="arithmatex">\(x^2\)</span> ou <span class="arithmatex">\(\ln(x)\)</span>) "gagne" sur l'autre à long terme ?</li>
 </ol>
 <hr />
 <h2 id="partie-3-integration-et-valeur-moyenne">Partie 3 : Intégration et Valeur Moyenne</h2>
 <p>On souhaite évaluer la valeur moyenne du signal sur une fenêtre temporelle choisie.</p>
 <ol>
 <li>
-<p><strong>Configuration :</strong> Créez deux curseurs <strong><code>a</code></strong> (min 0) et <strong><code>b</code></strong> (min 0.1). Réglez <code>a = 0</code> et <code>b = 2</code>.</p>
+<p><strong>Configuration :</strong> Créez deux curseurs <code>a</code> (min 0.1) et <code>b</code> (min 0.1). Réglez <code>a = 1</code> et <code>b = 4</code>.</p>
 </li>
 <li>
-<p><strong>Calcul global :</strong> Saisissez <code>I = Intégrale(f, a, b)</code> pour obtenir l'aire sous la courbe.</p>
+<p><strong>Calcul global :</strong> Saisissez <code>I = Intégrale(p, a, b)</code> pour obtenir l'aire sous la courbe.</p>
 </li>
 <li>
 <p><strong>Valeur Moyenne <span class="arithmatex">\(\mu\)</span> :</strong></p>
 </li>
-<li>Calculez la hauteur moyenne : `moy = I / (b - a</li>
+<li>
+<p>Calculez la hauteur moyenne : <code>moy = I / (b - a)</code>.</p>
+</li>
+<li>
+<p><strong>Visualisation :</strong> Créez le rectangle d'équivalence avec les points <code>(a,0)</code>, <code>(b,0)</code>, <code>(b, moy)</code> et <code>(a, moy)</code>. Utilisez l'outil <strong>Polygone</strong> pour le colorer.</p>
+</li>
+<li>
+<p><strong>Validation théorique (Calcul papier) :</strong></p>
+</li>
+<li>En utilisant la linéarité et la primitive de <span class="arithmatex">\(\ln(x)\)</span> qui est <span class="arithmatex">\((x\ln(x) - x)\)</span>, déterminez la primitive <span class="arithmatex">\(P(x)\)</span> de votre signal.</li>
+<li><em>Rappel :</em> <span class="arithmatex">\(P(x) = \display_style\int (-1.5x^2 + 2x + \ln(x)) dx\)</span>.</li>
+<li><strong>Calcul :</strong> Calculez la valeur exacte de <span class="arithmatex">\(\mu\)</span> pour l'intervalle <span class="arithmatex">\([1 ; 2]\)</span>.</li>
+<li><strong>Vérification :</strong> Comparez votre résultat avec la valeur <code>moy</code> affichée par GeoGebra.</li>
 </ol>
 
 
