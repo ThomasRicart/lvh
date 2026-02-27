@@ -27,6 +27,12 @@ function flipCard() {
 function updateCard() {
     if (questions.length === 0) return;
     const card = document.getElementById('card');
+	const recto = document.getElementById('recto');
+    const verso = document.getElementById('verso');
+
+// Vérification que les éléments existent bien dans la page
+    if (!card || !recto || !verso) return; 
+
     card.classList.remove('flipped');
     
     setTimeout(() => {
