@@ -1544,23 +1544,47 @@
 <h1 id="tp-1-approcher-laire-sous-la-courbe-avec-geogebra">TP 1 : Approcher l'aire sous la courbe avec GeoGebra</h1>
 <h2 id="1-mise-en-place-de-la-fonction">1. Mise en place de la fonction</h2>
 <ol>
-<li>Dans la barre de saisie, tapez : <code>f(x) = -0.5x² + 2x + 1</code></li>
-<li>Définissez l'intervalle d'étude en créant deux curseurs <span class="arithmatex">\(a\)</span> et <span class="arithmatex">\(b\)</span> :</li>
-<li>Cliquez sur l'outil <strong>Curseur</strong>, réglez <span class="arithmatex">\(a\)</span> de 0 à 5 (incrément 0.1).</li>
+<li>
+<p>Dans la barre de saisie, tapez : <code>f(x) = -0.5x² + 2x + 1</code></p>
+</li>
+<li>
+<p>Définissez l'intervalle d'étude en créant deux curseurs <span class="arithmatex">\(a\)</span> et <span class="arithmatex">\(b\)</span> :</p>
+</li>
+<li>
+<p>Cliquez sur l'outil <strong>Curseur</strong>, réglez <span class="arithmatex">\(a\)</span> de 0 à 5 (incrément 0.1).</p>
+</li>
 <li>Créez un curseur <span class="arithmatex">\(b\)</span> de 0 à 5 (incrément 0.1). Positionnez <span class="arithmatex">\(a=1\)</span> et <span class="arithmatex">\(b=4\)</span>.</li>
 </ol>
 <h2 id="2-sommes-de-riemann-approximation">2. Sommes de Riemann (Approximation)</h2>
-<p>On souhaite diviser l'intervalle <span class="arithmatex">\([a, b]\)</span> en <span class="arithmatex">\(n\)</span> rectangles pour estimer l'aire.
-1. Créez un curseur <code>n</code> (Nombre entier) allant de 1 à 100.
-2. Saisissez la commande : <code>S_inf = SommeInférieure(f, a, b, n)</code>
-3. Saisissez la commande : <code>S_sup = SommeSupérieure(f, a, b, n)</code>
-4. <strong>Observation :</strong> Faites varier le curseur <code>n</code>. 
-   - <em>Question :</em> Que se passe-t-il pour l'écart entre <code>S_inf</code> et <code>S_sup</code> quand <code>n</code> devient très grand ?</p>
+<p>On souhaite diviser l'intervalle <span class="arithmatex">\([a, b]\)</span> en <span class="arithmatex">\(n\)</span> rectangles pour estimer l'aire.</p>
+<ol>
+<li>
+<p>Créez un curseur <code>n</code> (Nombre entier) allant de 1 à 100.</p>
+</li>
+<li>
+<p>Saisissez la commande : <code>S_inf = SommeInférieure(f, a, b, n)</code></p>
+</li>
+<li>
+<p>Saisissez la commande : <code>S_sup = SommeSupérieure(f, a, b, n)</code></p>
+</li>
+<li>
+<p><strong>Observation :</strong> Faites varier le curseur <code>n</code>. </p>
+</li>
+<li>
+<p><em>Question :</em> Que se passe-t-il pour l'écart entre <code>S_inf</code> et <code>S_sup</code> quand <code>n</code> devient très grand ?</p>
+</li>
+</ol>
 <h2 id="3-valeur-exacte">3. Valeur exacte</h2>
 <ol>
-<li>Saisissez la commande : <code>Aire = Intégrale(f, a, b)</code></li>
-<li>Comparez la valeur de <code>Aire</code> avec vos sommes précédentes.
-3.<strong>Lien avec le cours :</strong> Déterminez par le calcul (sur papier) une primitive <span class="arithmatex">\(F\)</span> de <span class="arithmatex">\(f\)</span>. [cite_start]Vérifiez que <span class="arithmatex">\(F(b) - F(a)\)</span> donne le même résultat que GeoGebra.</li>
+<li>
+<p>Saisissez la commande : <code>Aire = Intégrale(f, a, b)</code></p>
+</li>
+<li>
+<p>Comparez la valeur de <code>Aire</code> avec vos sommes précédentes.</p>
+</li>
+<li>
+<p><strong>Lien avec le cours :</strong> Déterminez par le calcul (sur papier) une primitive <span class="arithmatex">\(F\)</span> de <span class="arithmatex">\(f\)</span>. [cite_start]Vérifiez que <span class="arithmatex">\(F(b) - F(a)\)</span> donne le même résultat que GeoGebra.</p>
+</li>
 </ol>
 
 
