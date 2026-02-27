@@ -41,7 +41,7 @@
     },
     {
         "recto": "Comment vérifier si une clé <code>'nom'</code> existe dans <code>d</code> sans provoquer d'erreur ?",
-        "verso": "En utilisant l'opérateur <code>in</code> : <code>if 'nom' in d:</code>"
+        "verso": "En utilisant l'opérateur <code>in</code> : <code>if 'nom' in d.keys():</code>"
     },
     {
         "recto": "Quelle erreur Python renvoie-t-il si on tente d'accéder à une clé inexistante ?",
@@ -52,7 +52,7 @@
         "verso": "On utilise la commande <code>del(mon_dico['clé'])</code>"
     },
     {
-        "recto": "Dans l'analyse fréquentielle de 'abracadabra', quelle serait la valeur associée à la clé 'a' ?",
+        "recto": "Dans l'analyse fréquentielle de <code>'abracadabra'</code>, quelle serait la valeur associée à la clé <code>'a'</code> ?",
         "verso": "La valeur serait <strong>5</strong>."
     },
     {
