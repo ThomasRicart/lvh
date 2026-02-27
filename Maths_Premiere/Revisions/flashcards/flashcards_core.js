@@ -16,7 +16,8 @@ async function initFlashcards(jsonPath) {
         questions = shuffle(data);
         updateCard();
     } catch (e) {
-        console.error("Erreur :", e);
+        console.error("Erreur de chargement JSON :", e);
+        document.getElementById('progress').innerText = "Erreur de chargement des questions.";
     }
 }
 
@@ -26,40 +27,34 @@ function flipCard() {
 
 function updateCard() {
     if (questions.length === 0) return;
+    
     const card = document.getElementById('card');
-    card.classList.remove('flipped');
+    card.classList.remove('flipped'); // Réinitialise la carte face recto
     
     setTimeout(() => {
         document.getElementById('recto').innerHTML = `<span>${questions[currentIndex].recto}</span>`;
         document.getElementById('verso').innerHTML = `<span>${questions[currentIndex].verso}</span>`;
         document.getElementById('progress').innerText = `Carte ${currentIndex + 1} / ${questions.length}`;
         
-        // --- CETTE PARTIE EST ESSENTIELLE POUR LE $ ---
+        // Force MathJax à traiter les nouveaux symboles $ chargés
         if (window.MathJax && MathJax.typesetPromise) {
             MathJax.typesetPromise();
         }
-        // ----------------------------------------------
-    }, 150);
-}
-// Vérification que les éléments existent bien dans la page
-    if (!card || !recto || !verso) return; 
-
-    card.classList.remove('flipped');
-    
-    setTimeout(() => {
-        document.getElementById('recto').innerHTML = `<span>${questions[currentIndex].recto}</span>`;
-        document.getElementById('verso').innerHTML = `<span>${questions[currentIndex].verso}</span>`;
-        document.getElementById('progress').innerText = `Carte ${currentIndex + 1} / ${questions.length}`;
-        if (window.MathJax) MathJax.typesetPromise();
     }, 150);
 }
 
 function nextCard(e) {
-    e.stopPropagation();
-    if (currentIndex < questions.length - 1) { currentIndex++; updateCard(); }
+    e.stopPropagation(); // Empêche de retourner la carte en cliquant sur le bouton
+    if (currentIndex < questions.length - 1) { 
+        currentIndex++; 
+        updateCard(); 
+    }
 }
 
 function prevCard(e) {
     e.stopPropagation();
-    if (currentIndex > 0) { currentIndex--; updateCard(); }
+    if (currentIndex > 0) { 
+        currentIndex--; 
+        updateCard(); 
+    }
 }

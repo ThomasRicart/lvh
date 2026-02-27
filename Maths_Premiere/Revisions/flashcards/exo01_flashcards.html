@@ -2,14 +2,16 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Flashcards - Nom du Chapitre</title>
+    <title>Flashcards - Révisions</title>
     <link rel="stylesheet" href="flashcards_style.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    
     <script src="flashcards_core.js" defer></script>
 </head>
 <body>
 
-    <h1 id="chapter-title">Chapitre 1 : Les Polynômes</h1>
+    <h1 id="chapter-title">Chapitre : Les Polynômes</h1>
     <div id="progress">Chargement...</div>
 
     <div class="flashcard-container" onclick="flipCard()">
@@ -25,10 +27,10 @@
     </div>
 
     <script>
-		document.addEventListener('DOMContentLoaded', () => {
-			// Vérifiez que ce nom correspond exactement à votre fichier .json
-			initFlashcards('exo01_questions.json'); 
-		});
-	</script>
+        // Lancer le chargement une fois la page prête
+        document.addEventListener('DOMContentLoaded', () => {
+            initFlashcards('exo01_questions.json'); 
+        });
+    </script>
 </body>
 </html>
