@@ -25,7 +25,7 @@
     
     
       
-        <title>TP 3 : Valeur moyenne et "Rectangle d'équivalence" - Cours de M. Ricart</title>
+        <title>TP 3 : Valeur moyenne et "Rectangle d'équivalence" (Dynamique) - Cours de M. Ricart</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tp-3-valeur-moyenne-et-rectangle-dequivalence" class="md-skip">
+        <a href="#tp-3-valeur-moyenne-et-rectangle-dequivalence-dynamique" class="md-skip">
           Aller au contenu
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              TP 3 : Valeur moyenne et "Rectangle d'équivalence"
+              TP 3 : Valeur moyenne et "Rectangle d'équivalence" (Dynamique)
             
           </span>
         </div>
@@ -1541,52 +1541,35 @@
 
 
 
-<h1 id="tp-3-valeur-moyenne-et-rectangle-dequivalence">TP 3 : Valeur moyenne et "Rectangle d'équivalence"</h1>
+<h1 id="tp-3-valeur-moyenne-et-rectangle-dequivalence-dynamique">TP 3 : Valeur moyenne et "Rectangle d'équivalence" (Dynamique)</h1>
 <h2 id="1-modelisation-du-signal">1. Modélisation du signal</h2>
 <p>On étudie la fonction <span class="arithmatex">\(f(t) = 4t e^{-t}\)</span> (type charge de condensateur ou signal amorti).</p>
 <ol>
-<li>
-<p>Saisissez : <code>f(x) = 4x * exp(-x)</code></p>
-</li>
-<li>
-<p>Créez un curseur <code>b</code> allant de 1 à 10. (On fixe <span class="arithmatex">\(a=0\)</span>).</p>
-</li>
+<li>Dans la barre de saisie, tapez : <code>f(x) := 4x * exp(-x)</code></li>
+<li>Créez deux curseurs :</li>
+<li>Un curseur <code>a</code> allant de 0 à 10 (incrément 0.1).</li>
+<li>Un curseur <code>b</code> allant de 0 à 10 (incrément 0.1). 
+   <em>(Astuce : veillez à ce que <span class="arithmatex">\(b &gt; a\)</span> en ajustant les curseurs)</em>.</li>
 </ol>
 <h2 id="2-calcul-de-la-valeur-moyenne">2. Calcul de la Valeur Moyenne</h2>
+<p>On veut visualiser le rectangle dont l'aire est égale à l'intégrale sur l'intervalle <span class="arithmatex">\([a, b]\)</span>.</p>
 <ol>
-<li>
-<p>Saisissez la commande pour l'intégrale : <code>I = Intégrale(f, 0, b)</code></p>
-</li>
-<li>
-<p>Calculez la valeur moyenne <span class="arithmatex">\(\mu\)</span> en saisissant : <code>moy = I / b</code>[cite: 54].</p>
-</li>
-<li>
-<p>Créez le rectangle d'équivalence :</p>
-</li>
-<li>
-<p>Créez les points <code>A=(0,0)</code>, <code>B=(b,0)</code>, <code>C=(b, moy)</code>, <code>D=(0, moy)</code>.</p>
-</li>
-<li>
-<p>Utilisez l'outil <strong>Polygone</strong> pour dessiner <code>ABCD</code>.</p>
-</li>
-<li>
-<p><strong>Interprétation visuelle :</strong> - Modifiez <code>b</code> avec le curseur. </p>
-</li>
-<li>
-<p>Justifiez que l'aire du rectangle est toujours égale à l'aire sous la courbe[cite: 56].</p>
-</li>
+<li>Saisissez la commande pour l'intégrale : <code>I = Intégrale(f, a, b)</code></li>
+<li>Calculez la valeur moyenne <span class="arithmatex">\(\mu\)</span> en saisissant : <code>moy = I / (b - a)</code></li>
+<li>Créez les points du rectangle :</li>
+<li><code>A = (a, 0)</code></li>
+<li><code>B = (b, 0)</code></li>
+<li><code>C = (b, moy)</code></li>
+<li><code>D = (a, moy)</code></li>
+<li>Utilisez l'outil <strong>Polygone</strong> pour dessiner <code>ABCD</code>.</li>
+<li><strong>Interprétation visuelle :</strong> - Faites varier <code>a</code> et <code>b</code> avec les curseurs.</li>
+<li><em>Question :</em> Observez comment le rectangle se déplace et change de hauteur. Justifiez pourquoi, peu importe la position de <span class="arithmatex">\(a\)</span> et <span class="arithmatex">\(b\)</span>, l'aire du rectangle <code>ABCD</code> reste toujours égale à l'aire sous la courbe entre <span class="arithmatex">\(a\)</span> et <span class="arithmatex">\(b\)</span>.</li>
 </ol>
 <h2 id="3-vers-la-derivation-revision">3. Vers la dérivation (Révision)</h2>
 <ol>
-<li>
-<p>Utilisez GeoGebra pour trouver le maximum de la fonction <span class="arithmatex">\(f\)</span> (Commande <code>Extremum(f)</code>).</p>
-</li>
-<li>
-<p>Vérifiez par le calcul que ce maximum correspond à la valeur où <span class="arithmatex">\(f'(x) = 0\)</span>.</p>
-</li>
-<li>
-<p><em>Question de synthèse :</em> Pour quelle valeur de <span class="arithmatex">\(b\)</span> la valeur moyenne <span class="arithmatex">\(\mu\)</span> est-elle maximale ? (Utilisez le curseur pour observer).</p>
-</li>
+<li>Utilisez GeoGebra pour trouver le maximum de la fonction <span class="arithmatex">\(f\)</span> sur <span class="arithmatex">\([0, 10]\)</span> avec la commande <code>Extremum(f)</code>.</li>
+<li>Vérifiez par le calcul (dérivation) que ce maximum est atteint pour <span class="arithmatex">\(t = 1\)</span>.</li>
+<li><em>Question de réflexion :</em> Lorsque le curseur <code>a</code> ou <code>b</code> se rapproche de la valeur <span class="arithmatex">\(1\)</span> (le maximum de la fonction), que se passe-t-il pour la valeur moyenne <span class="arithmatex">\(\mu\)</span> ? Est-elle plus élevée ou plus faible que si l'intervalle se situait sur les bords de la courbe ?</li>
 </ol>
 
 
