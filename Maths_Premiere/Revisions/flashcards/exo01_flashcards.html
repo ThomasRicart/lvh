@@ -8,7 +8,7 @@
         :root { --primary: #2563eb; --bg: #f1f5f9; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
         
-        .flashcard-container { width: 600px; height: 400px; perspective: 1000px; cursor: pointer; }
+        .flashcard-container { width: 400px; height: 250px; perspective: 1000px; cursor: pointer; }
         .flashcard { width: 100%; height: 100%; position: relative; transition: transform 0.6s; transform-style: preserve-3d; }
         .flashcard.flipped { transform: rotateY(180deg); }
 
@@ -17,21 +17,18 @@
 			width: 100%; 
 			height: 100%; 
 			backface-visibility: hidden;
-			display: flex; 
-			align-items: center; 
-			justify-content: center; 
+			display: flex;            /* Utilisation de Flexbox */
+			align-items: center;      /* Centrage vertical */
+			justify-content: center;   /* Centrage horizontal */
 			text-align: center;
-			padding: 30px; /* Augmenté pour la lisibilité */
+			padding: 20px; 
 			border-radius: 15px; 
 			box-shadow: 0 8px 15px rgba(0,0,0,0.1); 
 			box-sizing: border-box;
-    
-			/* --- CORRECTION : On autorise le flux de texte normal --- */
-			display: block;           /* On repasse en block pour le texte en ligne */
-			line-height: 400px;       /* Pour centrer verticalement avec la hauteur de la carte */
-			overflow-wrap: break-word; 
-			white-space: normal;     
+			white-space: normal;      /* Autorise le retour à la ligne */
 		}
+
+/* Supprimez ou commentez l'ancien .front span, .back span ainsi que le line-height: 400px */
 
 		/* Pour que le texte à l'intérieur soit bien centré verticalement malgré le mode block */
 		.front span, .back span {
