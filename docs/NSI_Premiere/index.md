@@ -4,8 +4,8 @@
 
 ## Le programme officiel
 
-<iframe src="./docs/NSI_premiere_programme.pdf" width="100%" height="600px">
+<iframe src="./_docs/NSI_premiere_programme.pdf" width="100%" height="600px">
     Ce navigateur ne supporte pas la visualisation de PDFs. 
     Veuillez télécharger le fichier pour le consulter : 
-    <a href="./docs/NSI_premiere_programme.pdf">Télécharger le PDF</a>.
+    <a href="./_docs/NSI_premiere_programme.pdf">Télécharger le PDF</a>.
 </iframe>
