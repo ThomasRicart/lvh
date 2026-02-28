@@ -13,3 +13,9 @@ def est_present(liste, element):
     return False
 ```
 </details>
+
+
+docs/_python/est_present_elements.py
+
+
+[lien](https://github.com/ThomasRicart/lvh/raw/refs/heads/main/docs/_python/est_present.py)
