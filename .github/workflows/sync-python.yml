@@ -1,0 +1,40 @@
+name: Sync Python Code to Markdown
+on:
+  push:
+    paths:
+      - 'docs/_python/est_present_elements.py' # Se déclenche si le script change
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Injecter le code
+        run: |
+          # 1. Extraction du contenu du fichier python
+          # On utilise 'cat' pour lire le fichier source
+          CODE=$(cat docs/_python/est_present_elements.py)
+          
+          # 2. On définit le chemin du fichier markdown cible
+          TARGET="docs/NSI_Premiere/index.md"
+          
+          # 3. Remplacement du contenu entre les balises
+          # On utilise une syntaxe temporaire pour gérer les retours à la ligne proprement
+          printf "\n\`\`\`python\n%s\n\`\`\`\n" "$CODE" > replacement.txt
+          
+          # Utilisation de sed pour remplacer le bloc complet dans le fichier index.md
+          sed -i "//,// {
+            // r replacement.txt
+            d
+          }" "$TARGET"
+          
+          rm replacement.txt
+
+      - name: Commit et Push
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          git add docs/NSI_Premiere/index.md
+          git commit -m "Automatique : Mise à jour du code Python dans index.md" || exit 0
+          git push
